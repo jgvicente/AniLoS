@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm", "cython >= 3.0.11", "numpy >= 2.0.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anilos"
+dynamic = ["version"]
+description = "A Line-of-Sight integrator for nearly isotropic Bianchi models"
+readme = "README.md"
+dependencies = [
+    "numpy < 2.0.0",
+    "scipy",
+    "classy",
+    "numba"
+]
+authors = [
+    {name = "Cyril Pitrou"},
+    {name = "Thiago Pereira", email = "tspereira@uel.br"},
+    {name = "João Vicente", email = "jgvicente2000@gmail.com"}
+]
+maintainers = [
+    {name = "João Vicente", email = "jgvicente2000@gmail.com"}
+]
+license = { text = "GPL" }
+keywords = ["Cosmology", "Bianchi", "CMB"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+# [project.urls]
+# Homepage = "https://example.com"
+# Documentation = "https://readthedocs.org"
+# Repository = "https://github.com/me/spam.git"
+# Issues = "https://github.com/me/spam/issues"
+# Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"

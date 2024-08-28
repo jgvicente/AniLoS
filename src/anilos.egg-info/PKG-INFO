@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: anilos
+Version: 0.0.0
+Summary: A Line-of-Sight integrator for nearly isotropic Bianchi models
+Author: Cyril Pitrou
+Author-email: Thiago Pereira <tspereira@uel.br>, João Vicente <jgvicente2000@gmail.com>
+Maintainer-email: João Vicente <jgvicente2000@gmail.com>
+License: GPL
+Keywords: Cosmology,Bianchi,CMB
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+Requires-Dist: numpy<2.0.0
+Requires-Dist: scipy
+Requires-Dist: classy
+Requires-Dist: numba
+
+Empty for now
