@@ -40,3 +40,7 @@ Examples can be found in examples folder
 ## Citation
 
 TBA.
+
+## License
+
+AniLoS is released under the GNU General Public License v3.0
