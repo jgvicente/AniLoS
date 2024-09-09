@@ -13,6 +13,10 @@ setup(
     ext_modules = [hyp_extensions]
 )
 
+# Generates a new .c file if hybess.pyx is modified
+# Uncomment the lines below to compile the modifications in hybess.pyx
+# After updating hybess.c (see README.md), comment these lines again
+
 # hyp_extensions = Extension(
 #     name = "anilos.hybess",
 #     sources=["./src/anilos/hybess_src/hybess.pyx"],
