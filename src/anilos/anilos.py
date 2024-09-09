@@ -17,33 +17,49 @@ class Anilos:
 
     Line of sight CMB integration for nearly-isotropic Bianchi /
     Homogeneously-perturbed FLRW models.
-    Written by Thiago Pereira, Cyril Pitrou and João Vicente
+    Written by Thiago Pereira, Cyril Pitrou, and João Vicente
     Based on: Phys. Rev. D 100, 123534 (2019)
               Phys. Rev. D 100, 123535 (2019)
     
     Methods
     -------
-    tensor_solver,
-    vector_solver,
-    alm_tensor,
+    tensor_solver
+        Solves the tensor perturbation equations.
+    vector_solver
+        Solves the vector perturbation equations.
+    alm_tensor
+        Computes the tensor mode alm coefficients.
     alm_vector
+        Computes the vector mode alm coefficients.
     
     Variables
     ---------
-
-    ztable,
-    etatable,
-    atable,
-    tensor_tc,
-    vector_tc,
-    nteb_tensor,
-    nteb_vector,
-    almT_tensor,
-    almE_tensor,
-    almB_tensor,
-    almT_vector,
-    almE_vector,
-    almB_vector
+    ztable : array
+        Table of redshift values.
+    etatable : array
+        Table of conformal time values.
+    atable : array
+        Table of scale factor values.
+    tensor_tc : float
+        Conformal time when tensor tight coupling ends.
+    vector_tc : float
+        Conformal time when vector tight coupling ends.
+    nteb_tensor : array
+        Array of the number of tensor modes for each multipole.
+    nteb_vector : array
+        Array of the number of vector modes for each multipole.
+    almT_tensor : array
+        Array of the tensor mode alm coefficients for temperature.
+    almE_tensor : array
+        Array of the tensor mode alm coefficients for E-mode polarization.
+    almB_tensor : array
+        Array of the tensor mode alm coefficients for B-mode polarization.
+    almT_vector : array
+        Array of the vector mode alm coefficients for temperature.
+    almE_vector : array
+        Array of the vector mode alm coefficients for E-mode polarization.
+    almB_vector : array
+        Array of the vector mode alm coefficients for B-mode polarization.
     """
 
     def __init__(self, params=None): 
@@ -51,20 +67,20 @@ class Anilos:
         """
         Parameters
         ----------
-        params : dict
+        params : dict, optional
             Dictionary containing the input variables.
         h_hubble : float, default: 0.67810
             Dimensionless Hubble constant.
         Omega_K : float, default: 1e-6
             Curvature density today.
-        Omega_b : float, default: Class default
-            Baryon density parameter today
-        Omega_cdm : float, default: Class default
-            CDM density parameter today
-        Omega_m : float, default: Class default
-            Matter density parameter today
-        Omega_Lambda : float, default: Class default
-            Cosmological constant density parameter today
+        Omega_b : float
+            Baryon density parameter today.
+        Omega_cdm : float
+            CDM density parameter today.
+        Omega_m : float
+            Matter density parameter today.
+        Omega_Lambda : float
+            Cosmological constant density parameter today.
         z_reio : float, default: 7.6711
             Reionization redshift.
         cutoff_multipole : int, default: 30
@@ -90,14 +106,19 @@ class Anilos:
 
         Class has a particular method to assign Omega_b, Omega_cdm,
         and Omega_Lambda given Omega_K. The user may inform only Omega_K
-        and the other parameters will be infered from Class.
+        and the other parameters will be inferred from Class.
 
         Some useful variables are:
-        ztable : redshift
-        etatable : conformal time
-        atable : scale factor
-        Hcaltable : Hubble paramter \cal{H}
-        tauprimetable : derivative of optical depth
+        ztable : array
+            Table of redshift values.
+        etatable : array
+            Table of conformal time values.
+        atable : array
+            Table of scale factor values.
+        Hcaltable : array
+            Table of Hubble parameter values.
+        tauprimetable : array
+            Table of derivative of optical depth values.
         """
 
         # Default values
@@ -298,9 +319,9 @@ class Anilos:
         Parameters
         ----------
         alm_array_list : list
-            List that contain all the
-            non-zero multiopoles for 
-            temperature and/or polarisation
+            List that contains all the
+            non-zero multipoles for 
+            temperature and/or polarization
         ell_max : int
             Maximum multipole
         m : int
@@ -309,6 +330,7 @@ class Anilos:
         Returns
         -------
         array or list of arrays
+            Alm coefficients in the format expected by healpy
         """
         if m == 2:
             inter = [2 * ell_max + 1,3 * ell_max]
@@ -332,22 +354,22 @@ class Anilos:
     ### Tensor modes ###
 
     def __tensor_call(self, eta, y, ell_max):
-        """Computes the values needed for tensor_hierarchy
+        """Computes the values needed for tensor_hierarchy.
 
         Parameters
         ----------
         eta : float
-            Conformal time
+            Conformal time.
         y : 1d complex array of  4 * ell_max - 2 elements
-            (beta,beta',ur,T,E,B)
+            (beta, beta', ur, T, E, B).
         ell_max : int
-            Multipole where truncation happens
+            Multipole where truncation happens.
 
         Returns
         -------
         complex array
             Array of 4 * ell_max - 2 entries containing the
-            derivatives of each variable
+            derivatives of each variable.
         """
 
         calH = float(self.calH_interp(eta))
@@ -373,22 +395,22 @@ class Anilos:
                             self.zeta_array_tensor)
 
     def __tensor_tight_call(self, eta, y, ell_max):
-        """Computes the values needed for tensor_tight_coupling_hierarchy
+        """Computes the values needed for tensor_tight_coupling_hierarchy.
 
         Parameters
         ----------
         eta : float
-            Conformal time
-        y : 1d complex array of  4 * ell_max - 2 elements
-            (beta,beta',ur,T,E,B)
+            Conformal time.
+        y : 1d complex array of 4 * ell_max - 2 elements
+            (beta, beta', ur, T, E, B).
         ell_max : int
-            Multipole where truncation happens
+            Multipole where truncation happens.
 
         Returns
         -------
         complex array
             Array of 4 * ell_max - 2 entries containing the
-            derivatives of each variable
+            derivatives of each variable.
         """
 
         calH = float(self.calH_interp(eta))
@@ -410,15 +432,15 @@ class Anilos:
                             self.zeta_array_tensor)
 
     def tensor_solver(self, calS2=None, method='RK45', rtol=1e-7, atol=1e-10):
-        """Solver of (beta,beta') and multipoles (N,T,E,B) as a function of time.
+        """Solver for (beta, beta') and multipoles (N, T, E, B) as a function of time.
 
         The shear beta and beta' and the multipoles N and T during
-        tight coupling are stored in the array Anilos.tensor_tc (for later use
+        the tight coupling phase are stored in the array Anilos.tensor_tc (for later use
         in the source terms of the integral solution) with
         the following structure:
         Anilos.tensor_tc: [beta, beta', N_2, T_2, N_3, T_3, ...]
 
-        The full hierarchy outside tc regime is stored in Anilos.nteb_tensor
+        The full hierarchy outside the tight coupling regime is stored in Anilos.nteb_tensor
         with the following structure:
         Anilos.nteb_tensor: [beta, beta', N_2, T_2, E_2, B_2, N_3, T_3, E_3, B_3, ...]
 
@@ -427,7 +449,7 @@ class Anilos:
         calS2 : complex, default: Eq. D.2 in arxiv:1909.13688
             Eq. D.2 in arxiv:1909.13688
         method : str, default: RK45
-            Method to solve the system
+            Method used to solve the system
         rtol, atol : float, default: 1e-7 and 1e-10
             Precision (see solve_ivp documentation for details)
         """
@@ -549,23 +571,23 @@ class Anilos:
         self.se2_tensor_interp = CubicSpline(self.etatable2,se2_full)
 
     def alm_tensor(self, ell_max, healpy = False):
-        """Computes alm_T, alm_E and alm_B simultaneously
-        using line-of-sight integration
+        """Computes alm_T, alm_E, and alm_B simultaneously
+        using line-of-sight integration.
 
         Integration is performed for multipoles 2 to ell_max.
         The only non-zero a_{lm} are a_{l0}. They are stored in
-        Anilos.almT_tensor, Anilos.almE_tensor and Anilos.alm_B_tensor
+        Anilos.almT_tensor, Anilos.almE_tensor, and Anilos.alm_B_tensor
         either as 1d arrays with length ell_max - 2 (if healpy is set to false),
-        in which are stored only the non-zero a_{lm}, or as sparse matrices,
+        in which only the non-zero a_{lm} are stored, or as sparse matrices,
         which can be passed into healpy.
 
         Parameters
         ----------
         ell_max : int
             Maximum multipole. It does not need to be
-            equal to the cutoff multipole
+            equal to the cutoff multipole.
         healpy : bool, default = False
-            Whether to set the alms into a format ready to be used in healpy
+            Whether to set the alms into a format ready to be used in healpy.
         """
 
         if self.calK < 0:
@@ -738,16 +760,15 @@ class Anilos:
                                             self.gauge)
                 
     def __setIC(self):
-        """Set initial conditions
+        """Set initial conditions.
 
-        Initial conditions for non-decaying vectors modes.
+        Initial conditions for non-decaying vector modes.
         Two ICs are implemented: 'isocurvature' and 'octupole'.
         Isocurvature: photons and neutrinos have opposite directions
-        velocities [1]
-        Octupole: an initial non-zero neutrino octupole [2]
+        velocities [1].
+        Octupole: an initial non-zero neutrino octupole [2].
 
-        References
-        ----------
+        References:
         [1] Lewis, A. (2004). Observable primordial vector modes.
         Physical Review D, 70(4), 043518.
         [2] Rebhan, A. K., & Schwarz, D. J. (1994). 
