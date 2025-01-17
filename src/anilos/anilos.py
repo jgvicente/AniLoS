@@ -62,12 +62,12 @@ class Anilos:
         Array of the vector mode alm coefficients for B-mode polarization.
     """
 
-    def __init__(self, params=None): 
+    def __init__(self, params): 
 
         """
         Parameters
         ----------
-        params : dict, optional
+        params : dict
             Dictionary containing the input variables.
         h_hubble : float, default: 0.67810
             Dimensionless Hubble constant.
