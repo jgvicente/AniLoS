@@ -4,24 +4,26 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "anilos"
-dynamic = ["version"]
+#dynamic = ["version"]
+version = "0.1.0"
 description = "A Line-of-Sight integrator for nearly isotropic Bianchi models"
 readme = "README.md"
 dependencies = [
-    "numpy < 2.0.0",
-    "scipy",
-    "classy",
-    "numba"
+    "numpy >= 2.0.2",
+    "scipy >= 1.13.0",
+    "numba >= 0.61.0"
 ]
+requires-python = ">= 3.10"
 authors = [
-    {name = "Cyril Pitrou"},
+    {name = "Cyril Pitrou", email = "pitrou@iap.fr"},
     {name = "Thiago Pereira", email = "tspereira@uel.br"},
     {name = "João Vicente", email = "jgvicente2000@gmail.com"}
 ]
 maintainers = [
     {name = "João Vicente", email = "jgvicente2000@gmail.com"}
 ]
-license = { text = "GPL" }
+#license-file = ["LICENSE"]
+license = { text = "GPL-3.0" }
 keywords = ["Cosmology", "Bianchi", "CMB"]
 classifiers = [
   "Development Status :: 4 - Beta",

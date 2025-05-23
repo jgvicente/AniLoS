@@ -1,11 +1,9 @@
+LICENSE
 README.md
 pyproject.toml
 setup.py
 ./src/anilos/hybess_src/hybess.c
-dist/anilos-0.0.0-cp39-cp39-linux_x86_64.whl
-dist/anilos-0.0.0.tar.gz
 examples/Example.ipynb
-examples/Example_aniclass.ipynb
 examples/.ipynb_checkpoints/Example-checkpoint.ipynb
 examples/.ipynb_checkpoints/Example_aniclass-checkpoint.ipynb
 src/anilos/__init__.py
@@ -17,5 +15,4 @@ src/anilos.egg-info/dependency_links.txt
 src/anilos.egg-info/requires.txt
 src/anilos.egg-info/top_level.txt
 src/anilos/hybess_src/hybess.c
-src/anilos/hybess_src/hybess.cpython-39-x86_64-linux-gnu.so
 src/anilos/hybess_src/hybess.pyx

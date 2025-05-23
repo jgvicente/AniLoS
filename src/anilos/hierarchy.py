@@ -334,7 +334,7 @@ def tensor_hierarchy(eta,
     #####
     ## 6 - Closure relation for Boltzmann hierarchy.
     ## This implements Eqs. (9) and (10) from Pitrou et al 2020 [arXiv:2005.12119]
-    ## including a copy of Eq.(9) for neutrinos. @Cyril: please confirm that you agree.
+    ## including a copy of Eq.(9) for neutrinos.
     ## See also section 5.4.5 in Riazuelo's thesis:
     ## https://tel.archives-ouvertes.fr/tel-00003366
     #####
@@ -468,7 +468,7 @@ def tensor_tight_coupling_hierarchy(eta,
     #####
     ## Closure relation for Boltzmann hierarchy.
     ## This implements Eqs. (9) and (10) from Pitrou et al 2020 [arXiv:2005.12119]
-    ## including a copy of Eq.(9) for neutrinos. @Cyril: please confirm that you agree.
+    ## including a copy of Eq.(9) for neutrinos.
     ## See also section 5.4.5 in Riazuelo's thesis:
     ## https://tel.archives-ouvertes.fr/tel-00003366
     #####

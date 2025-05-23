@@ -4,21 +4,21 @@
 {
     "distutils": {
         "depends": [
-            "/home/joao/anaconda3/lib/python3.9/site-packages/numpy/_core/include/numpy/arrayobject.h",
-            "/home/joao/anaconda3/lib/python3.9/site-packages/numpy/_core/include/numpy/arrayscalars.h",
-            "/home/joao/anaconda3/lib/python3.9/site-packages/numpy/_core/include/numpy/ndarrayobject.h",
-            "/home/joao/anaconda3/lib/python3.9/site-packages/numpy/_core/include/numpy/ndarraytypes.h",
-            "/home/joao/anaconda3/lib/python3.9/site-packages/numpy/_core/include/numpy/ufuncobject.h"
+            "/home/joao/anilos_build_env/lib/python3.10/site-packages/numpy/_core/include/numpy/arrayobject.h",
+            "/home/joao/anilos_build_env/lib/python3.10/site-packages/numpy/_core/include/numpy/arrayscalars.h",
+            "/home/joao/anilos_build_env/lib/python3.10/site-packages/numpy/_core/include/numpy/ndarrayobject.h",
+            "/home/joao/anilos_build_env/lib/python3.10/site-packages/numpy/_core/include/numpy/ndarraytypes.h",
+            "/home/joao/anilos_build_env/lib/python3.10/site-packages/numpy/_core/include/numpy/ufuncobject.h"
         ],
         "include_dirs": [
-            "/home/joao/anaconda3/lib/python3.9/site-packages/numpy/_core/include"
+            "/home/joao/anilos_build_env/lib/python3.10/site-packages/numpy/_core/include"
         ],
-        "name": "hybess",
+        "name": "anilos.hybess",
         "sources": [
-            "hybess.pyx"
+            "./src/anilos/hybess_src/hybess.pyx"
         ]
     },
-    "module_name": "hybess"
+    "module_name": "anilos.hybess"
 }
 END: Cython Metadata */
 
@@ -1238,8 +1238,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__hybess
-#define __PYX_HAVE_API__hybess
+#define __PYX_HAVE__anilos__hybess
+#define __PYX_HAVE_API__anilos__hybess
 /* Early includes */
 #include <string.h>
 #include <stdio.h>
@@ -1526,7 +1526,7 @@ static const char *__pyx_filename;
 /* #### Code section: filename_table ### */
 
 static const char *__pyx_f[] = {
-  "hybess.pyx",
+  "src/anilos/hybess_src/hybess.pyx",
   "<stringsource>",
   "__init__.cython-30.pxd",
   "type.pxd",
@@ -1675,7 +1675,7 @@ typedef struct {
 
 /* #### Code section: numeric_typedefs ### */
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":770
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":770
  * # in Cython to enable them only on the right systems.
  * 
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
@@ -1684,7 +1684,7 @@ typedef struct {
  */
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":771
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":771
  * 
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
@@ -1693,7 +1693,7 @@ typedef npy_int8 __pyx_t_5numpy_int8_t;
  */
 typedef npy_int16 __pyx_t_5numpy_int16_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":772
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":772
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t             # <<<<<<<<<<<<<<
@@ -1702,7 +1702,7 @@ typedef npy_int16 __pyx_t_5numpy_int16_t;
  */
 typedef npy_int32 __pyx_t_5numpy_int32_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":773
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":773
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
  * ctypedef npy_int64      int64_t             # <<<<<<<<<<<<<<
@@ -1711,7 +1711,7 @@ typedef npy_int32 __pyx_t_5numpy_int32_t;
  */
 typedef npy_int64 __pyx_t_5numpy_int64_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":777
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":777
  * #ctypedef npy_int128     int128_t
  * 
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
@@ -1720,7 +1720,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
  */
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":778
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":778
  * 
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
@@ -1729,7 +1729,7 @@ typedef npy_uint8 __pyx_t_5numpy_uint8_t;
  */
 typedef npy_uint16 __pyx_t_5numpy_uint16_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":779
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":779
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t             # <<<<<<<<<<<<<<
@@ -1738,7 +1738,7 @@ typedef npy_uint16 __pyx_t_5numpy_uint16_t;
  */
 typedef npy_uint32 __pyx_t_5numpy_uint32_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":780
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":780
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
  * ctypedef npy_uint64     uint64_t             # <<<<<<<<<<<<<<
@@ -1747,7 +1747,7 @@ typedef npy_uint32 __pyx_t_5numpy_uint32_t;
  */
 typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":784
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":784
  * #ctypedef npy_uint128    uint128_t
  * 
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
@@ -1756,7 +1756,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
  */
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":785
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":785
  * 
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
@@ -1765,7 +1765,7 @@ typedef npy_float32 __pyx_t_5numpy_float32_t;
  */
 typedef npy_float64 __pyx_t_5numpy_float64_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":792
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":792
  * ctypedef double complex complex128_t
  * 
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
@@ -1774,7 +1774,7 @@ typedef npy_float64 __pyx_t_5numpy_float64_t;
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":793
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":793
  * 
  * ctypedef npy_longlong   longlong_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
@@ -1783,7 +1783,7 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":795
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":795
  * ctypedef npy_ulonglong  ulonglong_t
  * 
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
@@ -1792,7 +1792,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":796
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":796
  * 
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
@@ -1801,7 +1801,7 @@ typedef npy_intp __pyx_t_5numpy_intp_t;
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":798
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":798
  * ctypedef npy_uintp      uintp_t
  * 
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
@@ -1810,7 +1810,7 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
  */
 typedef npy_double __pyx_t_5numpy_float_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":799
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":799
  * 
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
@@ -1819,7 +1819,7 @@ typedef npy_double __pyx_t_5numpy_float_t;
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":800
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":800
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
@@ -1872,7 +1872,7 @@ struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
 struct __pyx_memoryviewslice_obj;
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1096
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1096
  * 
  * # Iterator API added in v1.6
  * ctypedef int (*NpyIter_IterNextFunc)(NpyIter* it) noexcept nogil             # <<<<<<<<<<<<<<
@@ -1881,7 +1881,7 @@ struct __pyx_memoryviewslice_obj;
  */
 typedef int (*__pyx_t_5numpy_NpyIter_IterNextFunc)(NpyIter *);
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1097
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1097
  * # Iterator API added in v1.6
  * ctypedef int (*NpyIter_IterNextFunc)(NpyIter* it) noexcept nogil
  * ctypedef void (*NpyIter_GetMultiIndexFunc)(NpyIter* it, npy_intp* outcoords) noexcept nogil             # <<<<<<<<<<<<<<
@@ -1889,16 +1889,16 @@ typedef int (*__pyx_t_5numpy_NpyIter_IterNextFunc)(NpyIter *);
  * cdef extern from "numpy/arrayobject.h":
  */
 typedef void (*__pyx_t_5numpy_NpyIter_GetMultiIndexFunc)(NpyIter *, npy_intp *);
-struct __pyx_t_6hybess_Geometric_variables;
+struct __pyx_t_6anilos_6hybess_Geometric_variables;
 
-/* "hybess.pyx":59
+/* "src/anilos/hybess_src/hybess.pyx":60
  *     double complex I
  * 
  * cdef struct Geometric_variables:             # <<<<<<<<<<<<<<
  *     # Struct that contains some variables used in all functions
  *     long double r # dimensionless radial coordinate
  */
-struct __pyx_t_6hybess_Geometric_variables {
+struct __pyx_t_6anilos_6hybess_Geometric_variables {
   long double r;
   long double dr_over_r;
 };
@@ -3199,7 +3199,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__p
 
 /* Module declarations from "libc.math" */
 
-/* Module declarations from "hybess" */
+/* Module declarations from "anilos.hybess" */
 static PyObject *__pyx_collections_abc_Sequence = 0;
 static PyObject *generic = 0;
 static PyObject *strided = 0;
@@ -3208,15 +3208,15 @@ static PyObject *contiguous = 0;
 static PyObject *indirect_contiguous = 0;
 static int __pyx_memoryview_thread_locks_used;
 static PyThread_type_lock __pyx_memoryview_thread_locks[8];
-static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselComplex(long double, __pyx_t_long_double_complex, int, struct __pyx_t_6hybess_Geometric_variables); /*proto*/
-static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrimeComplex(__Pyx_memviewslice, __pyx_t_long_double_complex, int, struct __pyx_t_6hybess_Geometric_variables); /*proto*/
-static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_t_long_double_complex, int, __Pyx_memviewslice, __Pyx_memviewslice, struct __pyx_t_6hybess_Geometric_variables); /*proto*/
-static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double, __pyx_t_long_double_complex, int, struct __pyx_t_6hybess_Geometric_variables); /*proto*/
-static __Pyx_memviewslice __pyx_f_6hybess_ForwardsRecurrenceComplex(long double, __pyx_t_long_double_complex, int, struct __pyx_t_6hybess_Geometric_variables); /*proto*/
-static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex, int, long double, __pyx_t_long_double_complex *, int *, int *, int *); /*proto*/
-static __pyx_t_long_double_complex __pyx_f_6hybess_ximoverkc(int, __pyx_t_long_double_complex); /*proto*/
-static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double, int, int, int, int, __pyx_t_long_double_complex, long double, int, PyObject *); /*proto*/
-static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double, int, int, int, int, __pyx_t_long_double_complex, long double, int, PyObject *); /*proto*/
+static __Pyx_memviewslice __pyx_f_6anilos_6hybess_HyperBesselComplex(long double, __pyx_t_long_double_complex, int, struct __pyx_t_6anilos_6hybess_Geometric_variables); /*proto*/
+static __Pyx_memviewslice __pyx_f_6anilos_6hybess_HyperBesselPrimeComplex(__Pyx_memviewslice, __pyx_t_long_double_complex, int, struct __pyx_t_6anilos_6hybess_Geometric_variables); /*proto*/
+static __Pyx_memviewslice __pyx_f_6anilos_6hybess_HyperBesselPrime2Complex(__pyx_t_long_double_complex, int, __Pyx_memviewslice, __Pyx_memviewslice, struct __pyx_t_6anilos_6hybess_Geometric_variables); /*proto*/
+static __Pyx_memviewslice __pyx_f_6anilos_6hybess_BackwardsRecurrenceComplex(double, __pyx_t_long_double_complex, int, struct __pyx_t_6anilos_6hybess_Geometric_variables); /*proto*/
+static __Pyx_memviewslice __pyx_f_6anilos_6hybess_ForwardsRecurrenceComplex(long double, __pyx_t_long_double_complex, int, struct __pyx_t_6anilos_6hybess_Geometric_variables); /*proto*/
+static void __pyx_f_6anilos_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex, int, long double, __pyx_t_long_double_complex *, int *, int *, int *); /*proto*/
+static __pyx_t_long_double_complex __pyx_f_6anilos_6hybess_ximoverkc(int, __pyx_t_long_double_complex); /*proto*/
+static __Pyx_memviewslice __pyx_f_6anilos_6hybess_EpsilonComplex(long double, int, int, int, int, __pyx_t_long_double_complex, long double, int, PyObject *); /*proto*/
+static __Pyx_memviewslice __pyx_f_6anilos_6hybess_BetaComplex(long double, int, int, int, int, __pyx_t_long_double_complex, long double, int, PyObject *); /*proto*/
 static int __pyx_array_allocate_buffer(struct __pyx_array_obj *); /*proto*/
 static struct __pyx_array_obj *__pyx_array_new(PyObject *, Py_ssize_t, char *, char *, char *); /*proto*/
 static PyObject *__pyx_memoryview_new(PyObject *, int, int, __Pyx_TypeInfo *); /*proto*/
@@ -3255,11 +3255,11 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, 
 static __Pyx_TypeInfo __Pyx_TypeInfo_double = { "double", NULL, sizeof(double), { 0 }, 0, 'R', 0, 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo___pyx_t_long_double_complex = { "long double complex", NULL, sizeof(__pyx_t_long_double_complex), { 0 }, 0, 'C', 0, 0 };
 /* #### Code section: before_global_var ### */
-#define __Pyx_MODULE_NAME "hybess"
-extern int __pyx_module_is_main_hybess;
-int __pyx_module_is_main_hybess = 0;
+#define __Pyx_MODULE_NAME "anilos.hybess"
+extern int __pyx_module_is_main_anilos__hybess;
+int __pyx_module_is_main_anilos__hybess = 0;
 
-/* Implementation of "hybess" */
+/* Implementation of "anilos.hybess" */
 /* #### Code section: global_var ### */
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_print;
@@ -3351,7 +3351,6 @@ static const char __pyx_k_auxphi[] = "auxphi";
 static const char __pyx_k_enable[] = "enable";
 static const char __pyx_k_encode[] = "encode";
 static const char __pyx_k_format[] = "format";
-static const char __pyx_k_hybess[] = "hybess";
 static const char __pyx_k_import[] = "__import__";
 static const char __pyx_k_lenght[] = "lenght";
 static const char __pyx_k_name_2[] = "__name__";
@@ -3389,7 +3388,6 @@ static const char __pyx_k_reduce_ex[] = "__reduce_ex__";
 static const char __pyx_k_IndexError[] = "IndexError";
 static const char __pyx_k_ValueError[] = "ValueError";
 static const char __pyx_k_dr_over_r2[] = "dr_over_r2";
-static const char __pyx_k_hybess_pyx[] = "hybess.pyx";
 static const char __pyx_k_pyx_result[] = "__pyx_result";
 static const char __pyx_k_pyx_vtable[] = "__pyx_vtable__";
 static const char __pyx_k_ImportError[] = "ImportError";
@@ -3403,6 +3401,7 @@ static const char __pyx_k_is_coroutine[] = "_is_coroutine";
 static const char __pyx_k_pyx_checksum[] = "__pyx_checksum";
 static const char __pyx_k_stringsource[] = "<stringsource>";
 static const char __pyx_k_version_info[] = "version_info";
+static const char __pyx_k_anilos_hybess[] = "anilos.hybess";
 static const char __pyx_k_class_getitem[] = "__class_getitem__";
 static const char __pyx_k_reduce_cython[] = "__reduce_cython__";
 static const char __pyx_k_AssertionError[] = "AssertionError";
@@ -3432,7 +3431,7 @@ static const char __pyx_k_Step_may_not_be_zero_axis_d[] = "Step may not be zero 
 static const char __pyx_k_itemsize_0_for_cython_array[] = "itemsize <= 0 for cython.array";
 static const char __pyx_k_unable_to_allocate_array_data[] = "unable to allocate array data.";
 static const char __pyx_k_strided_and_direct_or_indirect[] = "<strided and direct or indirect>";
-static const char __pyx_k_hybesscy_pyx_is_a_module_that_c[] = " \nhybesscy.pyx is a module that computes Hyperspherical Bessel functions\n(HBF) of complex order. The method utilized to perform the\ncomputation is based on recursive relations and the modified\nLentz algorithm. It is a modification to Cython from the code\npresented in the file hyperspherical.c in Class.\nReferences: T. Tram Computation of hyperspherical Bessel functions \n(arXiv:1311.0839v2)\n\nFunctions:\n\nHyperBesselComplex : Computes HBF\n\nHyperBesselPrimeComplex : Computes derivative of HBF\n\nHyperBesselPrime2Complex : Computes second derivative of HBF\n\nBackwardsRecurrenceComplex : Computes HBF using backward recursion\n\nForwardsRecurrenceComplex : Computes HBF using forward recursion\n\nContinuedFractionComplex : Computes the continued fraction needed\n    for backward recursion\n\nximoverkc : Numerical factor\n\nEpsilonComplex : Computes the electric part of the radial function\n\nBetaComplex : Computes the magnetic part of the radial function\n\nepsilon : Calls EpsilonComplex\n\nbeta : Calls BetaComplex \n\nepsbeta_for_tensor : Computes the radial functions for the tensor part\n    of the multipoles\n\nepsbeta_for_vector : Computes the radial functions for the vector part\n    of the multipoles\n";
+static const char __pyx_k_hybesscy_pyx_is_a_module_that_c[] = " \nhybesscy.pyx is a module that computes Hyperspherical Bessel functions\n(HBF) of complex order. The method utilized to perform the\ncomputation is based on recursive relations and the modified\nLentz algorithm. It is a modification to Cython from the code\npresented in the file hyperspherical.c in Class.\nReferences: T. Tram Computation of hyperspherical Bessel functions \n(arXiv:1311.0839v2)\n\nFunctions:\n\n\nHyperBesselComplex : Computes HBF\n\nHyperBesselPrimeComplex : Computes derivative of HBF\n\nHyperBesselPrime2Complex : Computes second derivative of HBF\n\nBackwardsRecurrenceComplex : Computes HBF using backward recursion\n\nForwardsRecurrenceComplex : Computes HBF using forward recursion\n\nContinuedFractionComplex : Computes the continued fraction needed\n    for backward recursion\n\nximoverkc : Numerical factor\n\nEpsilonComplex : Computes the electric part of the radial function\n\nBetaComplex : Computes the magnetic part of the radial function\n\nepsilon : Calls EpsilonComplex\n\nbeta : Calls BetaComplex \n\nepsbeta_for_tensor : Computes the radial functions for the tensor part\n    of the multipoles\n\nepsbeta_for_vector : Computes the radial functions for the vector part\n    of the multipoles\n";
 static const char __pyx_k_All_dimensions_preceding_dimensi[] = "All dimensions preceding dimension %d must be indexed and not sliced";
 static const char __pyx_k_Buffer_view_does_not_expose_stri[] = "Buffer view does not expose strides";
 static const char __pyx_k_Can_only_create_a_buffer_that_is[] = "Can only create a buffer that is contiguous in memory.";
@@ -3451,6 +3450,7 @@ static const char __pyx_k_got_differing_extents_in_dimensi[] = "got differing ex
 static const char __pyx_k_no_default___reduce___due_to_non[] = "no default __reduce__ due to non-trivial __cinit__";
 static const char __pyx_k_numpy__core_multiarray_failed_to[] = "numpy._core.multiarray failed to import";
 static const char __pyx_k_numpy__core_umath_failed_to_impo[] = "numpy._core.umath failed to import";
+static const char __pyx_k_src_anilos_hybess_src_hybess_pyx[] = "src/anilos/hybess_src/hybess.pyx";
 static const char __pyx_k_unable_to_allocate_shape_and_str[] = "unable to allocate shape and strides.";
 /* #### Code section: decls ### */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
@@ -3494,11 +3494,11 @@ static void __pyx_memoryviewslice___pyx_pf_15View_dot_MemoryView_16_memoryviewsl
 static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_6hybess_epsilon(CYTHON_UNUSED PyObject *__pyx_self, double __pyx_v_chi, int __pyx_v_s, int __pyx_v_j, int __pyx_v_m, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, int __pyx_v_calK, double __pyx_v_ellc, PyObject *__pyx_v_mode); /* proto */
-static PyObject *__pyx_pf_6hybess_2beta(CYTHON_UNUSED PyObject *__pyx_self, double __pyx_v_chi, int __pyx_v_s, int __pyx_v_j, int __pyx_v_m, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, int __pyx_v_calK, double __pyx_v_ellc, PyObject *__pyx_v_mode); /* proto */
-static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_chi_grid, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, double __pyx_v_ellc, int __pyx_v_grid_length); /* proto */
-static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_chi_grid, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, double __pyx_v_ellc, int __pyx_v_grid_length); /* proto */
-static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_chi_grid, __pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell_max, CYTHON_UNUSED int __pyx_v_calK, double __pyx_v_ellc); /* proto */
+static PyObject *__pyx_pf_6anilos_6hybess_epsilon(CYTHON_UNUSED PyObject *__pyx_self, double __pyx_v_chi, int __pyx_v_s, int __pyx_v_j, int __pyx_v_m, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, int __pyx_v_calK, double __pyx_v_ellc, PyObject *__pyx_v_mode); /* proto */
+static PyObject *__pyx_pf_6anilos_6hybess_2beta(CYTHON_UNUSED PyObject *__pyx_self, double __pyx_v_chi, int __pyx_v_s, int __pyx_v_j, int __pyx_v_m, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, int __pyx_v_calK, double __pyx_v_ellc, PyObject *__pyx_v_mode); /* proto */
+static PyObject *__pyx_pf_6anilos_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_chi_grid, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, double __pyx_v_ellc, int __pyx_v_grid_length); /* proto */
+static PyObject *__pyx_pf_6anilos_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_chi_grid, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, double __pyx_v_ellc, int __pyx_v_grid_length); /* proto */
+static PyObject *__pyx_pf_6anilos_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_chi_grid, __pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell_max, CYTHON_UNUSED int __pyx_v_calK, double __pyx_v_ellc); /* proto */
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_memoryview(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -3625,6 +3625,7 @@ typedef struct {
   PyObject *__pyx_n_s_abc;
   PyObject *__pyx_n_s_allocate_buffer;
   PyObject *__pyx_kp_u_and;
+  PyObject *__pyx_n_s_anilos_hybess;
   PyObject *__pyx_n_s_array;
   PyObject *__pyx_n_s_asarray;
   PyObject *__pyx_n_s_asyncio_coroutines;
@@ -3681,8 +3682,6 @@ typedef struct {
   PyObject *__pyx_kp_u_got_differing_extents_in_dimensi;
   PyObject *__pyx_n_s_grid_length;
   PyObject *__pyx_n_s_gvar;
-  PyObject *__pyx_n_s_hybess;
-  PyObject *__pyx_kp_s_hybess_pyx;
   PyObject *__pyx_n_s_i;
   PyObject *__pyx_n_s_id;
   PyObject *__pyx_n_s_import;
@@ -3738,6 +3737,7 @@ typedef struct {
   PyObject *__pyx_n_s_shape;
   PyObject *__pyx_n_s_size;
   PyObject *__pyx_n_s_spec;
+  PyObject *__pyx_kp_s_src_anilos_hybess_src_hybess_pyx;
   PyObject *__pyx_n_s_start;
   PyObject *__pyx_n_s_step;
   PyObject *__pyx_n_s_stop;
@@ -3905,6 +3905,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_abc);
   Py_CLEAR(clear_module_state->__pyx_n_s_allocate_buffer);
   Py_CLEAR(clear_module_state->__pyx_kp_u_and);
+  Py_CLEAR(clear_module_state->__pyx_n_s_anilos_hybess);
   Py_CLEAR(clear_module_state->__pyx_n_s_array);
   Py_CLEAR(clear_module_state->__pyx_n_s_asarray);
   Py_CLEAR(clear_module_state->__pyx_n_s_asyncio_coroutines);
@@ -3961,8 +3962,6 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_kp_u_got_differing_extents_in_dimensi);
   Py_CLEAR(clear_module_state->__pyx_n_s_grid_length);
   Py_CLEAR(clear_module_state->__pyx_n_s_gvar);
-  Py_CLEAR(clear_module_state->__pyx_n_s_hybess);
-  Py_CLEAR(clear_module_state->__pyx_kp_s_hybess_pyx);
   Py_CLEAR(clear_module_state->__pyx_n_s_i);
   Py_CLEAR(clear_module_state->__pyx_n_s_id);
   Py_CLEAR(clear_module_state->__pyx_n_s_import);
@@ -4018,6 +4017,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_shape);
   Py_CLEAR(clear_module_state->__pyx_n_s_size);
   Py_CLEAR(clear_module_state->__pyx_n_s_spec);
+  Py_CLEAR(clear_module_state->__pyx_kp_s_src_anilos_hybess_src_hybess_pyx);
   Py_CLEAR(clear_module_state->__pyx_n_s_start);
   Py_CLEAR(clear_module_state->__pyx_n_s_step);
   Py_CLEAR(clear_module_state->__pyx_n_s_stop);
@@ -4163,6 +4163,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_abc);
   Py_VISIT(traverse_module_state->__pyx_n_s_allocate_buffer);
   Py_VISIT(traverse_module_state->__pyx_kp_u_and);
+  Py_VISIT(traverse_module_state->__pyx_n_s_anilos_hybess);
   Py_VISIT(traverse_module_state->__pyx_n_s_array);
   Py_VISIT(traverse_module_state->__pyx_n_s_asarray);
   Py_VISIT(traverse_module_state->__pyx_n_s_asyncio_coroutines);
@@ -4219,8 +4220,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_kp_u_got_differing_extents_in_dimensi);
   Py_VISIT(traverse_module_state->__pyx_n_s_grid_length);
   Py_VISIT(traverse_module_state->__pyx_n_s_gvar);
-  Py_VISIT(traverse_module_state->__pyx_n_s_hybess);
-  Py_VISIT(traverse_module_state->__pyx_kp_s_hybess_pyx);
   Py_VISIT(traverse_module_state->__pyx_n_s_i);
   Py_VISIT(traverse_module_state->__pyx_n_s_id);
   Py_VISIT(traverse_module_state->__pyx_n_s_import);
@@ -4276,6 +4275,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_shape);
   Py_VISIT(traverse_module_state->__pyx_n_s_size);
   Py_VISIT(traverse_module_state->__pyx_n_s_spec);
+  Py_VISIT(traverse_module_state->__pyx_kp_s_src_anilos_hybess_src_hybess_pyx);
   Py_VISIT(traverse_module_state->__pyx_n_s_start);
   Py_VISIT(traverse_module_state->__pyx_n_s_step);
   Py_VISIT(traverse_module_state->__pyx_n_s_stop);
@@ -4457,6 +4457,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_abc __pyx_mstate_global->__pyx_n_s_abc
 #define __pyx_n_s_allocate_buffer __pyx_mstate_global->__pyx_n_s_allocate_buffer
 #define __pyx_kp_u_and __pyx_mstate_global->__pyx_kp_u_and
+#define __pyx_n_s_anilos_hybess __pyx_mstate_global->__pyx_n_s_anilos_hybess
 #define __pyx_n_s_array __pyx_mstate_global->__pyx_n_s_array
 #define __pyx_n_s_asarray __pyx_mstate_global->__pyx_n_s_asarray
 #define __pyx_n_s_asyncio_coroutines __pyx_mstate_global->__pyx_n_s_asyncio_coroutines
@@ -4513,8 +4514,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_kp_u_got_differing_extents_in_dimensi __pyx_mstate_global->__pyx_kp_u_got_differing_extents_in_dimensi
 #define __pyx_n_s_grid_length __pyx_mstate_global->__pyx_n_s_grid_length
 #define __pyx_n_s_gvar __pyx_mstate_global->__pyx_n_s_gvar
-#define __pyx_n_s_hybess __pyx_mstate_global->__pyx_n_s_hybess
-#define __pyx_kp_s_hybess_pyx __pyx_mstate_global->__pyx_kp_s_hybess_pyx
 #define __pyx_n_s_i __pyx_mstate_global->__pyx_n_s_i
 #define __pyx_n_s_id __pyx_mstate_global->__pyx_n_s_id
 #define __pyx_n_s_import __pyx_mstate_global->__pyx_n_s_import
@@ -4570,6 +4569,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_shape __pyx_mstate_global->__pyx_n_s_shape
 #define __pyx_n_s_size __pyx_mstate_global->__pyx_n_s_size
 #define __pyx_n_s_spec __pyx_mstate_global->__pyx_n_s_spec
+#define __pyx_kp_s_src_anilos_hybess_src_hybess_pyx __pyx_mstate_global->__pyx_kp_s_src_anilos_hybess_src_hybess_pyx
 #define __pyx_n_s_start __pyx_mstate_global->__pyx_n_s_start
 #define __pyx_n_s_step __pyx_mstate_global->__pyx_n_s_step
 #define __pyx_n_s_stop __pyx_mstate_global->__pyx_n_s_stop
@@ -18258,7 +18258,7 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":286
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":286
  * 
  *         @property
  *         cdef inline npy_intp itemsize(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18269,7 +18269,7 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
 static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_8itemsize_itemsize(PyArray_Descr *__pyx_v_self) {
   npy_intp __pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":287
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":287
  *         @property
  *         cdef inline npy_intp itemsize(self) noexcept nogil:
  *             return PyDataType_ELSIZE(self)             # <<<<<<<<<<<<<<
@@ -18279,7 +18279,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_8itemsize_itemsize(PyArray_D
   __pyx_r = PyDataType_ELSIZE(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":286
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":286
  * 
  *         @property
  *         cdef inline npy_intp itemsize(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18292,7 +18292,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_8itemsize_itemsize(PyArray_D
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":290
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":290
  * 
  *         @property
  *         cdef inline npy_intp alignment(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18303,7 +18303,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_8itemsize_itemsize(PyArray_D
 static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_9alignment_alignment(PyArray_Descr *__pyx_v_self) {
   npy_intp __pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":291
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":291
  *         @property
  *         cdef inline npy_intp alignment(self) noexcept nogil:
  *             return PyDataType_ALIGNMENT(self)             # <<<<<<<<<<<<<<
@@ -18313,7 +18313,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_9alignment_alignment(PyArray
   __pyx_r = PyDataType_ALIGNMENT(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":290
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":290
  * 
  *         @property
  *         cdef inline npy_intp alignment(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18326,7 +18326,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_9alignment_alignment(PyArray
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":296
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":296
  *         # for this using PyDataType_HASFIELDS.
  *         @property
  *         cdef inline object fields(self):             # <<<<<<<<<<<<<<
@@ -18340,7 +18340,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_6fields_fields(PyArray_Desc
   PyObject *__pyx_t_1;
   __Pyx_RefNannySetupContext("fields", 1);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":297
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":297
  *         @property
  *         cdef inline object fields(self):
  *             return <object>PyDataType_FIELDS(self)             # <<<<<<<<<<<<<<
@@ -18353,7 +18353,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_6fields_fields(PyArray_Desc
   __pyx_r = ((PyObject *)__pyx_t_1);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":296
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":296
  *         # for this using PyDataType_HASFIELDS.
  *         @property
  *         cdef inline object fields(self):             # <<<<<<<<<<<<<<
@@ -18368,7 +18368,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_6fields_fields(PyArray_Desc
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":300
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":300
  * 
  *         @property
  *         cdef inline tuple names(self):             # <<<<<<<<<<<<<<
@@ -18382,7 +18382,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_5names_names(PyArray_Descr 
   PyObject *__pyx_t_1;
   __Pyx_RefNannySetupContext("names", 1);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":301
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":301
  *         @property
  *         cdef inline tuple names(self):
  *             return <tuple>PyDataType_NAMES(self)             # <<<<<<<<<<<<<<
@@ -18395,7 +18395,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_5names_names(PyArray_Descr 
   __pyx_r = ((PyObject*)__pyx_t_1);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":300
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":300
  * 
  *         @property
  *         cdef inline tuple names(self):             # <<<<<<<<<<<<<<
@@ -18410,7 +18410,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_5names_names(PyArray_Descr 
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":307
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":307
  *         # this field via the inline helper method PyDataType_SHAPE.
  *         @property
  *         cdef inline PyArray_ArrayDescr* subarray(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18421,7 +18421,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_5names_names(PyArray_Descr 
 static CYTHON_INLINE PyArray_ArrayDescr *__pyx_f_5numpy_5dtype_8subarray_subarray(PyArray_Descr *__pyx_v_self) {
   PyArray_ArrayDescr *__pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":308
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":308
  *         @property
  *         cdef inline PyArray_ArrayDescr* subarray(self) noexcept nogil:
  *             return PyDataType_SUBARRAY(self)             # <<<<<<<<<<<<<<
@@ -18431,7 +18431,7 @@ static CYTHON_INLINE PyArray_ArrayDescr *__pyx_f_5numpy_5dtype_8subarray_subarra
   __pyx_r = PyDataType_SUBARRAY(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":307
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":307
  *         # this field via the inline helper method PyDataType_SHAPE.
  *         @property
  *         cdef inline PyArray_ArrayDescr* subarray(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18444,7 +18444,7 @@ static CYTHON_INLINE PyArray_ArrayDescr *__pyx_f_5numpy_5dtype_8subarray_subarra
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":311
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":311
  * 
  *         @property
  *         cdef inline npy_uint64 flags(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18455,7 +18455,7 @@ static CYTHON_INLINE PyArray_ArrayDescr *__pyx_f_5numpy_5dtype_8subarray_subarra
 static CYTHON_INLINE npy_uint64 __pyx_f_5numpy_5dtype_5flags_flags(PyArray_Descr *__pyx_v_self) {
   npy_uint64 __pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":313
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":313
  *         cdef inline npy_uint64 flags(self) noexcept nogil:
  *             """The data types flags."""
  *             return PyDataType_FLAGS(self)             # <<<<<<<<<<<<<<
@@ -18465,7 +18465,7 @@ static CYTHON_INLINE npy_uint64 __pyx_f_5numpy_5dtype_5flags_flags(PyArray_Descr
   __pyx_r = PyDataType_FLAGS(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":311
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":311
  * 
  *         @property
  *         cdef inline npy_uint64 flags(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18478,7 +18478,7 @@ static CYTHON_INLINE npy_uint64 __pyx_f_5numpy_5dtype_5flags_flags(PyArray_Descr
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":323
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":323
  * 
  *         @property
  *         cdef inline int numiter(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18489,7 +18489,7 @@ static CYTHON_INLINE npy_uint64 __pyx_f_5numpy_5dtype_5flags_flags(PyArray_Descr
 static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_7numiter_numiter(PyArrayMultiIterObject *__pyx_v_self) {
   int __pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":325
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":325
  *         cdef inline int numiter(self) noexcept nogil:
  *             """The number of arrays that need to be broadcast to the same shape."""
  *             return PyArray_MultiIter_NUMITER(self)             # <<<<<<<<<<<<<<
@@ -18499,7 +18499,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_7numiter_numiter(PyArrayMulti
   __pyx_r = PyArray_MultiIter_NUMITER(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":323
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":323
  * 
  *         @property
  *         cdef inline int numiter(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18512,7 +18512,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_7numiter_numiter(PyArrayMulti
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":328
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":328
  * 
  *         @property
  *         cdef inline npy_intp size(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18523,7 +18523,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_7numiter_numiter(PyArrayMulti
 static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_4size_size(PyArrayMultiIterObject *__pyx_v_self) {
   npy_intp __pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":330
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":330
  *         cdef inline npy_intp size(self) noexcept nogil:
  *             """The total broadcasted size."""
  *             return PyArray_MultiIter_SIZE(self)             # <<<<<<<<<<<<<<
@@ -18533,7 +18533,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_4size_size(PyArrayMultiI
   __pyx_r = PyArray_MultiIter_SIZE(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":328
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":328
  * 
  *         @property
  *         cdef inline npy_intp size(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18546,7 +18546,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_4size_size(PyArrayMultiI
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":333
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":333
  * 
  *         @property
  *         cdef inline npy_intp index(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18557,7 +18557,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_4size_size(PyArrayMultiI
 static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_5index_index(PyArrayMultiIterObject *__pyx_v_self) {
   npy_intp __pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":335
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":335
  *         cdef inline npy_intp index(self) noexcept nogil:
  *             """The current (1-d) index into the broadcasted result."""
  *             return PyArray_MultiIter_INDEX(self)             # <<<<<<<<<<<<<<
@@ -18567,7 +18567,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_5index_index(PyArrayMult
   __pyx_r = PyArray_MultiIter_INDEX(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":333
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":333
  * 
  *         @property
  *         cdef inline npy_intp index(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18580,7 +18580,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_5index_index(PyArrayMult
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":338
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":338
  * 
  *         @property
  *         cdef inline int nd(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18591,7 +18591,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_5index_index(PyArrayMult
 static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_2nd_nd(PyArrayMultiIterObject *__pyx_v_self) {
   int __pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":340
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":340
  *         cdef inline int nd(self) noexcept nogil:
  *             """The number of dimensions in the broadcasted result."""
  *             return PyArray_MultiIter_NDIM(self)             # <<<<<<<<<<<<<<
@@ -18601,7 +18601,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_2nd_nd(PyArrayMultiIterObject
   __pyx_r = PyArray_MultiIter_NDIM(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":338
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":338
  * 
  *         @property
  *         cdef inline int nd(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18614,7 +18614,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_2nd_nd(PyArrayMultiIterObject
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":343
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":343
  * 
  *         @property
  *         cdef inline npy_intp* dimensions(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18625,7 +18625,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_2nd_nd(PyArrayMultiIterObject
 static CYTHON_INLINE npy_intp *__pyx_f_5numpy_9broadcast_10dimensions_dimensions(PyArrayMultiIterObject *__pyx_v_self) {
   npy_intp *__pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":345
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":345
  *         cdef inline npy_intp* dimensions(self) noexcept nogil:
  *             """The shape of the broadcasted result."""
  *             return PyArray_MultiIter_DIMS(self)             # <<<<<<<<<<<<<<
@@ -18635,7 +18635,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_9broadcast_10dimensions_dimensions
   __pyx_r = PyArray_MultiIter_DIMS(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":343
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":343
  * 
  *         @property
  *         cdef inline npy_intp* dimensions(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18648,7 +18648,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_9broadcast_10dimensions_dimensions
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":348
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":348
  * 
  *         @property
  *         cdef inline void** iters(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18659,7 +18659,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_9broadcast_10dimensions_dimensions
 static CYTHON_INLINE void **__pyx_f_5numpy_9broadcast_5iters_iters(PyArrayMultiIterObject *__pyx_v_self) {
   void **__pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":351
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":351
  *             """An array of iterator objects that holds the iterators for the arrays to be broadcast together.
  *             On return, the iterators are adjusted for broadcasting."""
  *             return PyArray_MultiIter_ITERS(self)             # <<<<<<<<<<<<<<
@@ -18669,7 +18669,7 @@ static CYTHON_INLINE void **__pyx_f_5numpy_9broadcast_5iters_iters(PyArrayMultiI
   __pyx_r = PyArray_MultiIter_ITERS(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":348
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":348
  * 
  *         @property
  *         cdef inline void** iters(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18682,7 +18682,7 @@ static CYTHON_INLINE void **__pyx_f_5numpy_9broadcast_5iters_iters(PyArrayMultiI
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":366
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":366
  * 
  *         @property
  *         cdef inline PyObject* base(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18693,7 +18693,7 @@ static CYTHON_INLINE void **__pyx_f_5numpy_9broadcast_5iters_iters(PyArrayMultiI
 static CYTHON_INLINE PyObject *__pyx_f_5numpy_7ndarray_4base_base(PyArrayObject *__pyx_v_self) {
   PyObject *__pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":369
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":369
  *             """Returns a borrowed reference to the object owning the data/memory.
  *             """
  *             return PyArray_BASE(self)             # <<<<<<<<<<<<<<
@@ -18703,7 +18703,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_7ndarray_4base_base(PyArrayObject 
   __pyx_r = PyArray_BASE(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":366
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":366
  * 
  *         @property
  *         cdef inline PyObject* base(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18716,7 +18716,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_7ndarray_4base_base(PyArrayObject 
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":372
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":372
  * 
  *         @property
  *         cdef inline dtype descr(self):             # <<<<<<<<<<<<<<
@@ -18730,7 +18730,7 @@ static CYTHON_INLINE PyArray_Descr *__pyx_f_5numpy_7ndarray_5descr_descr(PyArray
   PyArray_Descr *__pyx_t_1;
   __Pyx_RefNannySetupContext("descr", 1);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":375
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":375
  *             """Returns an owned reference to the dtype of the array.
  *             """
  *             return <dtype>PyArray_DESCR(self)             # <<<<<<<<<<<<<<
@@ -18743,7 +18743,7 @@ static CYTHON_INLINE PyArray_Descr *__pyx_f_5numpy_7ndarray_5descr_descr(PyArray
   __pyx_r = ((PyArray_Descr *)__pyx_t_1);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":372
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":372
  * 
  *         @property
  *         cdef inline dtype descr(self):             # <<<<<<<<<<<<<<
@@ -18758,7 +18758,7 @@ static CYTHON_INLINE PyArray_Descr *__pyx_f_5numpy_7ndarray_5descr_descr(PyArray
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":378
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":378
  * 
  *         @property
  *         cdef inline int ndim(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18769,7 +18769,7 @@ static CYTHON_INLINE PyArray_Descr *__pyx_f_5numpy_7ndarray_5descr_descr(PyArray
 static CYTHON_INLINE int __pyx_f_5numpy_7ndarray_4ndim_ndim(PyArrayObject *__pyx_v_self) {
   int __pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":381
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":381
  *             """Returns the number of dimensions in the array.
  *             """
  *             return PyArray_NDIM(self)             # <<<<<<<<<<<<<<
@@ -18779,7 +18779,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_7ndarray_4ndim_ndim(PyArrayObject *__pyx
   __pyx_r = PyArray_NDIM(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":378
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":378
  * 
  *         @property
  *         cdef inline int ndim(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18792,7 +18792,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_7ndarray_4ndim_ndim(PyArrayObject *__pyx
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":384
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":384
  * 
  *         @property
  *         cdef inline npy_intp *shape(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18803,7 +18803,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_7ndarray_4ndim_ndim(PyArrayObject *__pyx
 static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_5shape_shape(PyArrayObject *__pyx_v_self) {
   npy_intp *__pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":389
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":389
  *             Can return NULL for 0-dimensional arrays.
  *             """
  *             return PyArray_DIMS(self)             # <<<<<<<<<<<<<<
@@ -18813,7 +18813,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_5shape_shape(PyArrayObjec
   __pyx_r = PyArray_DIMS(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":384
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":384
  * 
  *         @property
  *         cdef inline npy_intp *shape(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18826,7 +18826,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_5shape_shape(PyArrayObjec
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":392
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":392
  * 
  *         @property
  *         cdef inline npy_intp *strides(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18837,7 +18837,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_5shape_shape(PyArrayObjec
 static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_7strides_strides(PyArrayObject *__pyx_v_self) {
   npy_intp *__pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":396
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":396
  *             The number of elements matches the number of dimensions of the array (ndim).
  *             """
  *             return PyArray_STRIDES(self)             # <<<<<<<<<<<<<<
@@ -18847,7 +18847,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_7strides_strides(PyArrayO
   __pyx_r = PyArray_STRIDES(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":392
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":392
  * 
  *         @property
  *         cdef inline npy_intp *strides(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18860,7 +18860,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_7strides_strides(PyArrayO
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":399
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":399
  * 
  *         @property
  *         cdef inline npy_intp size(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18871,7 +18871,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_7strides_strides(PyArrayO
 static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *__pyx_v_self) {
   npy_intp __pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":402
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":402
  *             """Returns the total size (in number of elements) of the array.
  *             """
  *             return PyArray_SIZE(self)             # <<<<<<<<<<<<<<
@@ -18881,7 +18881,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *
   __pyx_r = PyArray_SIZE(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":399
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":399
  * 
  *         @property
  *         cdef inline npy_intp size(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18894,7 +18894,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":405
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":405
  * 
  *         @property
  *         cdef inline char* data(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18905,7 +18905,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *
 static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__pyx_v_self) {
   char *__pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":411
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":411
  *             of `PyArray_DATA()` instead, which returns a 'void*'.
  *             """
  *             return PyArray_BYTES(self)             # <<<<<<<<<<<<<<
@@ -18915,7 +18915,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__p
   __pyx_r = PyArray_BYTES(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":405
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":405
  * 
  *         @property
  *         cdef inline char* data(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18928,7 +18928,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__p
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":807
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":807
  * ctypedef long double complex clongdouble_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -18945,7 +18945,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 1);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":808
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":808
  * 
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
@@ -18959,7 +18959,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":807
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":807
  * ctypedef long double complex clongdouble_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -18978,7 +18978,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":810
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":810
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -18995,7 +18995,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 1);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":811
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":811
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
@@ -19009,7 +19009,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":810
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":810
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -19028,7 +19028,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":813
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":813
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -19045,7 +19045,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 1);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":814
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":814
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
@@ -19059,7 +19059,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":813
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":813
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -19078,7 +19078,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":816
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":816
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -19095,7 +19095,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 1);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":817
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":817
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
@@ -19109,7 +19109,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":816
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":816
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -19128,7 +19128,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":819
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":819
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -19145,7 +19145,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 1);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":820
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":820
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
@@ -19159,7 +19159,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":819
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":819
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -19178,7 +19178,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":822
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":822
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -19193,7 +19193,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   PyObject *__pyx_t_2;
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 1);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":823
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":823
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -19203,7 +19203,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __pyx_t_1 = PyDataType_HASSUBARRAY(__pyx_v_d);
   if (__pyx_t_1) {
 
-    /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":824
+    /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":824
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape             # <<<<<<<<<<<<<<
@@ -19216,7 +19216,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     __pyx_r = ((PyObject*)__pyx_t_2);
     goto __pyx_L0;
 
-    /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":823
+    /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":823
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -19225,7 +19225,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  */
   }
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":826
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":826
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
@@ -19239,7 +19239,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
   }
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":822
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":822
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -19254,7 +19254,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1010
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1010
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base) except *:             # <<<<<<<<<<<<<<
@@ -19268,7 +19268,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1011
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1011
  * 
  * cdef inline void set_array_base(ndarray arr, object base) except *:
  *     Py_INCREF(base) # important to do this before stealing the reference below!             # <<<<<<<<<<<<<<
@@ -19277,7 +19277,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   Py_INCREF(__pyx_v_base);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1012
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1012
  * cdef inline void set_array_base(ndarray arr, object base) except *:
  *     Py_INCREF(base) # important to do this before stealing the reference below!
  *     PyArray_SetBaseObject(arr, base)             # <<<<<<<<<<<<<<
@@ -19286,7 +19286,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   __pyx_t_1 = PyArray_SetBaseObject(__pyx_v_arr, __pyx_v_base); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(2, 1012, __pyx_L1_error)
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1010
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1010
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base) except *:             # <<<<<<<<<<<<<<
@@ -19301,7 +19301,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __pyx_L0:;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1014
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1014
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -19316,7 +19316,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("get_array_base", 1);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1015
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1015
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)             # <<<<<<<<<<<<<<
@@ -19325,7 +19325,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   __pyx_v_base = PyArray_BASE(__pyx_v_arr);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1016
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1016
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -19335,7 +19335,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_t_1 = (__pyx_v_base == NULL);
   if (__pyx_t_1) {
 
-    /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1017
+    /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1017
  *     base = PyArray_BASE(arr)
  *     if base is NULL:
  *         return None             # <<<<<<<<<<<<<<
@@ -19346,7 +19346,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1016
+    /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1016
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -19355,7 +19355,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   }
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1018
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1018
  *     if base is NULL:
  *         return None
  *     return <object>base             # <<<<<<<<<<<<<<
@@ -19367,7 +19367,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_r = ((PyObject *)__pyx_v_base);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1014
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1014
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -19382,7 +19382,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1022
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1022
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -19406,7 +19406,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_array", 1);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1023
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1023
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -19422,7 +19422,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1024
+      /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1024
  * cdef inline int import_array() except -1:
  *     try:
  *         __pyx_import_array()             # <<<<<<<<<<<<<<
@@ -19431,7 +19431,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  */
       __pyx_t_4 = _import_array(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 1024, __pyx_L3_error)
 
-      /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1023
+      /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1023
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -19445,7 +19445,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1025
+    /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1025
  *     try:
  *         __pyx_import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -19460,7 +19460,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
       __Pyx_XGOTREF(__pyx_t_6);
       __Pyx_XGOTREF(__pyx_t_7);
 
-      /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1026
+      /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1026
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy._core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -19475,7 +19475,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     }
     goto __pyx_L5_except_error;
 
-    /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1023
+    /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1023
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -19491,7 +19491,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1022
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1022
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -19514,7 +19514,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1028
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1028
  *         raise ImportError("numpy._core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -19538,7 +19538,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_umath", 1);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1029
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1029
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -19554,7 +19554,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1030
+      /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1030
  * cdef inline int import_umath() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -19563,7 +19563,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 1030, __pyx_L3_error)
 
-      /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1029
+      /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1029
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -19577,7 +19577,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1031
+    /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1031
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -19592,7 +19592,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __Pyx_XGOTREF(__pyx_t_6);
       __Pyx_XGOTREF(__pyx_t_7);
 
-      /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1032
+      /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1032
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy._core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -19607,7 +19607,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     }
     goto __pyx_L5_except_error;
 
-    /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1029
+    /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1029
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -19623,7 +19623,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1028
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1028
  *         raise ImportError("numpy._core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -19646,7 +19646,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1034
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1034
  *         raise ImportError("numpy._core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -19670,7 +19670,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_ufunc", 1);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1035
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1035
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -19686,7 +19686,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1036
+      /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1036
  * cdef inline int import_ufunc() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -19695,7 +19695,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 1036, __pyx_L3_error)
 
-      /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1035
+      /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1035
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -19709,7 +19709,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1037
+    /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1037
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -19724,7 +19724,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __Pyx_XGOTREF(__pyx_t_6);
       __Pyx_XGOTREF(__pyx_t_7);
 
-      /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1038
+      /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1038
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy._core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -19739,7 +19739,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     }
     goto __pyx_L5_except_error;
 
-    /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1035
+    /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1035
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -19755,7 +19755,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1034
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1034
  *         raise ImportError("numpy._core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -19778,7 +19778,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1041
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1041
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj) noexcept:             # <<<<<<<<<<<<<<
@@ -19789,7 +19789,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
 static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_obj) {
   int __pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1053
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1053
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyTimedeltaArrType_Type)             # <<<<<<<<<<<<<<
@@ -19799,7 +19799,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyTimedeltaArrType_Type));
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1041
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1041
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj) noexcept:             # <<<<<<<<<<<<<<
@@ -19812,7 +19812,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1056
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1056
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj) noexcept:             # <<<<<<<<<<<<<<
@@ -19823,7 +19823,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
 static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_obj) {
   int __pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1068
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1068
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyDatetimeArrType_Type)             # <<<<<<<<<<<<<<
@@ -19833,7 +19833,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyDatetimeArrType_Type));
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1056
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1056
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj) noexcept:             # <<<<<<<<<<<<<<
@@ -19846,7 +19846,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1071
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1071
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -19857,7 +19857,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
 static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *__pyx_v_obj) {
   npy_datetime __pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1078
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1078
  *     also needed.  That can be found using `get_datetime64_unit`.
  *     """
  *     return (<PyDatetimeScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -19867,7 +19867,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   __pyx_r = ((PyDatetimeScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1071
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1071
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -19880,7 +19880,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1081
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1081
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -19891,7 +19891,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
 static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject *__pyx_v_obj) {
   npy_timedelta __pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1085
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1085
  *     returns the int64 value underlying scalar numpy timedelta64 object
  *     """
  *     return (<PyTimedeltaScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -19901,7 +19901,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   __pyx_r = ((PyTimedeltaScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1081
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1081
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -19914,7 +19914,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   return __pyx_r;
 }
 
-/* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1088
+/* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1088
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -19925,7 +19925,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
 static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObject *__pyx_v_obj) {
   NPY_DATETIMEUNIT __pyx_r;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1092
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1092
  *     returns the unit part of the dtype for a numpy datetime64 object.
  *     """
  *     return <NPY_DATETIMEUNIT>(<PyDatetimeScalarObject*>obj).obmeta.base             # <<<<<<<<<<<<<<
@@ -19935,7 +19935,7 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
   __pyx_r = ((NPY_DATETIMEUNIT)((PyDatetimeScalarObject *)__pyx_v_obj)->obmeta.base);
   goto __pyx_L0;
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1088
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1088
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -19948,7 +19948,7 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
   return __pyx_r;
 }
 
-/* "hybess.pyx":65
+/* "src/anilos/hybess_src/hybess.pyx":66
  * 
  * 
  * cdef long double complex[:] HyperBesselComplex(long double chi,             # <<<<<<<<<<<<<<
@@ -19956,7 +19956,7 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
  *                                                int ell_max,
  */
 
-static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselComplex(long double __pyx_v_chi, __pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell_max, struct __pyx_t_6hybess_Geometric_variables __pyx_v_gvar) {
+static __Pyx_memviewslice __pyx_f_6anilos_6hybess_HyperBesselComplex(long double __pyx_v_chi, __pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell_max, struct __pyx_t_6anilos_6hybess_Geometric_variables __pyx_v_gvar) {
   __Pyx_memviewslice __pyx_v_phi = { 0, 0, { 0 }, { 0 }, { 0 } };
   double __pyx_v_xfwd;
   __Pyx_memviewslice __pyx_r = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -19966,7 +19966,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselComplex(long double __pyx_v
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "hybess.pyx":93
+  /* "src/anilos/hybess_src/hybess.pyx":94
  *     cdef:
  *         long double complex [:] phi
  *         double xfwd = asinh(sqrt(ell_max * (ell_max + 1.)) / cabsl(nu))  # Critical point that defines             # <<<<<<<<<<<<<<
@@ -19975,7 +19975,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselComplex(long double __pyx_v
  */
   __pyx_v_xfwd = asinh((((long double)sqrt((__pyx_v_ell_max * (__pyx_v_ell_max + 1.)))) / cabsl(__pyx_v_nu)));
 
-  /* "hybess.pyx":98
+  /* "src/anilos/hybess_src/hybess.pyx":99
  * 
  *     # Calculating phi at chi/ellc given the order nu for multipoles 0 to ell_max + 1
  *     if chi< xfwd:             # <<<<<<<<<<<<<<
@@ -19985,19 +19985,19 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselComplex(long double __pyx_v
   __pyx_t_1 = (__pyx_v_chi < __pyx_v_xfwd);
   if (__pyx_t_1) {
 
-    /* "hybess.pyx":99
+    /* "src/anilos/hybess_src/hybess.pyx":100
  *     # Calculating phi at chi/ellc given the order nu for multipoles 0 to ell_max + 1
  *     if chi< xfwd:
  *         phi = BackwardsRecurrenceComplex(chi, nu, ell_max, gvar)             # <<<<<<<<<<<<<<
  *     else:
  *         phi = ForwardsRecurrenceComplex(chi, nu, ell_max, gvar)
  */
-    __pyx_t_2 = __pyx_f_6hybess_BackwardsRecurrenceComplex(__pyx_v_chi, __pyx_v_nu, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_2.memview)) __PYX_ERR(0, 99, __pyx_L1_error)
+    __pyx_t_2 = __pyx_f_6anilos_6hybess_BackwardsRecurrenceComplex(__pyx_v_chi, __pyx_v_nu, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_2.memview)) __PYX_ERR(0, 100, __pyx_L1_error)
     __pyx_v_phi = __pyx_t_2;
     __pyx_t_2.memview = NULL;
     __pyx_t_2.data = NULL;
 
-    /* "hybess.pyx":98
+    /* "src/anilos/hybess_src/hybess.pyx":99
  * 
  *     # Calculating phi at chi/ellc given the order nu for multipoles 0 to ell_max + 1
  *     if chi< xfwd:             # <<<<<<<<<<<<<<
@@ -20007,7 +20007,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselComplex(long double __pyx_v
     goto __pyx_L3;
   }
 
-  /* "hybess.pyx":101
+  /* "src/anilos/hybess_src/hybess.pyx":102
  *         phi = BackwardsRecurrenceComplex(chi, nu, ell_max, gvar)
  *     else:
  *         phi = ForwardsRecurrenceComplex(chi, nu, ell_max, gvar)             # <<<<<<<<<<<<<<
@@ -20015,14 +20015,14 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselComplex(long double __pyx_v
  *     return phi
  */
   /*else*/ {
-    __pyx_t_2 = __pyx_f_6hybess_ForwardsRecurrenceComplex(__pyx_v_chi, __pyx_v_nu, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_2.memview)) __PYX_ERR(0, 101, __pyx_L1_error)
+    __pyx_t_2 = __pyx_f_6anilos_6hybess_ForwardsRecurrenceComplex(__pyx_v_chi, __pyx_v_nu, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_2.memview)) __PYX_ERR(0, 102, __pyx_L1_error)
     __pyx_v_phi = __pyx_t_2;
     __pyx_t_2.memview = NULL;
     __pyx_t_2.data = NULL;
   }
   __pyx_L3:;
 
-  /* "hybess.pyx":103
+  /* "src/anilos/hybess_src/hybess.pyx":104
  *         phi = ForwardsRecurrenceComplex(chi, nu, ell_max, gvar)
  * 
  *     return phi             # <<<<<<<<<<<<<<
@@ -20033,7 +20033,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselComplex(long double __pyx_v
   __pyx_r = __pyx_v_phi;
   goto __pyx_L0;
 
-  /* "hybess.pyx":65
+  /* "src/anilos/hybess_src/hybess.pyx":66
  * 
  * 
  * cdef long double complex[:] HyperBesselComplex(long double chi,             # <<<<<<<<<<<<<<
@@ -20046,7 +20046,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselComplex(long double __pyx_v
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_2, 1);
   __pyx_r.data = NULL;
   __pyx_r.memview = NULL;
-  __Pyx_AddTraceback("hybess.HyperBesselComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.HyperBesselComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
   goto __pyx_L2;
   __pyx_L0:;
   if (unlikely(!__pyx_r.memview)) {
@@ -20057,7 +20057,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselComplex(long double __pyx_v
   return __pyx_r;
 }
 
-/* "hybess.pyx":106
+/* "src/anilos/hybess_src/hybess.pyx":107
  * 
  * 
  * cdef long double complex[:] HyperBesselPrimeComplex(long double complex[:] phi,             # <<<<<<<<<<<<<<
@@ -20065,7 +20065,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselComplex(long double __pyx_v
  *                                                     int ell_max,
  */
 
-static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrimeComplex(__Pyx_memviewslice __pyx_v_phi, __pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell_max, struct __pyx_t_6hybess_Geometric_variables __pyx_v_gvar) {
+static __Pyx_memviewslice __pyx_f_6anilos_6hybess_HyperBesselPrimeComplex(__Pyx_memviewslice __pyx_v_phi, __pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell_max, struct __pyx_t_6anilos_6hybess_Geometric_variables __pyx_v_gvar) {
   __Pyx_memviewslice __pyx_v_dphi = { 0, 0, { 0 }, { 0 }, { 0 } };
   long double __pyx_v_cotK;
   __pyx_t_long_double_complex __pyx_v_nu2;
@@ -20090,46 +20090,46 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrimeComplex(__Pyx_memviews
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("HyperBesselPrimeComplex", 1);
 
-  /* "hybess.pyx":129
+  /* "src/anilos/hybess_src/hybess.pyx":130
  * 
  *     cdef:
  *         long double complex[:] dphi = np.empty(ell_max + 1, dtype = np.clongdouble)             # <<<<<<<<<<<<<<
  *         long double cotK = gvar.dr_over_r
  *         long double complex nu2 = nu * nu
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_long((__pyx_v_ell_max + 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_long((__pyx_v_ell_max + 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 129, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_dphi = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "hybess.pyx":130
+  /* "src/anilos/hybess_src/hybess.pyx":131
  *     cdef:
  *         long double complex[:] dphi = np.empty(ell_max + 1, dtype = np.clongdouble)
  *         long double cotK = gvar.dr_over_r             # <<<<<<<<<<<<<<
@@ -20139,7 +20139,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrimeComplex(__Pyx_memviews
   __pyx_t_7 = __pyx_v_gvar.dr_over_r;
   __pyx_v_cotK = __pyx_t_7;
 
-  /* "hybess.pyx":131
+  /* "src/anilos/hybess_src/hybess.pyx":132
  *         long double complex[:] dphi = np.empty(ell_max + 1, dtype = np.clongdouble)
  *         long double cotK = gvar.dr_over_r
  *         long double complex nu2 = nu * nu             # <<<<<<<<<<<<<<
@@ -20148,7 +20148,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrimeComplex(__Pyx_memviews
  */
   __pyx_v_nu2 = __Pyx_c_prod_long__double(__pyx_v_nu, __pyx_v_nu);
 
-  /* "hybess.pyx":134
+  /* "src/anilos/hybess_src/hybess.pyx":135
  *         int l
  * 
  *     for l in range(ell_max+1):             # <<<<<<<<<<<<<<
@@ -20160,7 +20160,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrimeComplex(__Pyx_memviews
   for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
     __pyx_v_l = __pyx_t_10;
 
-    /* "hybess.pyx":135
+    /* "src/anilos/hybess_src/hybess.pyx":136
  * 
  *     for l in range(ell_max+1):
  *         dphi[l] = l * cotK * phi[l] - csqrtl(nu2 + (l + 1.) * (l + 1.)) *phi[l+1]             # <<<<<<<<<<<<<<
@@ -20173,7 +20173,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrimeComplex(__Pyx_memviews
     *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_dphi.data + __pyx_t_13 * __pyx_v_dphi.strides[0]) )) = __Pyx_c_diff_long__double(__Pyx_c_prod_long__double(__pyx_t_long_double_complex_from_parts((__pyx_v_l * __pyx_v_cotK), 0), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_11 * __pyx_v_phi.strides[0]) )))), __Pyx_c_prod_long__double(csqrtl(__Pyx_c_sum_long__double(__pyx_v_nu2, __pyx_t_long_double_complex_from_parts(((__pyx_v_l + 1.) * (__pyx_v_l + 1.)), 0))), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_12 * __pyx_v_phi.strides[0]) )))));
   }
 
-  /* "hybess.pyx":136
+  /* "src/anilos/hybess_src/hybess.pyx":137
  *     for l in range(ell_max+1):
  *         dphi[l] = l * cotK * phi[l] - csqrtl(nu2 + (l + 1.) * (l + 1.)) *phi[l+1]
  *     return dphi             # <<<<<<<<<<<<<<
@@ -20184,7 +20184,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrimeComplex(__Pyx_memviews
   __pyx_r = __pyx_v_dphi;
   goto __pyx_L0;
 
-  /* "hybess.pyx":106
+  /* "src/anilos/hybess_src/hybess.pyx":107
  * 
  * 
  * cdef long double complex[:] HyperBesselPrimeComplex(long double complex[:] phi,             # <<<<<<<<<<<<<<
@@ -20202,7 +20202,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrimeComplex(__Pyx_memviews
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_6, 1);
   __pyx_r.data = NULL;
   __pyx_r.memview = NULL;
-  __Pyx_AddTraceback("hybess.HyperBesselPrimeComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.HyperBesselPrimeComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
   goto __pyx_L2;
   __pyx_L0:;
   if (unlikely(!__pyx_r.memview)) {
@@ -20214,7 +20214,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrimeComplex(__Pyx_memviews
   return __pyx_r;
 }
 
-/* "hybess.pyx":138
+/* "src/anilos/hybess_src/hybess.pyx":139
  *     return dphi
  * 
  * cdef long double complex[:] HyperBesselPrime2Complex(long double complex nu,             # <<<<<<<<<<<<<<
@@ -20222,7 +20222,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrimeComplex(__Pyx_memviews
  *                                                      long double complex[:] phi,
  */
 
-static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell, __Pyx_memviewslice __pyx_v_phi, __Pyx_memviewslice __pyx_v_dphi, struct __pyx_t_6hybess_Geometric_variables __pyx_v_gvar) {
+static __Pyx_memviewslice __pyx_f_6anilos_6hybess_HyperBesselPrime2Complex(__pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell, __Pyx_memviewslice __pyx_v_phi, __Pyx_memviewslice __pyx_v_dphi, struct __pyx_t_6anilos_6hybess_Geometric_variables __pyx_v_gvar) {
   long double __pyx_v_x;
   long double __pyx_v_y2;
   __pyx_t_long_double_complex __pyx_v_nu2;
@@ -20248,7 +20248,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_t_long_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("HyperBesselPrime2Complex", 1);
 
-  /* "hybess.pyx":164
+  /* "src/anilos/hybess_src/hybess.pyx":165
  * 
  *     cdef:
  *         long double x = gvar.dr_over_r             # <<<<<<<<<<<<<<
@@ -20258,7 +20258,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_t_long_
   __pyx_t_1 = __pyx_v_gvar.dr_over_r;
   __pyx_v_x = __pyx_t_1;
 
-  /* "hybess.pyx":165
+  /* "src/anilos/hybess_src/hybess.pyx":166
  *     cdef:
  *         long double x = gvar.dr_over_r
  *         long double y2 = gvar.r * gvar.r             # <<<<<<<<<<<<<<
@@ -20267,7 +20267,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_t_long_
  */
   __pyx_v_y2 = (__pyx_v_gvar.r * __pyx_v_gvar.r);
 
-  /* "hybess.pyx":166
+  /* "src/anilos/hybess_src/hybess.pyx":167
  *         long double x = gvar.dr_over_r
  *         long double y2 = gvar.r * gvar.r
  *         long double complex nu2 = nu * nu             # <<<<<<<<<<<<<<
@@ -20276,46 +20276,46 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_t_long_
  */
   __pyx_v_nu2 = __Pyx_c_prod_long__double(__pyx_v_nu, __pyx_v_nu);
 
-  /* "hybess.pyx":168
+  /* "src/anilos/hybess_src/hybess.pyx":169
  *         long double complex nu2 = nu * nu
  *         int l
  *         long double complex[:] d2phi = np.empty(ell+1, dtype = np.clongdouble)             # <<<<<<<<<<<<<<
  * 
  *     for l in range(ell + 1):
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_empty); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_empty); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_ell + 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_ell + 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2)) __PYX_ERR(0, 169, __pyx_L1_error);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_6) < 0) __PYX_ERR(0, 168, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_6) < 0) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_6, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_6, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_d2phi = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "hybess.pyx":170
+  /* "src/anilos/hybess_src/hybess.pyx":171
  *         long double complex[:] d2phi = np.empty(ell+1, dtype = np.clongdouble)
  * 
  *     for l in range(ell + 1):             # <<<<<<<<<<<<<<
@@ -20327,7 +20327,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_t_long_
   for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
     __pyx_v_l = __pyx_t_10;
 
-    /* "hybess.pyx":171
+    /* "src/anilos/hybess_src/hybess.pyx":172
  * 
  *     for l in range(ell + 1):
  *         d2phi[l] = -2 * x * dphi[l] -(nu2 + 1.-l * (l+1.) /y2) * phi[l]             # <<<<<<<<<<<<<<
@@ -20340,7 +20340,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_t_long_
     *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_d2phi.data + __pyx_t_13 * __pyx_v_d2phi.strides[0]) )) = __Pyx_c_diff_long__double(__Pyx_c_prod_long__double(__pyx_t_long_double_complex_from_parts((-2.0 * __pyx_v_x), 0), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_dphi.data + __pyx_t_11 * __pyx_v_dphi.strides[0]) )))), __Pyx_c_prod_long__double(__Pyx_c_diff_long__double(__Pyx_c_sum_long__double(__pyx_v_nu2, __pyx_t_long_double_complex_from_parts(1., 0)), __pyx_t_long_double_complex_from_parts((((long double)(__pyx_v_l * (__pyx_v_l + 1.))) / __pyx_v_y2), 0)), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_12 * __pyx_v_phi.strides[0]) )))));
   }
 
-  /* "hybess.pyx":172
+  /* "src/anilos/hybess_src/hybess.pyx":173
  *     for l in range(ell + 1):
  *         d2phi[l] = -2 * x * dphi[l] -(nu2 + 1.-l * (l+1.) /y2) * phi[l]
  *     return d2phi             # <<<<<<<<<<<<<<
@@ -20351,7 +20351,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_t_long_
   __pyx_r = __pyx_v_d2phi;
   goto __pyx_L0;
 
-  /* "hybess.pyx":138
+  /* "src/anilos/hybess_src/hybess.pyx":139
  *     return dphi
  * 
  * cdef long double complex[:] HyperBesselPrime2Complex(long double complex nu,             # <<<<<<<<<<<<<<
@@ -20369,7 +20369,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_t_long_
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_7, 1);
   __pyx_r.data = NULL;
   __pyx_r.memview = NULL;
-  __Pyx_AddTraceback("hybess.HyperBesselPrime2Complex", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.HyperBesselPrime2Complex", __pyx_clineno, __pyx_lineno, __pyx_filename);
   goto __pyx_L2;
   __pyx_L0:;
   if (unlikely(!__pyx_r.memview)) {
@@ -20381,7 +20381,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_t_long_
   return __pyx_r;
 }
 
-/* "hybess.pyx":174
+/* "src/anilos/hybess_src/hybess.pyx":175
  *     return d2phi
  * 
  * cdef long double complex[:] BackwardsRecurrenceComplex(double x,             # <<<<<<<<<<<<<<
@@ -20389,7 +20389,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_t_long_
  *                                                        int ell,
  */
 
-static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __pyx_v_x, __pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell, struct __pyx_t_6hybess_Geometric_variables __pyx_v_gvar) {
+static __Pyx_memviewslice __pyx_f_6anilos_6hybess_BackwardsRecurrenceComplex(double __pyx_v_x, __pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell, struct __pyx_t_6anilos_6hybess_Geometric_variables __pyx_v_gvar) {
   __pyx_t_long_double_complex __pyx_v_ratio;
   long double __pyx_v_sinK;
   long double __pyx_v_cotK;
@@ -20434,7 +20434,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("BackwardsRecurrenceComplex", 1);
 
-  /* "hybess.pyx":202
+  /* "src/anilos/hybess_src/hybess.pyx":203
  *     cdef:
  *         long double complex ratio
  *         long double sinK = gvar.r             # <<<<<<<<<<<<<<
@@ -20444,7 +20444,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
   __pyx_t_1 = __pyx_v_gvar.r;
   __pyx_v_sinK = __pyx_t_1;
 
-  /* "hybess.pyx":203
+  /* "src/anilos/hybess_src/hybess.pyx":204
  *         long double complex ratio
  *         long double sinK = gvar.r
  *         long double cotK = gvar.dr_over_r             # <<<<<<<<<<<<<<
@@ -20454,7 +20454,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
   __pyx_t_1 = __pyx_v_gvar.dr_over_r;
   __pyx_v_cotK = __pyx_t_1;
 
-  /* "hybess.pyx":204
+  /* "src/anilos/hybess_src/hybess.pyx":205
  *         long double sinK = gvar.r
  *         long double cotK = gvar.dr_over_r
  *         long double complex nu2 = nu * nu             # <<<<<<<<<<<<<<
@@ -20463,7 +20463,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
  */
   __pyx_v_nu2 = __Pyx_c_prod_long__double(__pyx_v_nu, __pyx_v_nu);
 
-  /* "hybess.pyx":208
+  /* "src/anilos/hybess_src/hybess.pyx":209
  *         Py_ssize_t j, k
  *         int sign_r, sign_i
  *         int nonconvergence = 1             # <<<<<<<<<<<<<<
@@ -20472,55 +20472,55 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
  */
   __pyx_v_nonconvergence = 1;
 
-  /* "hybess.pyx":211
+  /* "src/anilos/hybess_src/hybess.pyx":212
  * 
  *     # Finding the first element of the sequence up to a multiplicative factor
  *     ContinuedFractionComplex(nu, ell, cotK, &ratio, &sign_r,  &sign_i, &nonconvergence)             # <<<<<<<<<<<<<<
  * 
  *     cdef:
  */
-  __pyx_f_6hybess_ContinuedFractionComplex(__pyx_v_nu, __pyx_v_ell, __pyx_v_cotK, (&__pyx_v_ratio), (&__pyx_v_sign_r), (&__pyx_v_sign_i), (&__pyx_v_nonconvergence)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 211, __pyx_L1_error)
+  __pyx_f_6anilos_6hybess_ContinuedFractionComplex(__pyx_v_nu, __pyx_v_ell, __pyx_v_cotK, (&__pyx_v_ratio), (&__pyx_v_sign_r), (&__pyx_v_sign_i), (&__pyx_v_nonconvergence)); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 212, __pyx_L1_error)
 
-  /* "hybess.pyx":214
+  /* "src/anilos/hybess_src/hybess.pyx":215
  * 
  *     cdef:
  *         long double complex[:] phi = np.empty(ell + 2, dtype = np.clongdouble)             # <<<<<<<<<<<<<<
  *         long double complex phi0 = csinl(nu * x) / (nu * sinK)  # Phi at ell = 0
  *         double auxsign_r =  <double> sign_r
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_empty); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_empty); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_ell + 2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_ell + 2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2)) __PYX_ERR(0, 214, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2)) __PYX_ERR(0, 215, __pyx_L1_error);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_6) < 0) __PYX_ERR(0, 214, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_6) < 0) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_6, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_6, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_phi = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "hybess.pyx":215
+  /* "src/anilos/hybess_src/hybess.pyx":216
  *     cdef:
  *         long double complex[:] phi = np.empty(ell + 2, dtype = np.clongdouble)
  *         long double complex phi0 = csinl(nu * x) / (nu * sinK)  # Phi at ell = 0             # <<<<<<<<<<<<<<
@@ -20529,7 +20529,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
  */
   __pyx_v_phi0 = __Pyx_c_quot_long__double(csinl(__Pyx_c_prod_long__double(__pyx_v_nu, __pyx_t_long_double_complex_from_parts(__pyx_v_x, 0))), __Pyx_c_prod_long__double(__pyx_v_nu, __pyx_t_long_double_complex_from_parts(__pyx_v_sinK, 0)));
 
-  /* "hybess.pyx":216
+  /* "src/anilos/hybess_src/hybess.pyx":217
  *         long double complex[:] phi = np.empty(ell + 2, dtype = np.clongdouble)
  *         long double complex phi0 = csinl(nu * x) / (nu * sinK)  # Phi at ell = 0
  *         double auxsign_r =  <double> sign_r             # <<<<<<<<<<<<<<
@@ -20538,7 +20538,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
  */
   __pyx_v_auxsign_r = ((double)__pyx_v_sign_r);
 
-  /* "hybess.pyx":217
+  /* "src/anilos/hybess_src/hybess.pyx":218
  *         long double complex phi0 = csinl(nu * x) / (nu * sinK)  # Phi at ell = 0
  *         double auxsign_r =  <double> sign_r
  *         double auxsign_i =  <double> sign_i             # <<<<<<<<<<<<<<
@@ -20547,7 +20547,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
  */
   __pyx_v_auxsign_i = ((double)__pyx_v_sign_i);
 
-  /* "hybess.pyx":218
+  /* "src/anilos/hybess_src/hybess.pyx":219
  *         double auxsign_r =  <double> sign_r
  *         double auxsign_i =  <double> sign_i
  *         long double complex phi1 = auxsign_r + I * auxsign_i  # Phi at ell + 1 up to a mult. factor             # <<<<<<<<<<<<<<
@@ -20557,7 +20557,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
   __pyx_t_8 = __Pyx_c_sum_double(__pyx_t_double_complex_from_parts(__pyx_v_auxsign_r, 0), __Pyx_c_prod_double(I, __pyx_t_double_complex_from_parts(__pyx_v_auxsign_i, 0)));
   __pyx_v_phi1 = __pyx_t_long_double_complex_from_parts(__Pyx_CREAL(__pyx_t_8), __Pyx_CIMAG(__pyx_t_8));
 
-  /* "hybess.pyx":219
+  /* "src/anilos/hybess_src/hybess.pyx":220
  *         double auxsign_i =  <double> sign_i
  *         long double complex phi1 = auxsign_r + I * auxsign_i  # Phi at ell + 1 up to a mult. factor
  *         long double complex denom = csqrtl(nu2 + (ell + 1) * (ell + 1))             # <<<<<<<<<<<<<<
@@ -20566,7 +20566,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
  */
   __pyx_v_denom = csqrtl(__Pyx_c_sum_long__double(__pyx_v_nu2, __pyx_t_long_double_complex_from_parts(((__pyx_v_ell + 1) * (__pyx_v_ell + 1)), 0)));
 
-  /* "hybess.pyx":220
+  /* "src/anilos/hybess_src/hybess.pyx":221
  *         long double complex phi1 = auxsign_r + I * auxsign_i  # Phi at ell + 1 up to a mult. factor
  *         long double complex denom = csqrtl(nu2 + (ell + 1) * (ell + 1))
  *         long double complex phi_p1 = phi1 * (ell * cotK - ratio)             # <<<<<<<<<<<<<<
@@ -20575,7 +20575,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
  */
   __pyx_v_phi_p1 = __Pyx_c_prod_long__double(__pyx_v_phi1, __Pyx_c_diff_long__double(__pyx_t_long_double_complex_from_parts((__pyx_v_ell * __pyx_v_cotK), 0), __pyx_v_ratio));
 
-  /* "hybess.pyx":223
+  /* "src/anilos/hybess_src/hybess.pyx":224
  *         long double complex val
  * 
  *     phi[ell + 1] = phi_p1 / denom  # Phi at ell + 1 (needed for dphi)             # <<<<<<<<<<<<<<
@@ -20585,7 +20585,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
   __pyx_t_9 = (__pyx_v_ell + 1);
   *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_9 * __pyx_v_phi.strides[0]) )) = __Pyx_c_quot_long__double(__pyx_v_phi_p1, __pyx_v_denom);
 
-  /* "hybess.pyx":224
+  /* "src/anilos/hybess_src/hybess.pyx":225
  * 
  *     phi[ell + 1] = phi_p1 / denom  # Phi at ell + 1 (needed for dphi)
  *     phi[ell] = phi1             # <<<<<<<<<<<<<<
@@ -20595,7 +20595,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
   __pyx_t_9 = __pyx_v_ell;
   *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_9 * __pyx_v_phi.strides[0]) )) = __pyx_v_phi1;
 
-  /* "hybess.pyx":225
+  /* "src/anilos/hybess_src/hybess.pyx":226
  *     phi[ell + 1] = phi_p1 / denom  # Phi at ell + 1 (needed for dphi)
  *     phi[ell] = phi1
  *     phi[ell - 1] = ((2. * ell + 1.) * cotK * phi[ell] - phi_p1) /csqrtl(nu2  + ell*ell)             # <<<<<<<<<<<<<<
@@ -20606,7 +20606,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
   __pyx_t_10 = (__pyx_v_ell - 1);
   *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_10 * __pyx_v_phi.strides[0]) )) = __Pyx_c_quot_long__double(__Pyx_c_diff_long__double(__Pyx_c_prod_long__double(__pyx_t_long_double_complex_from_parts((((2. * __pyx_v_ell) + 1.) * __pyx_v_cotK), 0), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_9 * __pyx_v_phi.strides[0]) )))), __pyx_v_phi_p1), csqrtl(__Pyx_c_sum_long__double(__pyx_v_nu2, __pyx_t_long_double_complex_from_parts((__pyx_v_ell * __pyx_v_ell), 0))));
 
-  /* "hybess.pyx":228
+  /* "src/anilos/hybess_src/hybess.pyx":229
  * 
  *     # Using backwards recurrence to evalute phi up to a multiplicative constant
  *     for i in range(ell-2, -1, -1):             # <<<<<<<<<<<<<<
@@ -20616,7 +20616,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
   for (__pyx_t_11 = (__pyx_v_ell - 2); __pyx_t_11 > -1; __pyx_t_11-=1) {
     __pyx_v_i = __pyx_t_11;
 
-    /* "hybess.pyx":229
+    /* "src/anilos/hybess_src/hybess.pyx":230
  *     # Using backwards recurrence to evalute phi up to a multiplicative constant
  *     for i in range(ell-2, -1, -1):
  *         denom = csqrtl(nu2 + (i + 1.) * (i + 1.))             # <<<<<<<<<<<<<<
@@ -20625,7 +20625,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
  */
     __pyx_v_denom = csqrtl(__Pyx_c_sum_long__double(__pyx_v_nu2, __pyx_t_long_double_complex_from_parts(((__pyx_v_i + 1.) * (__pyx_v_i + 1.)), 0)));
 
-    /* "hybess.pyx":230
+    /* "src/anilos/hybess_src/hybess.pyx":231
  *     for i in range(ell-2, -1, -1):
  *         denom = csqrtl(nu2 + (i + 1.) * (i + 1.))
  *         val = csqrtl(nu2 + (2. + i) * (2. + i))             # <<<<<<<<<<<<<<
@@ -20634,7 +20634,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
  */
     __pyx_v_val = csqrtl(__Pyx_c_sum_long__double(__pyx_v_nu2, __pyx_t_long_double_complex_from_parts(((2. + __pyx_v_i) * (2. + __pyx_v_i)), 0)));
 
-    /* "hybess.pyx":231
+    /* "src/anilos/hybess_src/hybess.pyx":232
  *         denom = csqrtl(nu2 + (i + 1.) * (i + 1.))
  *         val = csqrtl(nu2 + (2. + i) * (2. + i))
  *         phi[i] = ((2. * (i + 2.) -1.) * cotK * phi[i+1] - val * phi[i+2]) / denom             # <<<<<<<<<<<<<<
@@ -20646,7 +20646,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
     __pyx_t_12 = __pyx_v_i;
     *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_12 * __pyx_v_phi.strides[0]) )) = __Pyx_c_quot_long__double(__Pyx_c_diff_long__double(__Pyx_c_prod_long__double(__pyx_t_long_double_complex_from_parts((((2. * (__pyx_v_i + 2.)) - 1.) * __pyx_v_cotK), 0), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_9 * __pyx_v_phi.strides[0]) )))), __Pyx_c_prod_long__double(__pyx_v_val, (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_10 * __pyx_v_phi.strides[0]) ))))), __pyx_v_denom);
 
-    /* "hybess.pyx":233
+    /* "src/anilos/hybess_src/hybess.pyx":234
  *         phi[i] = ((2. * (i + 2.) -1.) * cotK * phi[i+1] - val * phi[i+2]) / denom
  *         # Renormalize everything in case of overflow
  *         if(cabsl(phi[i])> 1e200):             # <<<<<<<<<<<<<<
@@ -20657,7 +20657,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
     __pyx_t_13 = (cabsl((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_10 * __pyx_v_phi.strides[0]) )))) > 1e200);
     if (__pyx_t_13) {
 
-      /* "hybess.pyx":234
+      /* "src/anilos/hybess_src/hybess.pyx":235
  *         # Renormalize everything in case of overflow
  *         if(cabsl(phi[i])> 1e200):
  *             for j in prange(i, ell+1, nogil = True):             # <<<<<<<<<<<<<<
@@ -20695,7 +20695,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
                             {
                                 __pyx_v_j = (Py_ssize_t)(__pyx_t_14 + 1 * __pyx_t_16);
 
-                                /* "hybess.pyx":235
+                                /* "src/anilos/hybess_src/hybess.pyx":236
  *         if(cabsl(phi[i])> 1e200):
  *             for j in prange(i, ell+1, nogil = True):
  *                 phi[j] *= (1e-200)             # <<<<<<<<<<<<<<
@@ -20717,7 +20717,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
             #endif
           }
 
-          /* "hybess.pyx":234
+          /* "src/anilos/hybess_src/hybess.pyx":235
  *         # Renormalize everything in case of overflow
  *         if(cabsl(phi[i])> 1e200):
  *             for j in prange(i, ell+1, nogil = True):             # <<<<<<<<<<<<<<
@@ -20736,7 +20736,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
           }
       }
 
-      /* "hybess.pyx":233
+      /* "src/anilos/hybess_src/hybess.pyx":234
  *         phi[i] = ((2. * (i + 2.) -1.) * cotK * phi[i+1] - val * phi[i+2]) / denom
  *         # Renormalize everything in case of overflow
  *         if(cabsl(phi[i])> 1e200):             # <<<<<<<<<<<<<<
@@ -20746,7 +20746,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
     }
   }
 
-  /* "hybess.pyx":237
+  /* "src/anilos/hybess_src/hybess.pyx":238
  *                 phi[j] *= (1e-200)
  * 
  *     cdef long double complex factor = phi0 / phi[0]  # Multiplicative factor             # <<<<<<<<<<<<<<
@@ -20756,7 +20756,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
   __pyx_t_10 = 0;
   __pyx_v_factor = __Pyx_c_quot_long__double(__pyx_v_phi0, (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_10 * __pyx_v_phi.strides[0]) ))));
 
-  /* "hybess.pyx":238
+  /* "src/anilos/hybess_src/hybess.pyx":239
  * 
  *     cdef long double complex factor = phi0 / phi[0]  # Multiplicative factor
  *     for i in prange(ell + 2, nogil = True):             # <<<<<<<<<<<<<<
@@ -20793,7 +20793,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
                         {
                             __pyx_v_i = (int)(0 + 1 * __pyx_t_18);
 
-                            /* "hybess.pyx":239
+                            /* "src/anilos/hybess_src/hybess.pyx":240
  *     cdef long double complex factor = phi0 / phi[0]  # Multiplicative factor
  *     for i in prange(ell + 2, nogil = True):
  *         phi[i] *= factor             # <<<<<<<<<<<<<<
@@ -20815,7 +20815,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
         #endif
       }
 
-      /* "hybess.pyx":238
+      /* "src/anilos/hybess_src/hybess.pyx":239
  * 
  *     cdef long double complex factor = phi0 / phi[0]  # Multiplicative factor
  *     for i in prange(ell + 2, nogil = True):             # <<<<<<<<<<<<<<
@@ -20834,7 +20834,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
       }
   }
 
-  /* "hybess.pyx":240
+  /* "src/anilos/hybess_src/hybess.pyx":241
  *     for i in prange(ell + 2, nogil = True):
  *         phi[i] *= factor
  *     return phi             # <<<<<<<<<<<<<<
@@ -20845,7 +20845,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
   __pyx_r = __pyx_v_phi;
   goto __pyx_L0;
 
-  /* "hybess.pyx":174
+  /* "src/anilos/hybess_src/hybess.pyx":175
  *     return d2phi
  * 
  * cdef long double complex[:] BackwardsRecurrenceComplex(double x,             # <<<<<<<<<<<<<<
@@ -20863,7 +20863,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_7, 1);
   __pyx_r.data = NULL;
   __pyx_r.memview = NULL;
-  __Pyx_AddTraceback("hybess.BackwardsRecurrenceComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.BackwardsRecurrenceComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
   goto __pyx_L2;
   __pyx_L0:;
   if (unlikely(!__pyx_r.memview)) {
@@ -20875,7 +20875,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
   return __pyx_r;
 }
 
-/* "hybess.pyx":242
+/* "src/anilos/hybess_src/hybess.pyx":243
  *     return phi
  * 
  * cdef long double complex[:] ForwardsRecurrenceComplex(long double x,             # <<<<<<<<<<<<<<
@@ -20883,7 +20883,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BackwardsRecurrenceComplex(double __py
  *                                                       int ell,
  */
 
-static __Pyx_memviewslice __pyx_f_6hybess_ForwardsRecurrenceComplex(long double __pyx_v_x, __pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell, struct __pyx_t_6hybess_Geometric_variables __pyx_v_gvar) {
+static __Pyx_memviewslice __pyx_f_6anilos_6hybess_ForwardsRecurrenceComplex(long double __pyx_v_x, __pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell, struct __pyx_t_6anilos_6hybess_Geometric_variables __pyx_v_gvar) {
   __Pyx_memviewslice __pyx_v_phi = { 0, 0, { 0 }, { 0 }, { 0 } };
   long double __pyx_v_cotK;
   long double __pyx_v_sinK;
@@ -20909,46 +20909,46 @@ static __Pyx_memviewslice __pyx_f_6hybess_ForwardsRecurrenceComplex(long double 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("ForwardsRecurrenceComplex", 1);
 
-  /* "hybess.pyx":269
+  /* "src/anilos/hybess_src/hybess.pyx":270
  * 
  *     cdef:
  *         long double complex[:] phi = np.empty(ell + 2, dtype = np.clongdouble)             # <<<<<<<<<<<<<<
  *         long double cotK = gvar.dr_over_r
  *         long double sinK = gvar.r
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 269, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 269, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 270, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_long((__pyx_v_ell + 2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 269, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_long((__pyx_v_ell + 2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 269, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 270, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(0, 269, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 269, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 269, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 270, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 269, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 270, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 269, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 270, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 269, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 270, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 269, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 270, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_phi = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "hybess.pyx":270
+  /* "src/anilos/hybess_src/hybess.pyx":271
  *     cdef:
  *         long double complex[:] phi = np.empty(ell + 2, dtype = np.clongdouble)
  *         long double cotK = gvar.dr_over_r             # <<<<<<<<<<<<<<
@@ -20958,7 +20958,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_ForwardsRecurrenceComplex(long double 
   __pyx_t_7 = __pyx_v_gvar.dr_over_r;
   __pyx_v_cotK = __pyx_t_7;
 
-  /* "hybess.pyx":271
+  /* "src/anilos/hybess_src/hybess.pyx":272
  *         long double complex[:] phi = np.empty(ell + 2, dtype = np.clongdouble)
  *         long double cotK = gvar.dr_over_r
  *         long double sinK = gvar.r             # <<<<<<<<<<<<<<
@@ -20968,7 +20968,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_ForwardsRecurrenceComplex(long double 
   __pyx_t_7 = __pyx_v_gvar.r;
   __pyx_v_sinK = __pyx_t_7;
 
-  /* "hybess.pyx":272
+  /* "src/anilos/hybess_src/hybess.pyx":273
  *         long double cotK = gvar.dr_over_r
  *         long double sinK = gvar.r
  *         long double complex nu2 = nu * nu             # <<<<<<<<<<<<<<
@@ -20977,7 +20977,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_ForwardsRecurrenceComplex(long double 
  */
   __pyx_v_nu2 = __Pyx_c_prod_long__double(__pyx_v_nu, __pyx_v_nu);
 
-  /* "hybess.pyx":275
+  /* "src/anilos/hybess_src/hybess.pyx":276
  *         int l
  * 
  *     phi[0] = csinl(nu * x) / (nu * sinK)             # <<<<<<<<<<<<<<
@@ -20987,7 +20987,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_ForwardsRecurrenceComplex(long double 
   __pyx_t_8 = 0;
   *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_8 * __pyx_v_phi.strides[0]) )) = __Pyx_c_quot_long__double(csinl(__Pyx_c_prod_long__double(__pyx_v_nu, __pyx_t_long_double_complex_from_parts(__pyx_v_x, 0))), __Pyx_c_prod_long__double(__pyx_v_nu, __pyx_t_long_double_complex_from_parts(__pyx_v_sinK, 0)));
 
-  /* "hybess.pyx":276
+  /* "src/anilos/hybess_src/hybess.pyx":277
  * 
  *     phi[0] = csinl(nu * x) / (nu * sinK)
  *     phi[1] = phi[0] * (cotK - nu / ctanl(nu * x)) / csqrtl(nu2 + 1.)             # <<<<<<<<<<<<<<
@@ -20998,7 +20998,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_ForwardsRecurrenceComplex(long double 
   __pyx_t_9 = 1;
   *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_9 * __pyx_v_phi.strides[0]) )) = __Pyx_c_quot_long__double(__Pyx_c_prod_long__double((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_8 * __pyx_v_phi.strides[0]) ))), __Pyx_c_diff_long__double(__pyx_t_long_double_complex_from_parts(__pyx_v_cotK, 0), __Pyx_c_quot_long__double(__pyx_v_nu, ctanl(__Pyx_c_prod_long__double(__pyx_v_nu, __pyx_t_long_double_complex_from_parts(__pyx_v_x, 0)))))), csqrtl(__Pyx_c_sum_long__double(__pyx_v_nu2, __pyx_t_long_double_complex_from_parts(1., 0))));
 
-  /* "hybess.pyx":277
+  /* "src/anilos/hybess_src/hybess.pyx":278
  *     phi[0] = csinl(nu * x) / (nu * sinK)
  *     phi[1] = phi[0] * (cotK - nu / ctanl(nu * x)) / csqrtl(nu2 + 1.)
  *     for l in range(2, ell + 2):             # <<<<<<<<<<<<<<
@@ -21010,7 +21010,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_ForwardsRecurrenceComplex(long double 
   for (__pyx_t_12 = 2; __pyx_t_12 < __pyx_t_11; __pyx_t_12+=1) {
     __pyx_v_l = __pyx_t_12;
 
-    /* "hybess.pyx":278
+    /* "src/anilos/hybess_src/hybess.pyx":279
  *     phi[1] = phi[0] * (cotK - nu / ctanl(nu * x)) / csqrtl(nu2 + 1.)
  *     for l in range(2, ell + 2):
  *         phi[l] = ((2. * l - 1.) * cotK * phi[l-1] - phi[l-2] * csqrtl(nu2 + (l - 1.) * (l - 1.)))\             # <<<<<<<<<<<<<<
@@ -21020,7 +21020,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_ForwardsRecurrenceComplex(long double 
     __pyx_t_8 = (__pyx_v_l - 1);
     __pyx_t_9 = (__pyx_v_l - 2);
 
-    /* "hybess.pyx":279
+    /* "src/anilos/hybess_src/hybess.pyx":280
  *     for l in range(2, ell + 2):
  *         phi[l] = ((2. * l - 1.) * cotK * phi[l-1] - phi[l-2] * csqrtl(nu2 + (l - 1.) * (l - 1.)))\
  *             /csqrtl(nu2 + l*l)             # <<<<<<<<<<<<<<
@@ -21031,7 +21031,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_ForwardsRecurrenceComplex(long double 
     *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_13 * __pyx_v_phi.strides[0]) )) = __Pyx_c_quot_long__double(__Pyx_c_diff_long__double(__Pyx_c_prod_long__double(__pyx_t_long_double_complex_from_parts((((2. * __pyx_v_l) - 1.) * __pyx_v_cotK), 0), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_8 * __pyx_v_phi.strides[0]) )))), __Pyx_c_prod_long__double((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_9 * __pyx_v_phi.strides[0]) ))), csqrtl(__Pyx_c_sum_long__double(__pyx_v_nu2, __pyx_t_long_double_complex_from_parts(((__pyx_v_l - 1.) * (__pyx_v_l - 1.)), 0))))), csqrtl(__Pyx_c_sum_long__double(__pyx_v_nu2, __pyx_t_long_double_complex_from_parts((__pyx_v_l * __pyx_v_l), 0))));
   }
 
-  /* "hybess.pyx":281
+  /* "src/anilos/hybess_src/hybess.pyx":282
  *             /csqrtl(nu2 + l*l)
  * 
  *     return phi             # <<<<<<<<<<<<<<
@@ -21042,7 +21042,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_ForwardsRecurrenceComplex(long double 
   __pyx_r = __pyx_v_phi;
   goto __pyx_L0;
 
-  /* "hybess.pyx":242
+  /* "src/anilos/hybess_src/hybess.pyx":243
  *     return phi
  * 
  * cdef long double complex[:] ForwardsRecurrenceComplex(long double x,             # <<<<<<<<<<<<<<
@@ -21060,7 +21060,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_ForwardsRecurrenceComplex(long double 
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_6, 1);
   __pyx_r.data = NULL;
   __pyx_r.memview = NULL;
-  __Pyx_AddTraceback("hybess.ForwardsRecurrenceComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.ForwardsRecurrenceComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
   goto __pyx_L2;
   __pyx_L0:;
   if (unlikely(!__pyx_r.memview)) {
@@ -21072,7 +21072,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_ForwardsRecurrenceComplex(long double 
   return __pyx_r;
 }
 
-/* "hybess.pyx":284
+/* "src/anilos/hybess_src/hybess.pyx":285
  * 
  * @cython.cfunc
  * cdef void ContinuedFractionComplex(long double complex nu,             # <<<<<<<<<<<<<<
@@ -21080,7 +21080,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_ForwardsRecurrenceComplex(long double 
  *                                    long double cotK,
  */
 
-static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell, long double __pyx_v_cotK, __pyx_t_long_double_complex *__pyx_v_ratio, int *__pyx_v_sign_r, int *__pyx_v_sign_i, int *__pyx_v_nonconvergence) {
+static void __pyx_f_6anilos_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell, long double __pyx_v_cotK, __pyx_t_long_double_complex *__pyx_v_ratio, int *__pyx_v_sign_r, int *__pyx_v_sign_i, int *__pyx_v_nonconvergence) {
   long double __pyx_v_tiny;
   __pyx_t_long_double_complex __pyx_v_f;
   __pyx_t_long_double_complex __pyx_v_C;
@@ -21108,7 +21108,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("ContinuedFractionComplex", 1);
 
-  /* "hybess.pyx":316
+  /* "src/anilos/hybess_src/hybess.pyx":317
  *     """
  * 
  *     nonconvergence[0] = 0             # <<<<<<<<<<<<<<
@@ -21117,7 +21117,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
   (__pyx_v_nonconvergence[0]) = 0;
 
-  /* "hybess.pyx":317
+  /* "src/anilos/hybess_src/hybess.pyx":318
  * 
  *     nonconvergence[0] = 0
  *     sign_r[0] = 1             # <<<<<<<<<<<<<<
@@ -21126,7 +21126,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
   (__pyx_v_sign_r[0]) = 1;
 
-  /* "hybess.pyx":318
+  /* "src/anilos/hybess_src/hybess.pyx":319
  *     nonconvergence[0] = 0
  *     sign_r[0] = 1
  *     sign_i[0] = 1             # <<<<<<<<<<<<<<
@@ -21135,7 +21135,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
   (__pyx_v_sign_i[0]) = 1;
 
-  /* "hybess.pyx":320
+  /* "src/anilos/hybess_src/hybess.pyx":321
  *     sign_i[0] = 1
  *     cdef:
  *         long double tiny = 1e-100             # <<<<<<<<<<<<<<
@@ -21144,7 +21144,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
   __pyx_v_tiny = 1e-100;
 
-  /* "hybess.pyx":321
+  /* "src/anilos/hybess_src/hybess.pyx":322
  *     cdef:
  *         long double tiny = 1e-100
  *         long double complex f =  ell * cotK             # <<<<<<<<<<<<<<
@@ -21153,7 +21153,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
   __pyx_v_f = __pyx_t_long_double_complex_from_parts((__pyx_v_ell * __pyx_v_cotK), 0);
 
-  /* "hybess.pyx":322
+  /* "src/anilos/hybess_src/hybess.pyx":323
  *         long double tiny = 1e-100
  *         long double complex f =  ell * cotK
  *         long double complex C = f             # <<<<<<<<<<<<<<
@@ -21162,7 +21162,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
   __pyx_v_C = __pyx_v_f;
 
-  /* "hybess.pyx":323
+  /* "src/anilos/hybess_src/hybess.pyx":324
  *         long double complex f =  ell * cotK
  *         long double complex C = f
  *         long double complex D = 0.             # <<<<<<<<<<<<<<
@@ -21171,7 +21171,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
   __pyx_v_D = __pyx_t_long_double_complex_from_parts(0., 0);
 
-  /* "hybess.pyx":324
+  /* "src/anilos/hybess_src/hybess.pyx":325
  *         long double complex C = f
  *         long double complex D = 0.
  *         double i = 1.             # <<<<<<<<<<<<<<
@@ -21180,7 +21180,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
   __pyx_v_i = 1.;
 
-  /* "hybess.pyx":325
+  /* "src/anilos/hybess_src/hybess.pyx":326
  *         long double complex D = 0.
  *         double i = 1.
  *         long double complex nu2 = nu*nu             # <<<<<<<<<<<<<<
@@ -21189,21 +21189,21 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
   __pyx_v_nu2 = __Pyx_c_prod_long__double(__pyx_v_nu, __pyx_v_nu);
 
-  /* "hybess.pyx":330
+  /* "src/anilos/hybess_src/hybess.pyx":331
  *         long double complex b
  *         long double complex Delta
  *         long double epsilon_mac = np.finfo(np.clongdouble).eps             # <<<<<<<<<<<<<<
  *         long double eps = 1.
  *         double ell_a = <double> ell
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 330, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 331, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_finfo); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 330, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_finfo); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 331, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 330, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 331, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 330, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 331, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -21225,18 +21225,18 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 330, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 331, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_eps); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 330, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_eps); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 331, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_6 = __pyx_PyFloat_AsDouble(__pyx_t_3); if (unlikely((__pyx_t_6 == (long double)-1) && PyErr_Occurred())) __PYX_ERR(0, 330, __pyx_L1_error)
+  __pyx_t_6 = __pyx_PyFloat_AsDouble(__pyx_t_3); if (unlikely((__pyx_t_6 == (long double)-1) && PyErr_Occurred())) __PYX_ERR(0, 331, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_epsilon_mac = __pyx_t_6;
 
-  /* "hybess.pyx":331
+  /* "src/anilos/hybess_src/hybess.pyx":332
  *         long double complex Delta
  *         long double epsilon_mac = np.finfo(np.clongdouble).eps
  *         long double eps = 1.             # <<<<<<<<<<<<<<
@@ -21245,7 +21245,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
   __pyx_v_eps = 1.;
 
-  /* "hybess.pyx":332
+  /* "src/anilos/hybess_src/hybess.pyx":333
  *         long double epsilon_mac = np.finfo(np.clongdouble).eps
  *         long double eps = 1.
  *         double ell_a = <double> ell             # <<<<<<<<<<<<<<
@@ -21254,7 +21254,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
   __pyx_v_ell_a = ((double)__pyx_v_ell);
 
-  /* "hybess.pyx":334
+  /* "src/anilos/hybess_src/hybess.pyx":335
  *         double ell_a = <double> ell
  * 
  *     while (eps > epsilon_mac):             # <<<<<<<<<<<<<<
@@ -21265,7 +21265,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
     __pyx_t_7 = (__pyx_v_eps > __pyx_v_epsilon_mac);
     if (!__pyx_t_7) break;
 
-    /* "hybess.pyx":335
+    /* "src/anilos/hybess_src/hybess.pyx":336
  * 
  *     while (eps > epsilon_mac):
  *         denom = csqrtl(nu2 + (ell_a + i + 1.) * (ell_a + i + 1.))             # <<<<<<<<<<<<<<
@@ -21274,7 +21274,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
     __pyx_v_denom = csqrtl(__Pyx_c_sum_long__double(__pyx_v_nu2, __pyx_t_long_double_complex_from_parts((((__pyx_v_ell_a + __pyx_v_i) + 1.) * ((__pyx_v_ell_a + __pyx_v_i) + 1.)), 0)));
 
-    /* "hybess.pyx":336
+    /* "src/anilos/hybess_src/hybess.pyx":337
  *     while (eps > epsilon_mac):
  *         denom = csqrtl(nu2 + (ell_a + i + 1.) * (ell_a + i + 1.))
  *         b = (2. *(ell_a + i) + 1.) * cotK / denom             # <<<<<<<<<<<<<<
@@ -21283,7 +21283,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
     __pyx_v_b = __Pyx_c_quot_long__double(__pyx_t_long_double_complex_from_parts((((2. * (__pyx_v_ell_a + __pyx_v_i)) + 1.) * __pyx_v_cotK), 0), __pyx_v_denom);
 
-    /* "hybess.pyx":337
+    /* "src/anilos/hybess_src/hybess.pyx":338
  *         denom = csqrtl(nu2 + (ell_a + i + 1.) * (ell_a + i + 1.))
  *         b = (2. *(ell_a + i) + 1.) * cotK / denom
  *         a = -csqrtl(nu2 + (ell_a + i)*(ell_a + i)) /csqrtl(nu2 + (ell_a + i + 1.)*(ell_a + i + 1.))             # <<<<<<<<<<<<<<
@@ -21292,7 +21292,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
     __pyx_v_a = __Pyx_c_quot_long__double(__Pyx_c_neg_long__double(csqrtl(__Pyx_c_sum_long__double(__pyx_v_nu2, __pyx_t_long_double_complex_from_parts(((__pyx_v_ell_a + __pyx_v_i) * (__pyx_v_ell_a + __pyx_v_i)), 0)))), csqrtl(__Pyx_c_sum_long__double(__pyx_v_nu2, __pyx_t_long_double_complex_from_parts((((__pyx_v_ell_a + __pyx_v_i) + 1.) * ((__pyx_v_ell_a + __pyx_v_i) + 1.)), 0))));
 
-    /* "hybess.pyx":338
+    /* "src/anilos/hybess_src/hybess.pyx":339
  *         b = (2. *(ell_a + i) + 1.) * cotK / denom
  *         a = -csqrtl(nu2 + (ell_a + i)*(ell_a + i)) /csqrtl(nu2 + (ell_a + i + 1.)*(ell_a + i + 1.))
  *         if(i == 1):             # <<<<<<<<<<<<<<
@@ -21302,7 +21302,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
     __pyx_t_7 = (__pyx_v_i == 1.0);
     if (__pyx_t_7) {
 
-      /* "hybess.pyx":339
+      /* "src/anilos/hybess_src/hybess.pyx":340
  *         a = -csqrtl(nu2 + (ell_a + i)*(ell_a + i)) /csqrtl(nu2 + (ell_a + i + 1.)*(ell_a + i + 1.))
  *         if(i == 1):
  *             a = csqrtl(nu2 + (ell_a + 1.)* (ell_a + 1.)) * a             # <<<<<<<<<<<<<<
@@ -21311,7 +21311,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
       __pyx_v_a = __Pyx_c_prod_long__double(csqrtl(__Pyx_c_sum_long__double(__pyx_v_nu2, __pyx_t_long_double_complex_from_parts(((__pyx_v_ell_a + 1.) * (__pyx_v_ell_a + 1.)), 0))), __pyx_v_a);
 
-      /* "hybess.pyx":338
+      /* "src/anilos/hybess_src/hybess.pyx":339
  *         b = (2. *(ell_a + i) + 1.) * cotK / denom
  *         a = -csqrtl(nu2 + (ell_a + i)*(ell_a + i)) /csqrtl(nu2 + (ell_a + i + 1.)*(ell_a + i + 1.))
  *         if(i == 1):             # <<<<<<<<<<<<<<
@@ -21320,7 +21320,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
     }
 
-    /* "hybess.pyx":340
+    /* "src/anilos/hybess_src/hybess.pyx":341
  *         if(i == 1):
  *             a = csqrtl(nu2 + (ell_a + 1.)* (ell_a + 1.)) * a
  *         D = b + a * D             # <<<<<<<<<<<<<<
@@ -21329,7 +21329,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
     __pyx_v_D = __Pyx_c_sum_long__double(__pyx_v_b, __Pyx_c_prod_long__double(__pyx_v_a, __pyx_v_D));
 
-    /* "hybess.pyx":341
+    /* "src/anilos/hybess_src/hybess.pyx":342
  *             a = csqrtl(nu2 + (ell_a + 1.)* (ell_a + 1.)) * a
  *         D = b + a * D
  *         C = b + a / C             # <<<<<<<<<<<<<<
@@ -21338,7 +21338,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
     __pyx_v_C = __Pyx_c_sum_long__double(__pyx_v_b, __Pyx_c_quot_long__double(__pyx_v_a, __pyx_v_C));
 
-    /* "hybess.pyx":342
+    /* "src/anilos/hybess_src/hybess.pyx":343
  *         D = b + a * D
  *         C = b + a / C
  *         if(cabsl(D) == 0):             # <<<<<<<<<<<<<<
@@ -21348,7 +21348,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
     __pyx_t_7 = (cabsl(__pyx_v_D) == 0.0);
     if (__pyx_t_7) {
 
-      /* "hybess.pyx":343
+      /* "src/anilos/hybess_src/hybess.pyx":344
  *         C = b + a / C
  *         if(cabsl(D) == 0):
  *             D = tiny             # <<<<<<<<<<<<<<
@@ -21357,7 +21357,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
       __pyx_v_D = __pyx_t_long_double_complex_from_parts(__pyx_v_tiny, 0);
 
-      /* "hybess.pyx":342
+      /* "src/anilos/hybess_src/hybess.pyx":343
  *         D = b + a * D
  *         C = b + a / C
  *         if(cabsl(D) == 0):             # <<<<<<<<<<<<<<
@@ -21366,7 +21366,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
     }
 
-    /* "hybess.pyx":344
+    /* "src/anilos/hybess_src/hybess.pyx":345
  *         if(cabsl(D) == 0):
  *             D = tiny
  *         if (cabsl(C) == 0):             # <<<<<<<<<<<<<<
@@ -21376,7 +21376,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
     __pyx_t_7 = (cabsl(__pyx_v_C) == 0.0);
     if (__pyx_t_7) {
 
-      /* "hybess.pyx":345
+      /* "src/anilos/hybess_src/hybess.pyx":346
  *             D = tiny
  *         if (cabsl(C) == 0):
  *             C = tiny             # <<<<<<<<<<<<<<
@@ -21385,7 +21385,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
       __pyx_v_C = __pyx_t_long_double_complex_from_parts(__pyx_v_tiny, 0);
 
-      /* "hybess.pyx":344
+      /* "src/anilos/hybess_src/hybess.pyx":345
  *         if(cabsl(D) == 0):
  *             D = tiny
  *         if (cabsl(C) == 0):             # <<<<<<<<<<<<<<
@@ -21394,7 +21394,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
     }
 
-    /* "hybess.pyx":346
+    /* "src/anilos/hybess_src/hybess.pyx":347
  *         if (cabsl(C) == 0):
  *             C = tiny
  *         D = 1.0 / D             # <<<<<<<<<<<<<<
@@ -21403,7 +21403,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
     __pyx_v_D = __Pyx_c_quot_long__double(__pyx_t_long_double_complex_from_parts(1.0, 0), __pyx_v_D);
 
-    /* "hybess.pyx":347
+    /* "src/anilos/hybess_src/hybess.pyx":348
  *             C = tiny
  *         D = 1.0 / D
  *         Delta = C * D             # <<<<<<<<<<<<<<
@@ -21412,7 +21412,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
     __pyx_v_Delta = __Pyx_c_prod_long__double(__pyx_v_C, __pyx_v_D);
 
-    /* "hybess.pyx":348
+    /* "src/anilos/hybess_src/hybess.pyx":349
  *         D = 1.0 / D
  *         Delta = C * D
  *         f = f * Delta             # <<<<<<<<<<<<<<
@@ -21421,7 +21421,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
     __pyx_v_f = __Pyx_c_prod_long__double(__pyx_v_f, __pyx_v_Delta);
 
-    /* "hybess.pyx":349
+    /* "src/anilos/hybess_src/hybess.pyx":350
  *         Delta = C * D
  *         f = f * Delta
  *         if(creall(D) < 0):             # <<<<<<<<<<<<<<
@@ -21431,7 +21431,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
     __pyx_t_7 = (creall(__pyx_v_D) < 0.0);
     if (__pyx_t_7) {
 
-      /* "hybess.pyx":350
+      /* "src/anilos/hybess_src/hybess.pyx":351
  *         f = f * Delta
  *         if(creall(D) < 0):
  *             sign_r[0] *= -1             # <<<<<<<<<<<<<<
@@ -21441,7 +21441,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
       __pyx_t_8 = 0;
       (__pyx_v_sign_r[__pyx_t_8]) = ((__pyx_v_sign_r[__pyx_t_8]) * -1L);
 
-      /* "hybess.pyx":349
+      /* "src/anilos/hybess_src/hybess.pyx":350
  *         Delta = C * D
  *         f = f * Delta
  *         if(creall(D) < 0):             # <<<<<<<<<<<<<<
@@ -21450,7 +21450,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
     }
 
-    /* "hybess.pyx":351
+    /* "src/anilos/hybess_src/hybess.pyx":352
  *         if(creall(D) < 0):
  *             sign_r[0] *= -1
  *         if(cimagl(D) < 0):             # <<<<<<<<<<<<<<
@@ -21460,7 +21460,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
     __pyx_t_7 = (cimagl(__pyx_v_D) < 0.0);
     if (__pyx_t_7) {
 
-      /* "hybess.pyx":352
+      /* "src/anilos/hybess_src/hybess.pyx":353
  *             sign_r[0] *= -1
  *         if(cimagl(D) < 0):
  *             sign_i[0] *= -1             # <<<<<<<<<<<<<<
@@ -21470,7 +21470,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
       __pyx_t_8 = 0;
       (__pyx_v_sign_i[__pyx_t_8]) = ((__pyx_v_sign_i[__pyx_t_8]) * -1L);
 
-      /* "hybess.pyx":351
+      /* "src/anilos/hybess_src/hybess.pyx":352
  *         if(creall(D) < 0):
  *             sign_r[0] *= -1
  *         if(cimagl(D) < 0):             # <<<<<<<<<<<<<<
@@ -21479,7 +21479,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
     }
 
-    /* "hybess.pyx":353
+    /* "src/anilos/hybess_src/hybess.pyx":354
  *         if(cimagl(D) < 0):
  *             sign_i[0] *= -1
  *         eps = cabsl(Delta - 1)             # <<<<<<<<<<<<<<
@@ -21488,7 +21488,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
     __pyx_v_eps = cabsl(__Pyx_c_diff_long__double(__pyx_v_Delta, __pyx_t_long_double_complex_from_parts(1, 0)));
 
-    /* "hybess.pyx":354
+    /* "src/anilos/hybess_src/hybess.pyx":355
  *             sign_i[0] *= -1
  *         eps = cabsl(Delta - 1)
  *         i+= 1.             # <<<<<<<<<<<<<<
@@ -21497,7 +21497,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
     __pyx_v_i = (__pyx_v_i + 1.);
 
-    /* "hybess.pyx":355
+    /* "src/anilos/hybess_src/hybess.pyx":356
  *         eps = cabsl(Delta - 1)
  *         i+= 1.
  *         if(i == 1000000):             # <<<<<<<<<<<<<<
@@ -21507,18 +21507,18 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
     __pyx_t_7 = (__pyx_v_i == 1000000.0);
     if (__pyx_t_7) {
 
-      /* "hybess.pyx":356
+      /* "src/anilos/hybess_src/hybess.pyx":357
  *         i+= 1.
  *         if(i == 1000000):
  *             print("Continued fraction did not converge")             # <<<<<<<<<<<<<<
  *             nonconvergence[0] = 1
  *             break
  */
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 356, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 357, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "hybess.pyx":357
+      /* "src/anilos/hybess_src/hybess.pyx":358
  *         if(i == 1000000):
  *             print("Continued fraction did not converge")
  *             nonconvergence[0] = 1             # <<<<<<<<<<<<<<
@@ -21527,7 +21527,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
       (__pyx_v_nonconvergence[0]) = 1;
 
-      /* "hybess.pyx":358
+      /* "src/anilos/hybess_src/hybess.pyx":359
  *             print("Continued fraction did not converge")
  *             nonconvergence[0] = 1
  *             break             # <<<<<<<<<<<<<<
@@ -21536,7 +21536,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
       goto __pyx_L4_break;
 
-      /* "hybess.pyx":355
+      /* "src/anilos/hybess_src/hybess.pyx":356
  *         eps = cabsl(Delta - 1)
  *         i+= 1.
  *         if(i == 1000000):             # <<<<<<<<<<<<<<
@@ -21547,7 +21547,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
   }
   __pyx_L4_break:;
 
-  /* "hybess.pyx":359
+  /* "src/anilos/hybess_src/hybess.pyx":360
  *             nonconvergence[0] = 1
  *             break
  *     ratio[0] = f             # <<<<<<<<<<<<<<
@@ -21556,7 +21556,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  */
   (__pyx_v_ratio[0]) = __pyx_v_f;
 
-  /* "hybess.pyx":284
+  /* "src/anilos/hybess_src/hybess.pyx":285
  * 
  * @cython.cfunc
  * cdef void ContinuedFractionComplex(long double complex nu,             # <<<<<<<<<<<<<<
@@ -21571,12 +21571,12 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("hybess.ContinuedFractionComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.ContinuedFractionComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
 }
 
-/* "hybess.pyx":362
+/* "src/anilos/hybess_src/hybess.pyx":363
  * 
  * @cython.cfunc
  * cdef long double complex ximoverkc(int m, long double complex nu):             # <<<<<<<<<<<<<<
@@ -21584,7 +21584,7 @@ static void __pyx_f_6hybess_ContinuedFractionComplex(__pyx_t_long_double_complex
  * 
  */
 
-static __pyx_t_long_double_complex __pyx_f_6hybess_ximoverkc(CYTHON_UNUSED int __pyx_v_m, __pyx_t_long_double_complex __pyx_v_nu) {
+static __pyx_t_long_double_complex __pyx_f_6anilos_6hybess_ximoverkc(CYTHON_UNUSED int __pyx_v_m, __pyx_t_long_double_complex __pyx_v_nu) {
   int __pyx_v_i;
   __pyx_t_long_double_complex __pyx_v_prod;
   __pyx_t_long_double_complex __pyx_v_nu2;
@@ -21593,7 +21593,7 @@ static __pyx_t_long_double_complex __pyx_f_6hybess_ximoverkc(CYTHON_UNUSED int _
   int __pyx_t_2;
   int __pyx_t_3;
 
-  /* "hybess.pyx":378
+  /* "src/anilos/hybess_src/hybess.pyx":379
  *     cdef:
  *         int i
  *         long double complex prod = 1             # <<<<<<<<<<<<<<
@@ -21602,7 +21602,7 @@ static __pyx_t_long_double_complex __pyx_f_6hybess_ximoverkc(CYTHON_UNUSED int _
  */
   __pyx_v_prod = __pyx_t_long_double_complex_from_parts(1, 0);
 
-  /* "hybess.pyx":379
+  /* "src/anilos/hybess_src/hybess.pyx":380
  *         int i
  *         long double complex prod = 1
  *         long double complex nu2 = nu * nu             # <<<<<<<<<<<<<<
@@ -21611,7 +21611,7 @@ static __pyx_t_long_double_complex __pyx_f_6hybess_ximoverkc(CYTHON_UNUSED int _
  */
   __pyx_v_nu2 = __Pyx_c_prod_long__double(__pyx_v_nu, __pyx_v_nu);
 
-  /* "hybess.pyx":380
+  /* "src/anilos/hybess_src/hybess.pyx":381
  *         long double complex prod = 1
  *         long double complex nu2 = nu * nu
  *     for i in prange(m, nogil = True):             # <<<<<<<<<<<<<<
@@ -21648,7 +21648,7 @@ static __pyx_t_long_double_complex __pyx_f_6hybess_ximoverkc(CYTHON_UNUSED int _
                         {
                             __pyx_v_i = (int)(0 + 1 * __pyx_t_2);
 
-                            /* "hybess.pyx":381
+                            /* "src/anilos/hybess_src/hybess.pyx":382
  *         long double complex nu2 = nu * nu
  *     for i in prange(m, nogil = True):
  *         prod *= 1 / csqrtl(nu2 + (i+1) * (i+1))             # <<<<<<<<<<<<<<
@@ -21669,7 +21669,7 @@ static __pyx_t_long_double_complex __pyx_f_6hybess_ximoverkc(CYTHON_UNUSED int _
         #endif
       }
 
-      /* "hybess.pyx":380
+      /* "src/anilos/hybess_src/hybess.pyx":381
  *         long double complex prod = 1
  *         long double complex nu2 = nu * nu
  *     for i in prange(m, nogil = True):             # <<<<<<<<<<<<<<
@@ -21688,7 +21688,7 @@ static __pyx_t_long_double_complex __pyx_f_6hybess_ximoverkc(CYTHON_UNUSED int _
       }
   }
 
-  /* "hybess.pyx":382
+  /* "src/anilos/hybess_src/hybess.pyx":383
  *     for i in prange(m, nogil = True):
  *         prod *= 1 / csqrtl(nu2 + (i+1) * (i+1))
  *     return prod             # <<<<<<<<<<<<<<
@@ -21698,7 +21698,7 @@ static __pyx_t_long_double_complex __pyx_f_6hybess_ximoverkc(CYTHON_UNUSED int _
   __pyx_r = __pyx_v_prod;
   goto __pyx_L0;
 
-  /* "hybess.pyx":362
+  /* "src/anilos/hybess_src/hybess.pyx":363
  * 
  * @cython.cfunc
  * cdef long double complex ximoverkc(int m, long double complex nu):             # <<<<<<<<<<<<<<
@@ -21711,7 +21711,7 @@ static __pyx_t_long_double_complex __pyx_f_6hybess_ximoverkc(CYTHON_UNUSED int _
   return __pyx_r;
 }
 
-/* "hybess.pyx":384
+/* "src/anilos/hybess_src/hybess.pyx":385
  *     return prod
  * 
  * cdef long double complex[:] EpsilonComplex(long double chi,             # <<<<<<<<<<<<<<
@@ -21719,7 +21719,7 @@ static __pyx_t_long_double_complex __pyx_f_6hybess_ximoverkc(CYTHON_UNUSED int _
  *                                            int ell_max,
  */
 
-static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi, int __pyx_v_s, int __pyx_v_j, int __pyx_v_m, int __pyx_v_ell_max, __pyx_t_long_double_complex __pyx_v_nu, long double __pyx_v_ellc, CYTHON_UNUSED int __pyx_v_calK, PyObject *__pyx_v_mode) {
+static __Pyx_memviewslice __pyx_f_6anilos_6hybess_EpsilonComplex(long double __pyx_v_chi, int __pyx_v_s, int __pyx_v_j, int __pyx_v_m, int __pyx_v_ell_max, __pyx_t_long_double_complex __pyx_v_nu, long double __pyx_v_ellc, CYTHON_UNUSED int __pyx_v_calK, PyObject *__pyx_v_mode) {
   long double __pyx_v_r;
   long double __pyx_v_x;
   long double __pyx_v_y;
@@ -21729,7 +21729,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
   __Pyx_memviewslice __pyx_v_epsilon = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_dphi = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_d2phi = { 0, 0, { 0 }, { 0 }, { 0 } };
-  struct __pyx_t_6hybess_Geometric_variables __pyx_v_gvar;
+  struct __pyx_t_6anilos_6hybess_Geometric_variables __pyx_v_gvar;
   __Pyx_memviewslice __pyx_v_phi = { 0, 0, { 0 }, { 0 }, { 0 } };
   long __pyx_v_ell0;
   __Pyx_memviewslice __pyx_r = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -21757,7 +21757,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("EpsilonComplex", 1);
 
-  /* "hybess.pyx":420
+  /* "src/anilos/hybess_src/hybess.pyx":421
  * 
  *     cdef:
  *         long double r = ellc * sinhl(chi/ellc)             # <<<<<<<<<<<<<<
@@ -21766,7 +21766,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
  */
   __pyx_v_r = (__pyx_v_ellc * sinhl((__pyx_v_chi / __pyx_v_ellc)));
 
-  /* "hybess.pyx":421
+  /* "src/anilos/hybess_src/hybess.pyx":422
  *     cdef:
  *         long double r = ellc * sinhl(chi/ellc)
  *         long double x = coshl(chi/ellc)             # <<<<<<<<<<<<<<
@@ -21775,7 +21775,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
  */
   __pyx_v_x = coshl((__pyx_v_chi / __pyx_v_ellc));
 
-  /* "hybess.pyx":422
+  /* "src/anilos/hybess_src/hybess.pyx":423
  *         long double r = ellc * sinhl(chi/ellc)
  *         long double x = coshl(chi/ellc)
  *         long double y = r / ellc             # <<<<<<<<<<<<<<
@@ -21784,7 +21784,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
  */
   __pyx_v_y = (__pyx_v_r / __pyx_v_ellc);
 
-  /* "hybess.pyx":423
+  /* "src/anilos/hybess_src/hybess.pyx":424
  *         long double x = coshl(chi/ellc)
  *         long double y = r / ellc
  *         long double complex nured = nu * ellc             # <<<<<<<<<<<<<<
@@ -21793,56 +21793,56 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
  */
   __pyx_v_nured = __Pyx_c_prod_long__double(__pyx_v_nu, __pyx_t_long_double_complex_from_parts(__pyx_v_ellc, 0));
 
-  /* "hybess.pyx":425
+  /* "src/anilos/hybess_src/hybess.pyx":426
  *         long double complex nured = nu * ellc
  *         int l
  *         long double complex xi_k = ximoverkc(j,nured)             # <<<<<<<<<<<<<<
  *         long double complex[:] epsilon = np.empty(ell_max+1,dtype = np.clongdouble)
  *         long double complex[:] dphi
  */
-  __pyx_t_1 = __pyx_f_6hybess_ximoverkc(__pyx_v_j, __pyx_v_nured); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 425, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_6anilos_6hybess_ximoverkc(__pyx_v_j, __pyx_v_nured); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 426, __pyx_L1_error)
   __pyx_v_xi_k = __pyx_t_1;
 
-  /* "hybess.pyx":426
+  /* "src/anilos/hybess_src/hybess.pyx":427
  *         int l
  *         long double complex xi_k = ximoverkc(j,nured)
  *         long double complex[:] epsilon = np.empty(ell_max+1,dtype = np.clongdouble)             # <<<<<<<<<<<<<<
  *         long double complex[:] dphi
  *         long double complex[:] d2phi
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 426, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 427, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_empty); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 426, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_empty); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 427, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_ell_max + 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 426, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_long((__pyx_v_ell_max + 1)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 427, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 426, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 427, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2)) __PYX_ERR(0, 426, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2)) __PYX_ERR(0, 427, __pyx_L1_error);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 426, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 427, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 426, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 427, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 426, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 427, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_6) < 0) __PYX_ERR(0, 426, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_6) < 0) __PYX_ERR(0, 427, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 426, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 427, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_6, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 426, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_6, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 427, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_epsilon = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "hybess.pyx":431
+  /* "src/anilos/hybess_src/hybess.pyx":432
  *         Geometric_variables gvar
  * 
  *     gvar.r = y             # <<<<<<<<<<<<<<
@@ -21851,7 +21851,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
  */
   __pyx_v_gvar.r = __pyx_v_y;
 
-  /* "hybess.pyx":432
+  /* "src/anilos/hybess_src/hybess.pyx":433
  * 
  *     gvar.r = y
  *     gvar.dr_over_r = x / y             # <<<<<<<<<<<<<<
@@ -21860,29 +21860,29 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
  */
   __pyx_v_gvar.dr_over_r = (__pyx_v_x / __pyx_v_y);
 
-  /* "hybess.pyx":433
+  /* "src/anilos/hybess_src/hybess.pyx":434
  *     gvar.r = y
  *     gvar.dr_over_r = x / y
  *     cdef long double complex[:] phi = HyperBesselComplex(chi/ellc, nured ,ell_max,  gvar)             # <<<<<<<<<<<<<<
  *     if(mode == 'tensor'):
  *         ell0 = 2
  */
-  __pyx_t_7 = __pyx_f_6hybess_HyperBesselComplex((__pyx_v_chi / __pyx_v_ellc), __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 433, __pyx_L1_error)
+  __pyx_t_7 = __pyx_f_6anilos_6hybess_HyperBesselComplex((__pyx_v_chi / __pyx_v_ellc), __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 434, __pyx_L1_error)
   __pyx_v_phi = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "hybess.pyx":434
+  /* "src/anilos/hybess_src/hybess.pyx":435
  *     gvar.dr_over_r = x / y
  *     cdef long double complex[:] phi = HyperBesselComplex(chi/ellc, nured ,ell_max,  gvar)
  *     if(mode == 'tensor'):             # <<<<<<<<<<<<<<
  *         ell0 = 2
  *     elif(mode == 'vector'):
  */
-  __pyx_t_8 = (__Pyx_PyUnicode_Equals(__pyx_v_mode, __pyx_n_u_tensor, Py_EQ)); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 434, __pyx_L1_error)
+  __pyx_t_8 = (__Pyx_PyUnicode_Equals(__pyx_v_mode, __pyx_n_u_tensor, Py_EQ)); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 435, __pyx_L1_error)
   if (__pyx_t_8) {
 
-    /* "hybess.pyx":435
+    /* "src/anilos/hybess_src/hybess.pyx":436
  *     cdef long double complex[:] phi = HyperBesselComplex(chi/ellc, nured ,ell_max,  gvar)
  *     if(mode == 'tensor'):
  *         ell0 = 2             # <<<<<<<<<<<<<<
@@ -21891,7 +21891,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
  */
     __pyx_v_ell0 = 2;
 
-    /* "hybess.pyx":434
+    /* "src/anilos/hybess_src/hybess.pyx":435
  *     gvar.dr_over_r = x / y
  *     cdef long double complex[:] phi = HyperBesselComplex(chi/ellc, nured ,ell_max,  gvar)
  *     if(mode == 'tensor'):             # <<<<<<<<<<<<<<
@@ -21901,17 +21901,17 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
     goto __pyx_L3;
   }
 
-  /* "hybess.pyx":436
+  /* "src/anilos/hybess_src/hybess.pyx":437
  *     if(mode == 'tensor'):
  *         ell0 = 2
  *     elif(mode == 'vector'):             # <<<<<<<<<<<<<<
  *         ell0 = 1
  *     else:
  */
-  __pyx_t_8 = (__Pyx_PyUnicode_Equals(__pyx_v_mode, __pyx_n_u_vector, Py_EQ)); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 436, __pyx_L1_error)
+  __pyx_t_8 = (__Pyx_PyUnicode_Equals(__pyx_v_mode, __pyx_n_u_vector, Py_EQ)); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 437, __pyx_L1_error)
   if (likely(__pyx_t_8)) {
 
-    /* "hybess.pyx":437
+    /* "src/anilos/hybess_src/hybess.pyx":438
  *         ell0 = 2
  *     elif(mode == 'vector'):
  *         ell0 = 1             # <<<<<<<<<<<<<<
@@ -21920,7 +21920,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
  */
     __pyx_v_ell0 = 1;
 
-    /* "hybess.pyx":436
+    /* "src/anilos/hybess_src/hybess.pyx":437
  *     if(mode == 'tensor'):
  *         ell0 = 2
  *     elif(mode == 'vector'):             # <<<<<<<<<<<<<<
@@ -21930,7 +21930,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
     goto __pyx_L3;
   }
 
-  /* "hybess.pyx":439
+  /* "src/anilos/hybess_src/hybess.pyx":440
  *         ell0 = 1
  *     else:
  *         raise ValueError('Nonexisting or non implemented mode')             # <<<<<<<<<<<<<<
@@ -21938,15 +21938,15 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
  *         if s == 0:
  */
   /*else*/ {
-    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__12, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 439, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__12, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 440, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_Raise(__pyx_t_6, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __PYX_ERR(0, 439, __pyx_L1_error)
+    __PYX_ERR(0, 440, __pyx_L1_error)
   }
   __pyx_L3:;
 
-  /* "hybess.pyx":440
+  /* "src/anilos/hybess_src/hybess.pyx":441
  *     else:
  *         raise ValueError('Nonexisting or non implemented mode')
  *     if m == 0:             # <<<<<<<<<<<<<<
@@ -21956,7 +21956,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
   __pyx_t_8 = (__pyx_v_m == 0);
   if (__pyx_t_8) {
 
-    /* "hybess.pyx":441
+    /* "src/anilos/hybess_src/hybess.pyx":442
  *         raise ValueError('Nonexisting or non implemented mode')
  *     if m == 0:
  *         if s == 0:             # <<<<<<<<<<<<<<
@@ -21966,7 +21966,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
     __pyx_t_8 = (__pyx_v_s == 0);
     if (__pyx_t_8) {
 
-      /* "hybess.pyx":442
+      /* "src/anilos/hybess_src/hybess.pyx":443
  *     if m == 0:
  *         if s == 0:
  *             if j == 0:             # <<<<<<<<<<<<<<
@@ -21976,7 +21976,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
       switch (__pyx_v_j) {
         case 0:
 
-        /* "hybess.pyx":443
+        /* "src/anilos/hybess_src/hybess.pyx":444
  *         if s == 0:
  *             if j == 0:
  *                 return phi             # <<<<<<<<<<<<<<
@@ -21987,7 +21987,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
         __pyx_r = __pyx_v_phi;
         goto __pyx_L0;
 
-        /* "hybess.pyx":442
+        /* "src/anilos/hybess_src/hybess.pyx":443
  *     if m == 0:
  *         if s == 0:
  *             if j == 0:             # <<<<<<<<<<<<<<
@@ -21997,33 +21997,33 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
         break;
         case 1:
 
-        /* "hybess.pyx":447
+        /* "src/anilos/hybess_src/hybess.pyx":448
  *                 #     epsilon[l] = phi[l]
  *             elif j == 1:
  *                 dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)             # <<<<<<<<<<<<<<
  *                 return xi_k*np.asarray(dphi)
  *                 # for l in range(ell0, ell_max+1):
  */
-        __pyx_t_7 = __pyx_f_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 447, __pyx_L1_error)
+        __pyx_t_7 = __pyx_f_6anilos_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 448, __pyx_L1_error)
         __pyx_v_dphi = __pyx_t_7;
         __pyx_t_7.memview = NULL;
         __pyx_t_7.data = NULL;
 
-        /* "hybess.pyx":448
+        /* "src/anilos/hybess_src/hybess.pyx":449
  *             elif j == 1:
  *                 dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *                 return xi_k*np.asarray(dphi)             # <<<<<<<<<<<<<<
  *                 # for l in range(ell0, ell_max+1):
  *                 #     epsilon[l] = xi_k*dphi[l]
  */
-        __pyx_t_6 = __pyx_PyComplex_FromComplex(__pyx_v_xi_k); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 448, __pyx_L1_error)
+        __pyx_t_6 = __pyx_PyComplex_FromComplex(__pyx_v_xi_k); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 449, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
-        __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 448, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 449, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 448, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 449, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_dphi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 448, __pyx_L1_error)
+        __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_dphi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 449, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __pyx_t_5 = NULL;
         __pyx_t_9 = 0;
@@ -22044,22 +22044,22 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
           __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_9, 1+__pyx_t_9);
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 448, __pyx_L1_error)
+          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 449, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         }
-        __pyx_t_3 = PyNumber_Multiply(__pyx_t_6, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 448, __pyx_L1_error)
+        __pyx_t_3 = PyNumber_Multiply(__pyx_t_6, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 449, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-        __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_3, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 448, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_3, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 449, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_7;
         __pyx_t_7.memview = NULL;
         __pyx_t_7.data = NULL;
         goto __pyx_L0;
 
-        /* "hybess.pyx":446
+        /* "src/anilos/hybess_src/hybess.pyx":447
  *                 # for l in range(ell0, ell_max+1):
  *                 #     epsilon[l] = phi[l]
  *             elif j == 1:             # <<<<<<<<<<<<<<
@@ -22069,31 +22069,31 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
         break;
         case 2:
 
-        /* "hybess.pyx":452
+        /* "src/anilos/hybess_src/hybess.pyx":453
  *                 #     epsilon[l] = xi_k*dphi[l]
  *             elif j == 2:
  *                 dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)             # <<<<<<<<<<<<<<
  *                 d2phi = HyperBesselPrime2Complex(nured,ell_max,phi, dphi, gvar)
  *                 return xi_k/2. *(3.*np.asarray(d2phi) +(nured*nured + 1.)*np.asarray(phi[0:ell_max+1]))
  */
-        __pyx_t_7 = __pyx_f_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 452, __pyx_L1_error)
+        __pyx_t_7 = __pyx_f_6anilos_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 453, __pyx_L1_error)
         __pyx_v_dphi = __pyx_t_7;
         __pyx_t_7.memview = NULL;
         __pyx_t_7.data = NULL;
 
-        /* "hybess.pyx":453
+        /* "src/anilos/hybess_src/hybess.pyx":454
  *             elif j == 2:
  *                 dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *                 d2phi = HyperBesselPrime2Complex(nured,ell_max,phi, dphi, gvar)             # <<<<<<<<<<<<<<
  *                 return xi_k/2. *(3.*np.asarray(d2phi) +(nured*nured + 1.)*np.asarray(phi[0:ell_max+1]))
  *                 # for l in range(ell0, ell_max+1):
  */
-        __pyx_t_7 = __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_v_nured, __pyx_v_ell_max, __pyx_v_phi, __pyx_v_dphi, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 453, __pyx_L1_error)
+        __pyx_t_7 = __pyx_f_6anilos_6hybess_HyperBesselPrime2Complex(__pyx_v_nured, __pyx_v_ell_max, __pyx_v_phi, __pyx_v_dphi, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 454, __pyx_L1_error)
         __pyx_v_d2phi = __pyx_t_7;
         __pyx_t_7.memview = NULL;
         __pyx_t_7.data = NULL;
 
-        /* "hybess.pyx":454
+        /* "src/anilos/hybess_src/hybess.pyx":455
  *                 dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *                 d2phi = HyperBesselPrime2Complex(nured,ell_max,phi, dphi, gvar)
  *                 return xi_k/2. *(3.*np.asarray(d2phi) +(nured*nured + 1.)*np.asarray(phi[0:ell_max+1]))             # <<<<<<<<<<<<<<
@@ -22101,14 +22101,14 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
  *                 #     epsilon[l] = xi_k/2. *(3.*HyperBesselPrime2Complex(nured,l,phi, dphi, gvar)\
  */
         __pyx_t_1 = __Pyx_c_quot_long__double(__pyx_v_xi_k, __pyx_t_long_double_complex_from_parts(2., 0));
-        __pyx_t_3 = __pyx_PyComplex_FromComplex(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 454, __pyx_L1_error)
+        __pyx_t_3 = __pyx_PyComplex_FromComplex(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 455, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 454, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 455, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
-        __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_asarray); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 454, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_asarray); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 455, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-        __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_d2phi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 454, __pyx_L1_error)
+        __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_d2phi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 455, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         __pyx_t_5 = NULL;
         __pyx_t_9 = 0;
@@ -22129,19 +22129,19 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
           __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_9, 1+__pyx_t_9);
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 454, __pyx_L1_error)
+          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 455, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         }
-        __pyx_t_4 = PyNumber_Multiply(__pyx_float_3_, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 454, __pyx_L1_error)
+        __pyx_t_4 = PyNumber_Multiply(__pyx_float_3_, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 455, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_t_1 = __Pyx_c_sum_long__double(__Pyx_c_prod_long__double(__pyx_v_nured, __pyx_v_nured), __pyx_t_long_double_complex_from_parts(1., 0));
-        __pyx_t_2 = __pyx_PyComplex_FromComplex(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 454, __pyx_L1_error)
+        __pyx_t_2 = __pyx_PyComplex_FromComplex(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 455, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 454, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 455, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 454, __pyx_L1_error)
+        __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 455, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __pyx_t_7.data = __pyx_v_phi.data;
@@ -22162,10 +22162,10 @@ static __Pyx_memviewslice __pyx_f_6hybess_EpsilonComplex(long double __pyx_v_chi
     0,
     1) < 0))
 {
-    __PYX_ERR(0, 454, __pyx_L1_error)
+    __PYX_ERR(0, 455, __pyx_L1_error)
 }
 
-__pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 454, __pyx_L1_error)
+__pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 455, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __PYX_XCLEAR_MEMVIEW(&__pyx_t_7, 1);
         __pyx_t_7.memview = NULL; __pyx_t_7.data = NULL;
@@ -22188,30 +22188,30 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
           __pyx_t_6 = __Pyx_PyObject_FastCall(__pyx_t_10, __pyx_callargs+1-__pyx_t_9, 1+__pyx_t_9);
           __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-          if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 454, __pyx_L1_error)
+          if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 455, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         }
-        __pyx_t_10 = PyNumber_Multiply(__pyx_t_2, __pyx_t_6); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 454, __pyx_L1_error)
+        __pyx_t_10 = PyNumber_Multiply(__pyx_t_2, __pyx_t_6); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 455, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-        __pyx_t_6 = PyNumber_Add(__pyx_t_4, __pyx_t_10); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 454, __pyx_L1_error)
+        __pyx_t_6 = PyNumber_Add(__pyx_t_4, __pyx_t_10); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 455, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        __pyx_t_10 = PyNumber_Multiply(__pyx_t_3, __pyx_t_6); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 454, __pyx_L1_error)
+        __pyx_t_10 = PyNumber_Multiply(__pyx_t_3, __pyx_t_6); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 455, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-        __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_10, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 454, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_10, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 455, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         __pyx_r = __pyx_t_7;
         __pyx_t_7.memview = NULL;
         __pyx_t_7.data = NULL;
         goto __pyx_L0;
 
-        /* "hybess.pyx":451
+        /* "src/anilos/hybess_src/hybess.pyx":452
  *                 # for l in range(ell0, ell_max+1):
  *                 #     epsilon[l] = xi_k*dphi[l]
  *             elif j == 2:             # <<<<<<<<<<<<<<
@@ -22222,7 +22222,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         default: break;
       }
 
-      /* "hybess.pyx":441
+      /* "src/anilos/hybess_src/hybess.pyx":442
  *         raise ValueError('Nonexisting or non implemented mode')
  *     if m == 0:
  *         if s == 0:             # <<<<<<<<<<<<<<
@@ -22232,7 +22232,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
       goto __pyx_L5;
     }
 
-    /* "hybess.pyx":458
+    /* "src/anilos/hybess_src/hybess.pyx":459
  *                 #     epsilon[l] = xi_k/2. *(3.*HyperBesselPrime2Complex(nured,l,phi, dphi, gvar)\
  *                 #           +(nured*nured + 1.)*phi[l])
  *         elif s == 1:             # <<<<<<<<<<<<<<
@@ -22242,7 +22242,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
     __pyx_t_8 = (__pyx_v_s == 1);
     if (__pyx_t_8) {
 
-      /* "hybess.pyx":459
+      /* "src/anilos/hybess_src/hybess.pyx":460
  *                 #           +(nured*nured + 1.)*phi[l])
  *         elif s == 1:
  *             if j == 1:             # <<<<<<<<<<<<<<
@@ -22252,7 +22252,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
       switch (__pyx_v_j) {
         case 1:
 
-        /* "hybess.pyx":460
+        /* "src/anilos/hybess_src/hybess.pyx":461
  *         elif s == 1:
  *             if j == 1:
  *                 for l in range(ell0, ell_max+1):             # <<<<<<<<<<<<<<
@@ -22264,7 +22264,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         for (__pyx_t_11 = __pyx_v_ell0; __pyx_t_11 < __pyx_t_14; __pyx_t_11+=1) {
           __pyx_v_l = __pyx_t_11;
 
-          /* "hybess.pyx":463
+          /* "src/anilos/hybess_src/hybess.pyx":464
  *                     epsilon[l] = xi_k\
  *                                  *sqrt(l*(l+1.)/2.)\
  *                                  *phi[l]/y             # <<<<<<<<<<<<<<
@@ -22273,7 +22273,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
  */
           __pyx_t_15 = __pyx_v_l;
 
-          /* "hybess.pyx":461
+          /* "src/anilos/hybess_src/hybess.pyx":462
  *             if j == 1:
  *                 for l in range(ell0, ell_max+1):
  *                     epsilon[l] = xi_k\             # <<<<<<<<<<<<<<
@@ -22284,7 +22284,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
           *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_epsilon.data + __pyx_t_16 * __pyx_v_epsilon.strides[0]) )) = __Pyx_c_quot_long__double(__Pyx_c_prod_long__double(__Pyx_c_prod_long__double(__pyx_v_xi_k, __pyx_t_long_double_complex_from_parts(sqrt(((__pyx_v_l * (__pyx_v_l + 1.)) / 2.)), 0)), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_15 * __pyx_v_phi.strides[0]) )))), __pyx_t_long_double_complex_from_parts(__pyx_v_y, 0));
         }
 
-        /* "hybess.pyx":459
+        /* "src/anilos/hybess_src/hybess.pyx":460
  *                 #           +(nured*nured + 1.)*phi[l])
  *         elif s == 1:
  *             if j == 1:             # <<<<<<<<<<<<<<
@@ -22294,19 +22294,19 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         break;
         case 2:
 
-        /* "hybess.pyx":465
+        /* "src/anilos/hybess_src/hybess.pyx":466
  *                                  *phi[l]/y
  *             elif j == 2:
  *                 dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)             # <<<<<<<<<<<<<<
  *                 for l in range(ell0, ell_max+1):
  *                     epsilon[l] = xi_k\
  */
-        __pyx_t_7 = __pyx_f_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 465, __pyx_L1_error)
+        __pyx_t_7 = __pyx_f_6anilos_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 466, __pyx_L1_error)
         __pyx_v_dphi = __pyx_t_7;
         __pyx_t_7.memview = NULL;
         __pyx_t_7.data = NULL;
 
-        /* "hybess.pyx":466
+        /* "src/anilos/hybess_src/hybess.pyx":467
  *             elif j == 2:
  *                 dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *                 for l in range(ell0, ell_max+1):             # <<<<<<<<<<<<<<
@@ -22318,7 +22318,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         for (__pyx_t_11 = __pyx_v_ell0; __pyx_t_11 < __pyx_t_14; __pyx_t_11+=1) {
           __pyx_v_l = __pyx_t_11;
 
-          /* "hybess.pyx":469
+          /* "src/anilos/hybess_src/hybess.pyx":470
  *                     epsilon[l] = xi_k\
  *                                  *sqrt(3.*l*(l+1.)/2.)\
  *                                  *(dphi[l]/y-phi[l]*x/(y*y))             # <<<<<<<<<<<<<<
@@ -22328,7 +22328,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
           __pyx_t_15 = __pyx_v_l;
           __pyx_t_16 = __pyx_v_l;
 
-          /* "hybess.pyx":467
+          /* "src/anilos/hybess_src/hybess.pyx":468
  *                 dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *                 for l in range(ell0, ell_max+1):
  *                     epsilon[l] = xi_k\             # <<<<<<<<<<<<<<
@@ -22339,7 +22339,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
           *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_epsilon.data + __pyx_t_17 * __pyx_v_epsilon.strides[0]) )) = __Pyx_c_prod_long__double(__Pyx_c_prod_long__double(__pyx_v_xi_k, __pyx_t_long_double_complex_from_parts(sqrt((((3. * __pyx_v_l) * (__pyx_v_l + 1.)) / 2.)), 0)), __Pyx_c_diff_long__double(__Pyx_c_quot_long__double((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_dphi.data + __pyx_t_15 * __pyx_v_dphi.strides[0]) ))), __pyx_t_long_double_complex_from_parts(__pyx_v_y, 0)), __Pyx_c_quot_long__double(__Pyx_c_prod_long__double((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_16 * __pyx_v_phi.strides[0]) ))), __pyx_t_long_double_complex_from_parts(__pyx_v_x, 0)), __pyx_t_long_double_complex_from_parts((__pyx_v_y * __pyx_v_y), 0))));
         }
 
-        /* "hybess.pyx":464
+        /* "src/anilos/hybess_src/hybess.pyx":465
  *                                  *sqrt(l*(l+1.)/2.)\
  *                                  *phi[l]/y
  *             elif j == 2:             # <<<<<<<<<<<<<<
@@ -22350,7 +22350,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         default: break;
       }
 
-      /* "hybess.pyx":458
+      /* "src/anilos/hybess_src/hybess.pyx":459
  *                 #     epsilon[l] = xi_k/2. *(3.*HyperBesselPrime2Complex(nured,l,phi, dphi, gvar)\
  *                 #           +(nured*nured + 1.)*phi[l])
  *         elif s == 1:             # <<<<<<<<<<<<<<
@@ -22360,7 +22360,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
       goto __pyx_L5;
     }
 
-    /* "hybess.pyx":470
+    /* "src/anilos/hybess_src/hybess.pyx":471
  *                                  *sqrt(3.*l*(l+1.)/2.)\
  *                                  *(dphi[l]/y-phi[l]*x/(y*y))
  *         elif s == 2 and j == 2:             # <<<<<<<<<<<<<<
@@ -22378,7 +22378,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
     __pyx_L10_bool_binop_done:;
     if (__pyx_t_8) {
 
-      /* "hybess.pyx":471
+      /* "src/anilos/hybess_src/hybess.pyx":472
  *                                  *(dphi[l]/y-phi[l]*x/(y*y))
  *         elif s == 2 and j == 2:
  *             for l in range(ell0, ell_max+1):             # <<<<<<<<<<<<<<
@@ -22390,7 +22390,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
       for (__pyx_t_11 = __pyx_v_ell0; __pyx_t_11 < __pyx_t_14; __pyx_t_11+=1) {
         __pyx_v_l = __pyx_t_11;
 
-        /* "hybess.pyx":474
+        /* "src/anilos/hybess_src/hybess.pyx":475
  *                     epsilon[l] = xi_k\
  *                                  *sqrt((3./8.)*(l+2.)*(l+1.)*(l)*(l-1.))\
  *                                  *phi[l]/(y*y)             # <<<<<<<<<<<<<<
@@ -22399,7 +22399,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
  */
         __pyx_t_16 = __pyx_v_l;
 
-        /* "hybess.pyx":472
+        /* "src/anilos/hybess_src/hybess.pyx":473
  *         elif s == 2 and j == 2:
  *             for l in range(ell0, ell_max+1):
  *                     epsilon[l] = xi_k\             # <<<<<<<<<<<<<<
@@ -22410,7 +22410,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_epsilon.data + __pyx_t_15 * __pyx_v_epsilon.strides[0]) )) = __Pyx_c_quot_long__double(__Pyx_c_prod_long__double(__Pyx_c_prod_long__double(__pyx_v_xi_k, __pyx_t_long_double_complex_from_parts(sqrt((((((3. / 8.) * (__pyx_v_l + 2.)) * (__pyx_v_l + 1.)) * __pyx_v_l) * (__pyx_v_l - 1.))), 0)), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_16 * __pyx_v_phi.strides[0]) )))), __pyx_t_long_double_complex_from_parts((__pyx_v_y * __pyx_v_y), 0));
       }
 
-      /* "hybess.pyx":470
+      /* "src/anilos/hybess_src/hybess.pyx":471
  *                                  *sqrt(3.*l*(l+1.)/2.)\
  *                                  *(dphi[l]/y-phi[l]*x/(y*y))
  *         elif s == 2 and j == 2:             # <<<<<<<<<<<<<<
@@ -22420,7 +22420,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
     }
     __pyx_L5:;
 
-    /* "hybess.pyx":440
+    /* "src/anilos/hybess_src/hybess.pyx":441
  *     else:
  *         raise ValueError('Nonexisting or non implemented mode')
  *     if m == 0:             # <<<<<<<<<<<<<<
@@ -22430,7 +22430,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
     goto __pyx_L4;
   }
 
-  /* "hybess.pyx":476
+  /* "src/anilos/hybess_src/hybess.pyx":477
  *                                  *phi[l]/(y*y)
  * 
  *     elif m == 1:             # <<<<<<<<<<<<<<
@@ -22440,7 +22440,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
   __pyx_t_8 = (__pyx_v_m == 1);
   if (__pyx_t_8) {
 
-    /* "hybess.pyx":477
+    /* "src/anilos/hybess_src/hybess.pyx":478
  * 
  *     elif m == 1:
  *         if s == 0:             # <<<<<<<<<<<<<<
@@ -22450,7 +22450,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
     __pyx_t_8 = (__pyx_v_s == 0);
     if (__pyx_t_8) {
 
-      /* "hybess.pyx":478
+      /* "src/anilos/hybess_src/hybess.pyx":479
  *     elif m == 1:
  *         if s == 0:
  *             if j == 1:             # <<<<<<<<<<<<<<
@@ -22460,7 +22460,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
       switch (__pyx_v_j) {
         case 1:
 
-        /* "hybess.pyx":479
+        /* "src/anilos/hybess_src/hybess.pyx":480
  *         if s == 0:
  *             if j == 1:
  *                 for l in range(ell0, ell_max+1):             # <<<<<<<<<<<<<<
@@ -22472,7 +22472,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         for (__pyx_t_11 = __pyx_v_ell0; __pyx_t_11 < __pyx_t_14; __pyx_t_11+=1) {
           __pyx_v_l = __pyx_t_11;
 
-          /* "hybess.pyx":482
+          /* "src/anilos/hybess_src/hybess.pyx":483
  *                     epsilon[l] = xi_k\
  *                                  *sqrt(l*(l+1.)/2.)\
  *                                  *phi[l]/y             # <<<<<<<<<<<<<<
@@ -22481,7 +22481,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
  */
           __pyx_t_16 = __pyx_v_l;
 
-          /* "hybess.pyx":480
+          /* "src/anilos/hybess_src/hybess.pyx":481
  *             if j == 1:
  *                 for l in range(ell0, ell_max+1):
  *                     epsilon[l] = xi_k\             # <<<<<<<<<<<<<<
@@ -22492,7 +22492,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
           *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_epsilon.data + __pyx_t_15 * __pyx_v_epsilon.strides[0]) )) = __Pyx_c_quot_long__double(__Pyx_c_prod_long__double(__Pyx_c_prod_long__double(__pyx_v_xi_k, __pyx_t_long_double_complex_from_parts(sqrt(((__pyx_v_l * (__pyx_v_l + 1.)) / 2.)), 0)), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_16 * __pyx_v_phi.strides[0]) )))), __pyx_t_long_double_complex_from_parts(__pyx_v_y, 0));
         }
 
-        /* "hybess.pyx":478
+        /* "src/anilos/hybess_src/hybess.pyx":479
  *     elif m == 1:
  *         if s == 0:
  *             if j == 1:             # <<<<<<<<<<<<<<
@@ -22502,19 +22502,19 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         break;
         case 2:
 
-        /* "hybess.pyx":484
+        /* "src/anilos/hybess_src/hybess.pyx":485
  *                                  *phi[l]/y
  *             elif j == 2:
  *                 dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)             # <<<<<<<<<<<<<<
  *                 for l in range(ell0, ell_max+1):
  *                     epsilon[l] = xi_k\
  */
-        __pyx_t_7 = __pyx_f_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 484, __pyx_L1_error)
+        __pyx_t_7 = __pyx_f_6anilos_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 485, __pyx_L1_error)
         __pyx_v_dphi = __pyx_t_7;
         __pyx_t_7.memview = NULL;
         __pyx_t_7.data = NULL;
 
-        /* "hybess.pyx":485
+        /* "src/anilos/hybess_src/hybess.pyx":486
  *             elif j == 2:
  *                 dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *                 for l in range(ell0, ell_max+1):             # <<<<<<<<<<<<<<
@@ -22526,7 +22526,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         for (__pyx_t_11 = __pyx_v_ell0; __pyx_t_11 < __pyx_t_14; __pyx_t_11+=1) {
           __pyx_v_l = __pyx_t_11;
 
-          /* "hybess.pyx":488
+          /* "src/anilos/hybess_src/hybess.pyx":489
  *                     epsilon[l] = xi_k\
  *                                  *sqrt(3.*l*(l+1.)/2.)\
  *                                  *(dphi[l]/y\             # <<<<<<<<<<<<<<
@@ -22535,7 +22535,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
  */
           __pyx_t_16 = __pyx_v_l;
 
-          /* "hybess.pyx":489
+          /* "src/anilos/hybess_src/hybess.pyx":490
  *                                  *sqrt(3.*l*(l+1.)/2.)\
  *                                  *(dphi[l]/y\
  *                                  -phi[l]*x/y**2)             # <<<<<<<<<<<<<<
@@ -22544,7 +22544,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
  */
           __pyx_t_15 = __pyx_v_l;
 
-          /* "hybess.pyx":486
+          /* "src/anilos/hybess_src/hybess.pyx":487
  *                 dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *                 for l in range(ell0, ell_max+1):
  *                     epsilon[l] = xi_k\             # <<<<<<<<<<<<<<
@@ -22555,7 +22555,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
           *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_epsilon.data + __pyx_t_17 * __pyx_v_epsilon.strides[0]) )) = __Pyx_c_prod_long__double(__Pyx_c_prod_long__double(__pyx_v_xi_k, __pyx_t_long_double_complex_from_parts(sqrt((((3. * __pyx_v_l) * (__pyx_v_l + 1.)) / 2.)), 0)), __Pyx_c_diff_long__double(__Pyx_c_quot_long__double((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_dphi.data + __pyx_t_16 * __pyx_v_dphi.strides[0]) ))), __pyx_t_long_double_complex_from_parts(__pyx_v_y, 0)), __Pyx_c_quot_long__double(__Pyx_c_prod_long__double((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_15 * __pyx_v_phi.strides[0]) ))), __pyx_t_long_double_complex_from_parts(__pyx_v_x, 0)), __pyx_t_long_double_complex_from_parts(powl(__pyx_v_y, 2.0), 0))));
         }
 
-        /* "hybess.pyx":483
+        /* "src/anilos/hybess_src/hybess.pyx":484
  *                                  *sqrt(l*(l+1.)/2.)\
  *                                  *phi[l]/y
  *             elif j == 2:             # <<<<<<<<<<<<<<
@@ -22566,7 +22566,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         default: break;
       }
 
-      /* "hybess.pyx":477
+      /* "src/anilos/hybess_src/hybess.pyx":478
  * 
  *     elif m == 1:
  *         if s == 0:             # <<<<<<<<<<<<<<
@@ -22576,7 +22576,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
       goto __pyx_L14;
     }
 
-    /* "hybess.pyx":490
+    /* "src/anilos/hybess_src/hybess.pyx":491
  *                                  *(dphi[l]/y\
  *                                  -phi[l]*x/y**2)
  *         elif s == 1:             # <<<<<<<<<<<<<<
@@ -22586,19 +22586,19 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
     __pyx_t_8 = (__pyx_v_s == 1);
     if (__pyx_t_8) {
 
-      /* "hybess.pyx":491
+      /* "src/anilos/hybess_src/hybess.pyx":492
  *                                  -phi[l]*x/y**2)
  *         elif s == 1:
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)             # <<<<<<<<<<<<<<
  *             if j == 1:
  *                 return (xi_k/2.) *(np.asarray(dphi) + np.asarray(phi[0:ell_max+1])*x/y)
  */
-      __pyx_t_7 = __pyx_f_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 491, __pyx_L1_error)
+      __pyx_t_7 = __pyx_f_6anilos_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 492, __pyx_L1_error)
       __pyx_v_dphi = __pyx_t_7;
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "hybess.pyx":492
+      /* "src/anilos/hybess_src/hybess.pyx":493
  *         elif s == 1:
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *             if j == 1:             # <<<<<<<<<<<<<<
@@ -22608,7 +22608,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
       __pyx_t_8 = (__pyx_v_j == 1);
       if (__pyx_t_8) {
 
-        /* "hybess.pyx":493
+        /* "src/anilos/hybess_src/hybess.pyx":494
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *             if j == 1:
  *                 return (xi_k/2.) *(np.asarray(dphi) + np.asarray(phi[0:ell_max+1])*x/y)             # <<<<<<<<<<<<<<
@@ -22616,14 +22616,14 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
  *                 #     epsilon[l] = (xi_k/2.)\
  */
         __pyx_t_1 = __Pyx_c_quot_long__double(__pyx_v_xi_k, __pyx_t_long_double_complex_from_parts(2., 0));
-        __pyx_t_10 = __pyx_PyComplex_FromComplex(__pyx_t_1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 493, __pyx_L1_error)
+        __pyx_t_10 = __pyx_PyComplex_FromComplex(__pyx_t_1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 494, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
-        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 493, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 494, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_asarray); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 493, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_asarray); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 494, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_dphi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 493, __pyx_L1_error)
+        __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_dphi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 494, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __pyx_t_2 = NULL;
         __pyx_t_9 = 0;
@@ -22644,13 +22644,13 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
           __pyx_t_6 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_9, 1+__pyx_t_9);
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 493, __pyx_L1_error)
+          if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 494, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         }
-        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 493, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 494, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_asarray); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 493, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_asarray); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 494, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_t_7.data = __pyx_v_phi.data;
@@ -22671,10 +22671,10 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
     0,
     1) < 0))
 {
-    __PYX_ERR(0, 493, __pyx_L1_error)
+    __PYX_ERR(0, 494, __pyx_L1_error)
 }
 
-__pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 493, __pyx_L1_error)
+__pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 494, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __PYX_XCLEAR_MEMVIEW(&__pyx_t_7, 1);
         __pyx_t_7.memview = NULL; __pyx_t_7.data = NULL;
@@ -22697,38 +22697,38 @@ __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
           __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_9, 1+__pyx_t_9);
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 493, __pyx_L1_error)
+          if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 494, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         }
-        __pyx_t_2 = PyFloat_FromDouble(__pyx_v_x); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 493, __pyx_L1_error)
+        __pyx_t_2 = PyFloat_FromDouble(__pyx_v_x); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 494, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_3 = PyNumber_Multiply(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 493, __pyx_L1_error)
+        __pyx_t_3 = PyNumber_Multiply(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 494, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-        __pyx_t_2 = PyFloat_FromDouble(__pyx_v_y); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 493, __pyx_L1_error)
+        __pyx_t_2 = PyFloat_FromDouble(__pyx_v_y); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 494, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_4 = __Pyx_PyNumber_Divide(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 493, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyNumber_Divide(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 494, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-        __pyx_t_2 = PyNumber_Add(__pyx_t_6, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 493, __pyx_L1_error)
+        __pyx_t_2 = PyNumber_Add(__pyx_t_6, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 494, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        __pyx_t_4 = PyNumber_Multiply(__pyx_t_10, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 493, __pyx_L1_error)
+        __pyx_t_4 = PyNumber_Multiply(__pyx_t_10, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 494, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-        __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_4, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 493, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_4, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 494, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __pyx_r = __pyx_t_7;
         __pyx_t_7.memview = NULL;
         __pyx_t_7.data = NULL;
         goto __pyx_L0;
 
-        /* "hybess.pyx":492
+        /* "src/anilos/hybess_src/hybess.pyx":493
  *         elif s == 1:
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *             if j == 1:             # <<<<<<<<<<<<<<
@@ -22737,7 +22737,7 @@ __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
  */
       }
 
-      /* "hybess.pyx":497
+      /* "src/anilos/hybess_src/hybess.pyx":498
  *                 #     epsilon[l] = (xi_k/2.)\
  *                 #                  *(dphi[l]+phi[l]*x/y)
  *             if j == 2:             # <<<<<<<<<<<<<<
@@ -22747,33 +22747,33 @@ __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
       __pyx_t_8 = (__pyx_v_j == 2);
       if (__pyx_t_8) {
 
-        /* "hybess.pyx":498
+        /* "src/anilos/hybess_src/hybess.pyx":499
  *                 #                  *(dphi[l]+phi[l]*x/y)
  *             if j == 2:
  *                 d2phi = HyperBesselPrime2Complex(nured,ell_max,phi, dphi, gvar)             # <<<<<<<<<<<<<<
  *                 return xi_k *(np.asarray(d2phi) +(x/y)*np.asarray(dphi) +(nured*nured/2.-1./(y*y))*np.asarray(phi[0:ell_max+1]))
  *                 # for l in range(ell0, ell_max+1):
  */
-        __pyx_t_7 = __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_v_nured, __pyx_v_ell_max, __pyx_v_phi, __pyx_v_dphi, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 498, __pyx_L1_error)
+        __pyx_t_7 = __pyx_f_6anilos_6hybess_HyperBesselPrime2Complex(__pyx_v_nured, __pyx_v_ell_max, __pyx_v_phi, __pyx_v_dphi, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 499, __pyx_L1_error)
         __pyx_v_d2phi = __pyx_t_7;
         __pyx_t_7.memview = NULL;
         __pyx_t_7.data = NULL;
 
-        /* "hybess.pyx":499
+        /* "src/anilos/hybess_src/hybess.pyx":500
  *             if j == 2:
  *                 d2phi = HyperBesselPrime2Complex(nured,ell_max,phi, dphi, gvar)
  *                 return xi_k *(np.asarray(d2phi) +(x/y)*np.asarray(dphi) +(nured*nured/2.-1./(y*y))*np.asarray(phi[0:ell_max+1]))             # <<<<<<<<<<<<<<
  *                 # for l in range(ell0, ell_max+1):
  *                 #     epsilon[l] = xi_k\
  */
-        __pyx_t_4 = __pyx_PyComplex_FromComplex(__pyx_v_xi_k); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __pyx_t_4 = __pyx_PyComplex_FromComplex(__pyx_v_xi_k); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_asarray); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_asarray); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        __pyx_t_10 = __pyx_memoryview_fromslice(__pyx_v_d2phi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __pyx_t_10 = __pyx_memoryview_fromslice(__pyx_v_d2phi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         __pyx_t_3 = NULL;
         __pyx_t_9 = 0;
@@ -22794,18 +22794,18 @@ __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
           __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_6, __pyx_callargs+1-__pyx_t_9, 1+__pyx_t_9);
           __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 499, __pyx_L1_error)
+          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 500, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         }
-        __pyx_t_6 = PyFloat_FromDouble((__pyx_v_x / __pyx_v_y)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __pyx_t_6 = PyFloat_FromDouble((__pyx_v_x / __pyx_v_y)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
-        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_asarray); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_asarray); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_dphi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_dphi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __pyx_t_12 = NULL;
         __pyx_t_9 = 0;
@@ -22826,24 +22826,24 @@ __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
           __pyx_t_10 = __Pyx_PyObject_FastCall(__pyx_t_5, __pyx_callargs+1-__pyx_t_9, 1+__pyx_t_9);
           __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 499, __pyx_L1_error)
+          if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 500, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_10);
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         }
-        __pyx_t_5 = PyNumber_Multiply(__pyx_t_6, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __pyx_t_5 = PyNumber_Multiply(__pyx_t_6, __pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        __pyx_t_10 = PyNumber_Add(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __pyx_t_10 = PyNumber_Add(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __pyx_t_1 = __Pyx_c_diff_long__double(__Pyx_c_quot_long__double(__Pyx_c_prod_long__double(__pyx_v_nured, __pyx_v_nured), __pyx_t_long_double_complex_from_parts(2., 0)), __pyx_t_long_double_complex_from_parts((((long double)1.) / (__pyx_v_y * __pyx_v_y)), 0));
-        __pyx_t_5 = __pyx_PyComplex_FromComplex(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __pyx_t_5 = __pyx_PyComplex_FromComplex(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
-        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         __pyx_t_7.data = __pyx_v_phi.data;
@@ -22864,10 +22864,10 @@ __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
     0,
     1) < 0))
 {
-    __PYX_ERR(0, 499, __pyx_L1_error)
+    __PYX_ERR(0, 500, __pyx_L1_error)
 }
 
-__pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 499, __pyx_L1_error)
+__pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         __PYX_XCLEAR_MEMVIEW(&__pyx_t_7, 1);
         __pyx_t_7.memview = NULL; __pyx_t_7.data = NULL;
@@ -22890,30 +22890,30 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
           __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_9, 1+__pyx_t_9);
           __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 499, __pyx_L1_error)
+          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 500, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         }
-        __pyx_t_3 = PyNumber_Multiply(__pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __pyx_t_3 = PyNumber_Multiply(__pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-        __pyx_t_2 = PyNumber_Add(__pyx_t_10, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __pyx_t_2 = PyNumber_Add(__pyx_t_10, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __pyx_t_3 = PyNumber_Multiply(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __pyx_t_3 = PyNumber_Multiply(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-        __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_3, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 499, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_3, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 500, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_r = __pyx_t_7;
         __pyx_t_7.memview = NULL;
         __pyx_t_7.data = NULL;
         goto __pyx_L0;
 
-        /* "hybess.pyx":497
+        /* "src/anilos/hybess_src/hybess.pyx":498
  *                 #     epsilon[l] = (xi_k/2.)\
  *                 #                  *(dphi[l]+phi[l]*x/y)
  *             if j == 2:             # <<<<<<<<<<<<<<
@@ -22922,7 +22922,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
  */
       }
 
-      /* "hybess.pyx":490
+      /* "src/anilos/hybess_src/hybess.pyx":491
  *                                  *(dphi[l]/y\
  *                                  -phi[l]*x/y**2)
  *         elif s == 1:             # <<<<<<<<<<<<<<
@@ -22932,7 +22932,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
       goto __pyx_L14;
     }
 
-    /* "hybess.pyx":505
+    /* "src/anilos/hybess_src/hybess.pyx":506
  *                 #                  +(x/y)*dphi[l]
  *                 #                  +(nured*nured/2.-1./y**2)*phi[l])
  *         elif s == 2 and j == 2:             # <<<<<<<<<<<<<<
@@ -22950,19 +22950,19 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
     __pyx_L21_bool_binop_done:;
     if (__pyx_t_8) {
 
-      /* "hybess.pyx":506
+      /* "src/anilos/hybess_src/hybess.pyx":507
  *                 #                  +(nured*nured/2.-1./y**2)*phi[l])
  *         elif s == 2 and j == 2:
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)             # <<<<<<<<<<<<<<
  *             for l in range(ell0, ell_max+1):
  *                     epsilon[l] = xi_k\
  */
-      __pyx_t_7 = __pyx_f_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 506, __pyx_L1_error)
+      __pyx_t_7 = __pyx_f_6anilos_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 507, __pyx_L1_error)
       __pyx_v_dphi = __pyx_t_7;
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "hybess.pyx":507
+      /* "src/anilos/hybess_src/hybess.pyx":508
  *         elif s == 2 and j == 2:
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *             for l in range(ell0, ell_max+1):             # <<<<<<<<<<<<<<
@@ -22974,7 +22974,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
       for (__pyx_t_11 = __pyx_v_ell0; __pyx_t_11 < __pyx_t_14; __pyx_t_11+=1) {
         __pyx_v_l = __pyx_t_11;
 
-        /* "hybess.pyx":510
+        /* "src/anilos/hybess_src/hybess.pyx":511
  *                     epsilon[l] = xi_k\
  *                                  *sqrt((l+2)*(l-1))/2\
  *                                  *(dphi[l]/y +phi[l]*x/(y*y))             # <<<<<<<<<<<<<<
@@ -22984,7 +22984,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         __pyx_t_15 = __pyx_v_l;
         __pyx_t_16 = __pyx_v_l;
 
-        /* "hybess.pyx":508
+        /* "src/anilos/hybess_src/hybess.pyx":509
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *             for l in range(ell0, ell_max+1):
  *                     epsilon[l] = xi_k\             # <<<<<<<<<<<<<<
@@ -22995,7 +22995,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_epsilon.data + __pyx_t_17 * __pyx_v_epsilon.strides[0]) )) = __Pyx_c_prod_long__double(__Pyx_c_quot_long__double(__Pyx_c_prod_long__double(__pyx_v_xi_k, __pyx_t_long_double_complex_from_parts(sqrt(((__pyx_v_l + 2) * (__pyx_v_l - 1))), 0)), __pyx_t_long_double_complex_from_parts(2, 0)), __Pyx_c_sum_long__double(__Pyx_c_quot_long__double((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_dphi.data + __pyx_t_15 * __pyx_v_dphi.strides[0]) ))), __pyx_t_long_double_complex_from_parts(__pyx_v_y, 0)), __Pyx_c_quot_long__double(__Pyx_c_prod_long__double((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_16 * __pyx_v_phi.strides[0]) ))), __pyx_t_long_double_complex_from_parts(__pyx_v_x, 0)), __pyx_t_long_double_complex_from_parts((__pyx_v_y * __pyx_v_y), 0))));
       }
 
-      /* "hybess.pyx":505
+      /* "src/anilos/hybess_src/hybess.pyx":506
  *                 #                  +(x/y)*dphi[l]
  *                 #                  +(nured*nured/2.-1./y**2)*phi[l])
  *         elif s == 2 and j == 2:             # <<<<<<<<<<<<<<
@@ -23005,7 +23005,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
     }
     __pyx_L14:;
 
-    /* "hybess.pyx":476
+    /* "src/anilos/hybess_src/hybess.pyx":477
  *                                  *phi[l]/(y*y)
  * 
  *     elif m == 1:             # <<<<<<<<<<<<<<
@@ -23015,7 +23015,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
     goto __pyx_L4;
   }
 
-  /* "hybess.pyx":512
+  /* "src/anilos/hybess_src/hybess.pyx":513
  *                                  *(dphi[l]/y +phi[l]*x/(y*y))
  * 
  *     elif m == 2 and j == 2:             # <<<<<<<<<<<<<<
@@ -23033,7 +23033,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
   __pyx_L25_bool_binop_done:;
   if (__pyx_t_8) {
 
-    /* "hybess.pyx":513
+    /* "src/anilos/hybess_src/hybess.pyx":514
  * 
  *     elif m == 2 and j == 2:
  *         if s == 0:             # <<<<<<<<<<<<<<
@@ -23043,7 +23043,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
     switch (__pyx_v_s) {
       case 0:
 
-      /* "hybess.pyx":514
+      /* "src/anilos/hybess_src/hybess.pyx":515
  *     elif m == 2 and j == 2:
  *         if s == 0:
  *             for l in range(ell0, ell_max+1):             # <<<<<<<<<<<<<<
@@ -23055,7 +23055,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
       for (__pyx_t_11 = __pyx_v_ell0; __pyx_t_11 < __pyx_t_14; __pyx_t_11+=1) {
         __pyx_v_l = __pyx_t_11;
 
-        /* "hybess.pyx":517
+        /* "src/anilos/hybess_src/hybess.pyx":518
  *                     epsilon[l] = xi_k\
  *                                  *sqrt((3./8.)*(l+2.)*(l+1.)*(l)*(l-1.))\
  *                                  *phi[l]/y**2             # <<<<<<<<<<<<<<
@@ -23064,7 +23064,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
  */
         __pyx_t_16 = __pyx_v_l;
 
-        /* "hybess.pyx":515
+        /* "src/anilos/hybess_src/hybess.pyx":516
  *         if s == 0:
  *             for l in range(ell0, ell_max+1):
  *                     epsilon[l] = xi_k\             # <<<<<<<<<<<<<<
@@ -23075,7 +23075,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_epsilon.data + __pyx_t_15 * __pyx_v_epsilon.strides[0]) )) = __Pyx_c_quot_long__double(__Pyx_c_prod_long__double(__Pyx_c_prod_long__double(__pyx_v_xi_k, __pyx_t_long_double_complex_from_parts(sqrt((((((3. / 8.) * (__pyx_v_l + 2.)) * (__pyx_v_l + 1.)) * __pyx_v_l) * (__pyx_v_l - 1.))), 0)), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_16 * __pyx_v_phi.strides[0]) )))), __pyx_t_long_double_complex_from_parts(powl(__pyx_v_y, 2.0), 0));
       }
 
-      /* "hybess.pyx":513
+      /* "src/anilos/hybess_src/hybess.pyx":514
  * 
  *     elif m == 2 and j == 2:
  *         if s == 0:             # <<<<<<<<<<<<<<
@@ -23085,19 +23085,19 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
       break;
       case 1:
 
-      /* "hybess.pyx":519
+      /* "src/anilos/hybess_src/hybess.pyx":520
  *                                  *phi[l]/y**2
  *         elif s == 1:
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)             # <<<<<<<<<<<<<<
  *             for l in range(ell0, ell_max+1):
  *                     epsilon[l] = xi_k\
  */
-      __pyx_t_7 = __pyx_f_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 519, __pyx_L1_error)
+      __pyx_t_7 = __pyx_f_6anilos_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 520, __pyx_L1_error)
       __pyx_v_dphi = __pyx_t_7;
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "hybess.pyx":520
+      /* "src/anilos/hybess_src/hybess.pyx":521
  *         elif s == 1:
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *             for l in range(ell0, ell_max+1):             # <<<<<<<<<<<<<<
@@ -23109,7 +23109,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
       for (__pyx_t_11 = __pyx_v_ell0; __pyx_t_11 < __pyx_t_14; __pyx_t_11+=1) {
         __pyx_v_l = __pyx_t_11;
 
-        /* "hybess.pyx":523
+        /* "src/anilos/hybess_src/hybess.pyx":524
  *                     epsilon[l] = xi_k\
  *                                  *sqrt((l+2.)*(l-1.))/2.\
  *                                  *(dphi[l]/y             # <<<<<<<<<<<<<<
@@ -23118,7 +23118,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
  */
         __pyx_t_16 = __pyx_v_l;
 
-        /* "hybess.pyx":524
+        /* "src/anilos/hybess_src/hybess.pyx":525
  *                                  *sqrt((l+2.)*(l-1.))/2.\
  *                                  *(dphi[l]/y
  *                                  +phi[l]*x/y**2)             # <<<<<<<<<<<<<<
@@ -23127,7 +23127,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
  */
         __pyx_t_15 = __pyx_v_l;
 
-        /* "hybess.pyx":521
+        /* "src/anilos/hybess_src/hybess.pyx":522
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *             for l in range(ell0, ell_max+1):
  *                     epsilon[l] = xi_k\             # <<<<<<<<<<<<<<
@@ -23138,7 +23138,7 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_epsilon.data + __pyx_t_17 * __pyx_v_epsilon.strides[0]) )) = __Pyx_c_prod_long__double(__Pyx_c_quot_long__double(__Pyx_c_prod_long__double(__pyx_v_xi_k, __pyx_t_long_double_complex_from_parts(sqrt(((__pyx_v_l + 2.) * (__pyx_v_l - 1.))), 0)), __pyx_t_long_double_complex_from_parts(2., 0)), __Pyx_c_sum_long__double(__Pyx_c_quot_long__double((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_dphi.data + __pyx_t_16 * __pyx_v_dphi.strides[0]) ))), __pyx_t_long_double_complex_from_parts(__pyx_v_y, 0)), __Pyx_c_quot_long__double(__Pyx_c_prod_long__double((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_15 * __pyx_v_phi.strides[0]) ))), __pyx_t_long_double_complex_from_parts(__pyx_v_x, 0)), __pyx_t_long_double_complex_from_parts(powl(__pyx_v_y, 2.0), 0))));
       }
 
-      /* "hybess.pyx":518
+      /* "src/anilos/hybess_src/hybess.pyx":519
  *                                  *sqrt((3./8.)*(l+2.)*(l+1.)*(l)*(l-1.))\
  *                                  *phi[l]/y**2
  *         elif s == 1:             # <<<<<<<<<<<<<<
@@ -23148,31 +23148,31 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
       break;
       case 2:
 
-      /* "hybess.pyx":526
+      /* "src/anilos/hybess_src/hybess.pyx":527
  *                                  +phi[l]*x/y**2)
  *         elif s == 2:
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)             # <<<<<<<<<<<<<<
  *             d2phi = HyperBesselPrime2Complex(nured,ell_max,phi, dphi, gvar)
  *             return (xi_k/4) *(np.asarray(d2phi) +4.*(x/y)*np.asarray(dphi) + (2.*((x/y)**2) +1. - nured*nured)\
  */
-      __pyx_t_7 = __pyx_f_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 526, __pyx_L1_error)
+      __pyx_t_7 = __pyx_f_6anilos_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 527, __pyx_L1_error)
       __pyx_v_dphi = __pyx_t_7;
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "hybess.pyx":527
+      /* "src/anilos/hybess_src/hybess.pyx":528
  *         elif s == 2:
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *             d2phi = HyperBesselPrime2Complex(nured,ell_max,phi, dphi, gvar)             # <<<<<<<<<<<<<<
  *             return (xi_k/4) *(np.asarray(d2phi) +4.*(x/y)*np.asarray(dphi) + (2.*((x/y)**2) +1. - nured*nured)\
  *                               *np.asarray(phi[0:ell_max+1]))
  */
-      __pyx_t_7 = __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_v_nured, __pyx_v_ell_max, __pyx_v_phi, __pyx_v_dphi, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 527, __pyx_L1_error)
+      __pyx_t_7 = __pyx_f_6anilos_6hybess_HyperBesselPrime2Complex(__pyx_v_nured, __pyx_v_ell_max, __pyx_v_phi, __pyx_v_dphi, __pyx_v_gvar); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 528, __pyx_L1_error)
       __pyx_v_d2phi = __pyx_t_7;
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
 
-      /* "hybess.pyx":528
+      /* "src/anilos/hybess_src/hybess.pyx":529
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *             d2phi = HyperBesselPrime2Complex(nured,ell_max,phi, dphi, gvar)
  *             return (xi_k/4) *(np.asarray(d2phi) +4.*(x/y)*np.asarray(dphi) + (2.*((x/y)**2) +1. - nured*nured)\             # <<<<<<<<<<<<<<
@@ -23180,14 +23180,14 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
  *             # for l in range(ell0, ell_max+1):
  */
       __pyx_t_1 = __Pyx_c_quot_long__double(__pyx_v_xi_k, __pyx_t_long_double_complex_from_parts(4, 0));
-      __pyx_t_3 = __pyx_PyComplex_FromComplex(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __pyx_t_3 = __pyx_PyComplex_FromComplex(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 529, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 529, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_asarray); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_asarray); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 529, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_d2phi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_d2phi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 529, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __pyx_t_5 = NULL;
       __pyx_t_9 = 0;
@@ -23208,18 +23208,18 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_10, __pyx_callargs+1-__pyx_t_9, 1+__pyx_t_9);
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 528, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 529, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       }
-      __pyx_t_10 = PyFloat_FromDouble((4. * (__pyx_v_x / __pyx_v_y))); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __pyx_t_10 = PyFloat_FromDouble((4. * (__pyx_v_x / __pyx_v_y))); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 529, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 529, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 529, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_dphi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_dphi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 529, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __pyx_t_12 = NULL;
       __pyx_t_9 = 0;
@@ -23240,32 +23240,32 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_6, __pyx_callargs+1-__pyx_t_9, 1+__pyx_t_9);
         __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-        if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 528, __pyx_L1_error)
+        if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 529, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       }
-      __pyx_t_6 = PyNumber_Multiply(__pyx_t_10, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __pyx_t_6 = PyNumber_Multiply(__pyx_t_10, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 529, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_4 = PyNumber_Add(__pyx_t_2, __pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __pyx_t_4 = PyNumber_Add(__pyx_t_2, __pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 529, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_t_1 = __Pyx_c_diff_long__double(__pyx_t_long_double_complex_from_parts(((2. * powl((__pyx_v_x / __pyx_v_y), 2.0)) + 1.), 0), __Pyx_c_prod_long__double(__pyx_v_nured, __pyx_v_nured));
-      __pyx_t_6 = __pyx_PyComplex_FromComplex(__pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __pyx_t_6 = __pyx_PyComplex_FromComplex(__pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 529, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
 
-      /* "hybess.pyx":529
+      /* "src/anilos/hybess_src/hybess.pyx":530
  *             d2phi = HyperBesselPrime2Complex(nured,ell_max,phi, dphi, gvar)
  *             return (xi_k/4) *(np.asarray(d2phi) +4.*(x/y)*np.asarray(dphi) + (2.*((x/y)**2) +1. - nured*nured)\
  *                               *np.asarray(phi[0:ell_max+1]))             # <<<<<<<<<<<<<<
  *             # for l in range(ell0, ell_max+1):
  *             #         epsilon[l] = (xi_k/4)\
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 529, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 530, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_asarray); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 529, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_asarray); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 530, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __pyx_t_7.data = __pyx_v_phi.data;
@@ -23286,10 +23286,10 @@ __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
     0,
     1) < 0))
 {
-    __PYX_ERR(0, 529, __pyx_L1_error)
+    __PYX_ERR(0, 530, __pyx_L1_error)
 }
 
-__pyx_t_10 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 529, __pyx_L1_error)
+__pyx_t_10 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 530, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __PYX_XCLEAR_MEMVIEW(&__pyx_t_7, 1);
       __pyx_t_7.memview = NULL; __pyx_t_7.data = NULL;
@@ -23312,38 +23312,38 @@ __pyx_t_10 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __
         __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_5, __pyx_callargs+1-__pyx_t_9, 1+__pyx_t_9);
         __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 529, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 530, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       }
-      __pyx_t_5 = PyNumber_Multiply(__pyx_t_6, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 529, __pyx_L1_error)
+      __pyx_t_5 = PyNumber_Multiply(__pyx_t_6, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 530, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-      /* "hybess.pyx":528
+      /* "src/anilos/hybess_src/hybess.pyx":529
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *             d2phi = HyperBesselPrime2Complex(nured,ell_max,phi, dphi, gvar)
  *             return (xi_k/4) *(np.asarray(d2phi) +4.*(x/y)*np.asarray(dphi) + (2.*((x/y)**2) +1. - nured*nured)\             # <<<<<<<<<<<<<<
  *                               *np.asarray(phi[0:ell_max+1]))
  *             # for l in range(ell0, ell_max+1):
  */
-      __pyx_t_2 = PyNumber_Add(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __pyx_t_2 = PyNumber_Add(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 529, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_5 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __pyx_t_5 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 529, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 528, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 529, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_r = __pyx_t_7;
       __pyx_t_7.memview = NULL;
       __pyx_t_7.data = NULL;
       goto __pyx_L0;
 
-      /* "hybess.pyx":525
+      /* "src/anilos/hybess_src/hybess.pyx":526
  *                                  *(dphi[l]/y
  *                                  +phi[l]*x/y**2)
  *         elif s == 2:             # <<<<<<<<<<<<<<
@@ -23354,7 +23354,7 @@ __pyx_t_10 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __
       default: break;
     }
 
-    /* "hybess.pyx":512
+    /* "src/anilos/hybess_src/hybess.pyx":513
  *                                  *(dphi[l]/y +phi[l]*x/(y*y))
  * 
  *     elif m == 2 and j == 2:             # <<<<<<<<<<<<<<
@@ -23364,7 +23364,7 @@ __pyx_t_10 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __
   }
   __pyx_L4:;
 
-  /* "hybess.pyx":536
+  /* "src/anilos/hybess_src/hybess.pyx":537
  *             #                      +(2.*((x/y)**2) - calK - nured**2)
  *             #                      *phi[l])
  *     return epsilon             # <<<<<<<<<<<<<<
@@ -23375,7 +23375,7 @@ __pyx_t_10 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __
   __pyx_r = __pyx_v_epsilon;
   goto __pyx_L0;
 
-  /* "hybess.pyx":384
+  /* "src/anilos/hybess_src/hybess.pyx":385
  *     return prod
  * 
  * cdef long double complex[:] EpsilonComplex(long double chi,             # <<<<<<<<<<<<<<
@@ -23395,7 +23395,7 @@ __pyx_t_10 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __
   __Pyx_XDECREF(__pyx_t_12);
   __pyx_r.data = NULL;
   __pyx_r.memview = NULL;
-  __Pyx_AddTraceback("hybess.EpsilonComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.EpsilonComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
   goto __pyx_L2;
   __pyx_L0:;
   if (unlikely(!__pyx_r.memview)) {
@@ -23410,7 +23410,7 @@ __pyx_t_10 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __
   return __pyx_r;
 }
 
-/* "hybess.pyx":538
+/* "src/anilos/hybess_src/hybess.pyx":539
  *     return epsilon
  * 
  * cdef long double complex[:] BetaComplex(long double chi,             # <<<<<<<<<<<<<<
@@ -23418,7 +23418,7 @@ __pyx_t_10 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __
  *                                         int ell_max,
  */
 
-static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, int __pyx_v_s, int __pyx_v_j, int __pyx_v_m, int __pyx_v_ell_max, __pyx_t_long_double_complex __pyx_v_nu, long double __pyx_v_ellc, CYTHON_UNUSED int __pyx_v_calK, PyObject *__pyx_v_mode) {
+static __Pyx_memviewslice __pyx_f_6anilos_6hybess_BetaComplex(long double __pyx_v_chi, int __pyx_v_s, int __pyx_v_j, int __pyx_v_m, int __pyx_v_ell_max, __pyx_t_long_double_complex __pyx_v_nu, long double __pyx_v_ellc, CYTHON_UNUSED int __pyx_v_calK, PyObject *__pyx_v_mode) {
   long double __pyx_v_r;
   long double __pyx_v_x;
   long double __pyx_v_y;
@@ -23426,7 +23426,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
   __pyx_t_long_double_complex __pyx_v_nured;
   __Pyx_memviewslice __pyx_v_dphi = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_beta = { 0, 0, { 0 }, { 0 }, { 0 } };
-  struct __pyx_t_6hybess_Geometric_variables __pyx_v_gvar;
+  struct __pyx_t_6anilos_6hybess_Geometric_variables __pyx_v_gvar;
   __pyx_t_long_double_complex __pyx_v_xi_k;
   __Pyx_memviewslice __pyx_v_phi = { 0, 0, { 0 }, { 0 }, { 0 } };
   long __pyx_v_ell0;
@@ -23454,7 +23454,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("BetaComplex", 1);
 
-  /* "hybess.pyx":574
+  /* "src/anilos/hybess_src/hybess.pyx":575
  * 
  *     cdef:
  *         long double r = ellc * sinhl(chi/ellc)             # <<<<<<<<<<<<<<
@@ -23463,7 +23463,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
  */
   __pyx_v_r = (__pyx_v_ellc * sinhl((__pyx_v_chi / __pyx_v_ellc)));
 
-  /* "hybess.pyx":575
+  /* "src/anilos/hybess_src/hybess.pyx":576
  *     cdef:
  *         long double r = ellc * sinhl(chi/ellc)
  *         long double x = coshl(chi/ellc)             # <<<<<<<<<<<<<<
@@ -23472,7 +23472,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
  */
   __pyx_v_x = coshl((__pyx_v_chi / __pyx_v_ellc));
 
-  /* "hybess.pyx":576
+  /* "src/anilos/hybess_src/hybess.pyx":577
  *         long double r = ellc * sinhl(chi/ellc)
  *         long double x = coshl(chi/ellc)
  *         long double y = r/ellc             # <<<<<<<<<<<<<<
@@ -23481,7 +23481,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
  */
   __pyx_v_y = (__pyx_v_r / __pyx_v_ellc);
 
-  /* "hybess.pyx":578
+  /* "src/anilos/hybess_src/hybess.pyx":579
  *         long double y = r/ellc
  *         int l
  *         long double complex nured = nu * ellc             # <<<<<<<<<<<<<<
@@ -23490,56 +23490,56 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
  */
   __pyx_v_nured = __Pyx_c_prod_long__double(__pyx_v_nu, __pyx_t_long_double_complex_from_parts(__pyx_v_ellc, 0));
 
-  /* "hybess.pyx":580
+  /* "src/anilos/hybess_src/hybess.pyx":581
  *         long double complex nured = nu * ellc
  *         long double complex[:] dphi
  *         long double complex[:] beta = np.empty(ell_max+1,dtype = np.clongdouble)             # <<<<<<<<<<<<<<
  *         Geometric_variables gvar
  *         long double complex xi_k = ximoverkc(j,nured)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 580, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 581, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 580, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 581, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_long((__pyx_v_ell_max + 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 580, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_long((__pyx_v_ell_max + 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 581, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 580, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 581, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(0, 580, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(0, 581, __pyx_L1_error);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 580, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 581, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 580, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 581, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 580, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 581, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 580, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 581, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 580, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 581, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 580, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 581, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_beta = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "hybess.pyx":582
+  /* "src/anilos/hybess_src/hybess.pyx":583
  *         long double complex[:] beta = np.empty(ell_max+1,dtype = np.clongdouble)
  *         Geometric_variables gvar
  *         long double complex xi_k = ximoverkc(j,nured)             # <<<<<<<<<<<<<<
  * 
  *     gvar.r = y
  */
-  __pyx_t_7 = __pyx_f_6hybess_ximoverkc(__pyx_v_j, __pyx_v_nured); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 582, __pyx_L1_error)
+  __pyx_t_7 = __pyx_f_6anilos_6hybess_ximoverkc(__pyx_v_j, __pyx_v_nured); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 583, __pyx_L1_error)
   __pyx_v_xi_k = __pyx_t_7;
 
-  /* "hybess.pyx":584
+  /* "src/anilos/hybess_src/hybess.pyx":585
  *         long double complex xi_k = ximoverkc(j,nured)
  * 
  *     gvar.r = y             # <<<<<<<<<<<<<<
@@ -23548,7 +23548,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
  */
   __pyx_v_gvar.r = __pyx_v_y;
 
-  /* "hybess.pyx":585
+  /* "src/anilos/hybess_src/hybess.pyx":586
  * 
  *     gvar.r = y
  *     gvar.dr_over_r = x/y             # <<<<<<<<<<<<<<
@@ -23557,29 +23557,29 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
  */
   __pyx_v_gvar.dr_over_r = (__pyx_v_x / __pyx_v_y);
 
-  /* "hybess.pyx":586
+  /* "src/anilos/hybess_src/hybess.pyx":587
  *     gvar.r = y
  *     gvar.dr_over_r = x/y
  *     cdef long double complex [:] phi = HyperBesselComplex(chi/ellc, nured ,ell_max, gvar)             # <<<<<<<<<<<<<<
  *     if(mode == 'tensor'):
  *         ell0 = 2
  */
-  __pyx_t_6 = __pyx_f_6hybess_HyperBesselComplex((__pyx_v_chi / __pyx_v_ellc), __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 586, __pyx_L1_error)
+  __pyx_t_6 = __pyx_f_6anilos_6hybess_HyperBesselComplex((__pyx_v_chi / __pyx_v_ellc), __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 587, __pyx_L1_error)
   __pyx_v_phi = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "hybess.pyx":587
+  /* "src/anilos/hybess_src/hybess.pyx":588
  *     gvar.dr_over_r = x/y
  *     cdef long double complex [:] phi = HyperBesselComplex(chi/ellc, nured ,ell_max, gvar)
  *     if(mode == 'tensor'):             # <<<<<<<<<<<<<<
  *         ell0 = 2
  *     elif(mode == 'vector'):
  */
-  __pyx_t_8 = (__Pyx_PyUnicode_Equals(__pyx_v_mode, __pyx_n_u_tensor, Py_EQ)); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 587, __pyx_L1_error)
+  __pyx_t_8 = (__Pyx_PyUnicode_Equals(__pyx_v_mode, __pyx_n_u_tensor, Py_EQ)); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 588, __pyx_L1_error)
   if (__pyx_t_8) {
 
-    /* "hybess.pyx":588
+    /* "src/anilos/hybess_src/hybess.pyx":589
  *     cdef long double complex [:] phi = HyperBesselComplex(chi/ellc, nured ,ell_max, gvar)
  *     if(mode == 'tensor'):
  *         ell0 = 2             # <<<<<<<<<<<<<<
@@ -23588,7 +23588,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
  */
     __pyx_v_ell0 = 2;
 
-    /* "hybess.pyx":587
+    /* "src/anilos/hybess_src/hybess.pyx":588
  *     gvar.dr_over_r = x/y
  *     cdef long double complex [:] phi = HyperBesselComplex(chi/ellc, nured ,ell_max, gvar)
  *     if(mode == 'tensor'):             # <<<<<<<<<<<<<<
@@ -23598,17 +23598,17 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
     goto __pyx_L3;
   }
 
-  /* "hybess.pyx":589
+  /* "src/anilos/hybess_src/hybess.pyx":590
  *     if(mode == 'tensor'):
  *         ell0 = 2
  *     elif(mode == 'vector'):             # <<<<<<<<<<<<<<
  *         ell0 = 1
  *     else:
  */
-  __pyx_t_8 = (__Pyx_PyUnicode_Equals(__pyx_v_mode, __pyx_n_u_vector, Py_EQ)); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 589, __pyx_L1_error)
+  __pyx_t_8 = (__Pyx_PyUnicode_Equals(__pyx_v_mode, __pyx_n_u_vector, Py_EQ)); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 590, __pyx_L1_error)
   if (likely(__pyx_t_8)) {
 
-    /* "hybess.pyx":590
+    /* "src/anilos/hybess_src/hybess.pyx":591
  *         ell0 = 2
  *     elif(mode == 'vector'):
  *         ell0 = 1             # <<<<<<<<<<<<<<
@@ -23617,7 +23617,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
  */
     __pyx_v_ell0 = 1;
 
-    /* "hybess.pyx":589
+    /* "src/anilos/hybess_src/hybess.pyx":590
  *     if(mode == 'tensor'):
  *         ell0 = 2
  *     elif(mode == 'vector'):             # <<<<<<<<<<<<<<
@@ -23627,7 +23627,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
     goto __pyx_L3;
   }
 
-  /* "hybess.pyx":592
+  /* "src/anilos/hybess_src/hybess.pyx":593
  *         ell0 = 1
  *     else:
  *         raise ValueError('Nonexisting or non implemented mode')             # <<<<<<<<<<<<<<
@@ -23635,15 +23635,15 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
  *     if m == 0 or s == 0:
  */
   /*else*/ {
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__12, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 592, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__12, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 593, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_Raise(__pyx_t_5, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __PYX_ERR(0, 592, __pyx_L1_error)
+    __PYX_ERR(0, 593, __pyx_L1_error)
   }
   __pyx_L3:;
 
-  /* "hybess.pyx":594
+  /* "src/anilos/hybess_src/hybess.pyx":595
  *         raise ValueError('Nonexisting or non implemented mode')
  * 
  *     if m == 0 or s == 0:             # <<<<<<<<<<<<<<
@@ -23661,19 +23661,19 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
   __pyx_L5_bool_binop_done:;
   if (__pyx_t_8) {
 
-    /* "hybess.pyx":595
+    /* "src/anilos/hybess_src/hybess.pyx":596
  * 
  *     if m == 0 or s == 0:
  *         return np.zeros(ell_max+1)             # <<<<<<<<<<<<<<
  *     elif m == 1:
  *         if s == 1:
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 595, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 595, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyInt_From_long((__pyx_v_ell_max + 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 595, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_long((__pyx_v_ell_max + 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_t_2 = NULL;
     __pyx_t_10 = 0;
@@ -23694,18 +23694,18 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
       __pyx_t_5 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_10, 1+__pyx_t_10);
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 595, __pyx_L1_error)
+      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 596, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     }
-    __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 595, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_r = __pyx_t_6;
     __pyx_t_6.memview = NULL;
     __pyx_t_6.data = NULL;
     goto __pyx_L0;
 
-    /* "hybess.pyx":594
+    /* "src/anilos/hybess_src/hybess.pyx":595
  *         raise ValueError('Nonexisting or non implemented mode')
  * 
  *     if m == 0 or s == 0:             # <<<<<<<<<<<<<<
@@ -23714,7 +23714,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
  */
   }
 
-  /* "hybess.pyx":596
+  /* "src/anilos/hybess_src/hybess.pyx":597
  *     if m == 0 or s == 0:
  *         return np.zeros(ell_max+1)
  *     elif m == 1:             # <<<<<<<<<<<<<<
@@ -23724,7 +23724,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
   __pyx_t_8 = (__pyx_v_m == 1);
   if (__pyx_t_8) {
 
-    /* "hybess.pyx":597
+    /* "src/anilos/hybess_src/hybess.pyx":598
  *         return np.zeros(ell_max+1)
  *     elif m == 1:
  *         if s == 1:             # <<<<<<<<<<<<<<
@@ -23734,7 +23734,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
     __pyx_t_8 = (__pyx_v_s == 1);
     if (__pyx_t_8) {
 
-      /* "hybess.pyx":598
+      /* "src/anilos/hybess_src/hybess.pyx":599
  *     elif m == 1:
  *         if s == 1:
  *             if j == 1:             # <<<<<<<<<<<<<<
@@ -23744,7 +23744,7 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
       switch (__pyx_v_j) {
         case 1:
 
-        /* "hybess.pyx":599
+        /* "src/anilos/hybess_src/hybess.pyx":600
  *         if s == 1:
  *             if j == 1:
  *                 return -nured/2*xi_k * np.asarray(phi[0:ell_max+1])             # <<<<<<<<<<<<<<
@@ -23752,11 +23752,11 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
  *                 #     beta[l] = -nured/2*xi_k\
  */
         __pyx_t_7 = __Pyx_c_prod_long__double(__Pyx_c_quot_long__double(__Pyx_c_neg_long__double(__pyx_v_nured), __pyx_t_long_double_complex_from_parts(2, 0)), __pyx_v_xi_k);
-        __pyx_t_5 = __pyx_PyComplex_FromComplex(__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 599, __pyx_L1_error)
+        __pyx_t_5 = __pyx_PyComplex_FromComplex(__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 600, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 599, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 600, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_asarray); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 599, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_asarray); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 600, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_t_6.data = __pyx_v_phi.data;
@@ -23777,10 +23777,10 @@ static __Pyx_memviewslice __pyx_f_6hybess_BetaComplex(long double __pyx_v_chi, i
     0,
     1) < 0))
 {
-    __PYX_ERR(0, 599, __pyx_L1_error)
+    __PYX_ERR(0, 600, __pyx_L1_error)
 }
 
-__pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 599, __pyx_L1_error)
+__pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 600, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __PYX_XCLEAR_MEMVIEW(&__pyx_t_6, 1);
         __pyx_t_6.memview = NULL; __pyx_t_6.data = NULL;
@@ -23803,22 +23803,22 @@ __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
           __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_10, 1+__pyx_t_10);
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 599, __pyx_L1_error)
+          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 600, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         }
-        __pyx_t_2 = PyNumber_Multiply(__pyx_t_5, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 599, __pyx_L1_error)
+        __pyx_t_2 = PyNumber_Multiply(__pyx_t_5, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 600, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_2, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 599, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_2, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 600, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_r = __pyx_t_6;
         __pyx_t_6.memview = NULL;
         __pyx_t_6.data = NULL;
         goto __pyx_L0;
 
-        /* "hybess.pyx":598
+        /* "src/anilos/hybess_src/hybess.pyx":599
  *     elif m == 1:
  *         if s == 1:
  *             if j == 1:             # <<<<<<<<<<<<<<
@@ -23828,19 +23828,19 @@ __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
         break;
         case 2:
 
-        /* "hybess.pyx":604
+        /* "src/anilos/hybess_src/hybess.pyx":605
  *                 #               *phi[l]
  *             elif j == 2:
  *                 dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)             # <<<<<<<<<<<<<<
  *                 return -nured/2*xi_k\
  *                               *(np.asarray(dphi) - (x/y)*np.asarray(phi[0:ell_max+1]))
  */
-        __pyx_t_6 = __pyx_f_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 604, __pyx_L1_error)
+        __pyx_t_6 = __pyx_f_6anilos_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 605, __pyx_L1_error)
         __pyx_v_dphi = __pyx_t_6;
         __pyx_t_6.memview = NULL;
         __pyx_t_6.data = NULL;
 
-        /* "hybess.pyx":605
+        /* "src/anilos/hybess_src/hybess.pyx":606
  *             elif j == 2:
  *                 dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *                 return -nured/2*xi_k\             # <<<<<<<<<<<<<<
@@ -23848,22 +23848,22 @@ __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
  *                 # for l in range (ell0, ell_max+1):
  */
         __pyx_t_7 = __Pyx_c_prod_long__double(__Pyx_c_quot_long__double(__Pyx_c_neg_long__double(__pyx_v_nured), __pyx_t_long_double_complex_from_parts(2, 0)), __pyx_v_xi_k);
-        __pyx_t_2 = __pyx_PyComplex_FromComplex(__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 605, __pyx_L1_error)
+        __pyx_t_2 = __pyx_PyComplex_FromComplex(__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 606, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
 
-        /* "hybess.pyx":606
+        /* "src/anilos/hybess_src/hybess.pyx":607
  *                 dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *                 return -nured/2*xi_k\
  *                               *(np.asarray(dphi) - (x/y)*np.asarray(phi[0:ell_max+1]))             # <<<<<<<<<<<<<<
  *                 # for l in range (ell0, ell_max+1):
  *                 #     beta[l] = -nured/2*xi_k\
  */
-        __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 606, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 607, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 606, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_asarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 607, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-        __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_dphi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 606, __pyx_L1_error)
+        __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_dphi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 607, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __pyx_t_4 = NULL;
         __pyx_t_10 = 0;
@@ -23884,15 +23884,15 @@ __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
           __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_1, __pyx_callargs+1-__pyx_t_10, 1+__pyx_t_10);
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 606, __pyx_L1_error)
+          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 607, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         }
-        __pyx_t_1 = PyFloat_FromDouble((__pyx_v_x / __pyx_v_y)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 606, __pyx_L1_error)
+        __pyx_t_1 = PyFloat_FromDouble((__pyx_v_x / __pyx_v_y)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 607, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 606, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 607, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_asarray); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 606, __pyx_L1_error)
+        __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_asarray); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 607, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_12);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __pyx_t_6.data = __pyx_v_phi.data;
@@ -23913,10 +23913,10 @@ __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
     0,
     1) < 0))
 {
-    __PYX_ERR(0, 606, __pyx_L1_error)
+    __PYX_ERR(0, 607, __pyx_L1_error)
 }
 
-__pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 606, __pyx_L1_error)
+__pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 607, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __PYX_XCLEAR_MEMVIEW(&__pyx_t_6, 1);
         __pyx_t_6.memview = NULL; __pyx_t_6.data = NULL;
@@ -23939,30 +23939,30 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
           __pyx_t_5 = __Pyx_PyObject_FastCall(__pyx_t_12, __pyx_callargs+1-__pyx_t_10, 1+__pyx_t_10);
           __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 606, __pyx_L1_error)
+          if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 607, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         }
-        __pyx_t_12 = PyNumber_Multiply(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 606, __pyx_L1_error)
+        __pyx_t_12 = PyNumber_Multiply(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 607, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_12);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-        __pyx_t_5 = PyNumber_Subtract(__pyx_t_3, __pyx_t_12); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 606, __pyx_L1_error)
+        __pyx_t_5 = PyNumber_Subtract(__pyx_t_3, __pyx_t_12); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 607, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-        __pyx_t_12 = PyNumber_Multiply(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 606, __pyx_L1_error)
+        __pyx_t_12 = PyNumber_Multiply(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 607, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_12);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-        __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_12, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 606, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_12, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 607, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         __pyx_r = __pyx_t_6;
         __pyx_t_6.memview = NULL;
         __pyx_t_6.data = NULL;
         goto __pyx_L0;
 
-        /* "hybess.pyx":603
+        /* "src/anilos/hybess_src/hybess.pyx":604
  *                 #     beta[l] = -nured/2*xi_k\
  *                 #               *phi[l]
  *             elif j == 2:             # <<<<<<<<<<<<<<
@@ -23973,7 +23973,7 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
         default: break;
       }
 
-      /* "hybess.pyx":597
+      /* "src/anilos/hybess_src/hybess.pyx":598
  *         return np.zeros(ell_max+1)
  *     elif m == 1:
  *         if s == 1:             # <<<<<<<<<<<<<<
@@ -23983,7 +23983,7 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
       goto __pyx_L7;
     }
 
-    /* "hybess.pyx":610
+    /* "src/anilos/hybess_src/hybess.pyx":611
  *                 #     beta[l] = -nured/2*xi_k\
  *                 #               *(dphi[l] - (x/y)*phi[l])
  *         elif s == 2 and j == 2:             # <<<<<<<<<<<<<<
@@ -24001,7 +24001,7 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
     __pyx_L8_bool_binop_done:;
     if (__pyx_t_8) {
 
-      /* "hybess.pyx":611
+      /* "src/anilos/hybess_src/hybess.pyx":612
  *                 #               *(dphi[l] - (x/y)*phi[l])
  *         elif s == 2 and j == 2:
  *             for l in range (ell0, ell_max+1):             # <<<<<<<<<<<<<<
@@ -24013,7 +24013,7 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
       for (__pyx_t_11 = __pyx_v_ell0; __pyx_t_11 < __pyx_t_15; __pyx_t_11+=1) {
         __pyx_v_l = __pyx_t_11;
 
-        /* "hybess.pyx":614
+        /* "src/anilos/hybess_src/hybess.pyx":615
  *                     beta[l] = -nured*xi_k\
  *                               *sqrt((l+2.)*(l-1.))/2.\
  *                               *phi[l]/y             # <<<<<<<<<<<<<<
@@ -24022,7 +24022,7 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
  */
         __pyx_t_16 = __pyx_v_l;
 
-        /* "hybess.pyx":612
+        /* "src/anilos/hybess_src/hybess.pyx":613
  *         elif s == 2 and j == 2:
  *             for l in range (ell0, ell_max+1):
  *                     beta[l] = -nured*xi_k\             # <<<<<<<<<<<<<<
@@ -24033,7 +24033,7 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
         *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_beta.data + __pyx_t_17 * __pyx_v_beta.strides[0]) )) = __Pyx_c_quot_long__double(__Pyx_c_prod_long__double(__Pyx_c_quot_long__double(__Pyx_c_prod_long__double(__Pyx_c_prod_long__double(__Pyx_c_neg_long__double(__pyx_v_nured), __pyx_v_xi_k), __pyx_t_long_double_complex_from_parts(sqrt(((__pyx_v_l + 2.) * (__pyx_v_l - 1.))), 0)), __pyx_t_long_double_complex_from_parts(2., 0)), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_16 * __pyx_v_phi.strides[0]) )))), __pyx_t_long_double_complex_from_parts(__pyx_v_y, 0));
       }
 
-      /* "hybess.pyx":610
+      /* "src/anilos/hybess_src/hybess.pyx":611
  *                 #     beta[l] = -nured/2*xi_k\
  *                 #               *(dphi[l] - (x/y)*phi[l])
  *         elif s == 2 and j == 2:             # <<<<<<<<<<<<<<
@@ -24043,7 +24043,7 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
     }
     __pyx_L7:;
 
-    /* "hybess.pyx":596
+    /* "src/anilos/hybess_src/hybess.pyx":597
  *     if m == 0 or s == 0:
  *         return np.zeros(ell_max+1)
  *     elif m == 1:             # <<<<<<<<<<<<<<
@@ -24053,7 +24053,7 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
     goto __pyx_L4;
   }
 
-  /* "hybess.pyx":615
+  /* "src/anilos/hybess_src/hybess.pyx":616
  *                               *sqrt((l+2.)*(l-1.))/2.\
  *                               *phi[l]/y
  *     elif m == 2:             # <<<<<<<<<<<<<<
@@ -24063,7 +24063,7 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
   __pyx_t_8 = (__pyx_v_m == 2);
   if (__pyx_t_8) {
 
-    /* "hybess.pyx":616
+    /* "src/anilos/hybess_src/hybess.pyx":617
  *                               *phi[l]/y
  *     elif m == 2:
  *         if s == 1 and j == 2:             # <<<<<<<<<<<<<<
@@ -24081,7 +24081,7 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
     __pyx_L13_bool_binop_done:;
     if (__pyx_t_8) {
 
-      /* "hybess.pyx":617
+      /* "src/anilos/hybess_src/hybess.pyx":618
  *     elif m == 2:
  *         if s == 1 and j == 2:
  *             for l in range (ell0, ell_max+1):             # <<<<<<<<<<<<<<
@@ -24093,7 +24093,7 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
       for (__pyx_t_11 = __pyx_v_ell0; __pyx_t_11 < __pyx_t_15; __pyx_t_11+=1) {
         __pyx_v_l = __pyx_t_11;
 
-        /* "hybess.pyx":620
+        /* "src/anilos/hybess_src/hybess.pyx":621
  *                     beta[l] = -nured*xi_k\
  *                               *sqrt((l+2.)*(l-1.))/2.\
  *                               *phi[l]/y             # <<<<<<<<<<<<<<
@@ -24102,7 +24102,7 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
  */
         __pyx_t_16 = __pyx_v_l;
 
-        /* "hybess.pyx":618
+        /* "src/anilos/hybess_src/hybess.pyx":619
  *         if s == 1 and j == 2:
  *             for l in range (ell0, ell_max+1):
  *                     beta[l] = -nured*xi_k\             # <<<<<<<<<<<<<<
@@ -24113,7 +24113,7 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
         *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_beta.data + __pyx_t_17 * __pyx_v_beta.strides[0]) )) = __Pyx_c_quot_long__double(__Pyx_c_prod_long__double(__Pyx_c_quot_long__double(__Pyx_c_prod_long__double(__Pyx_c_prod_long__double(__Pyx_c_neg_long__double(__pyx_v_nured), __pyx_v_xi_k), __pyx_t_long_double_complex_from_parts(sqrt(((__pyx_v_l + 2.) * (__pyx_v_l - 1.))), 0)), __pyx_t_long_double_complex_from_parts(2., 0)), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_16 * __pyx_v_phi.strides[0]) )))), __pyx_t_long_double_complex_from_parts(__pyx_v_y, 0));
       }
 
-      /* "hybess.pyx":616
+      /* "src/anilos/hybess_src/hybess.pyx":617
  *                               *phi[l]/y
  *     elif m == 2:
  *         if s == 1 and j == 2:             # <<<<<<<<<<<<<<
@@ -24123,7 +24123,7 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
       goto __pyx_L12;
     }
 
-    /* "hybess.pyx":621
+    /* "src/anilos/hybess_src/hybess.pyx":622
  *                               *sqrt((l+2.)*(l-1.))/2.\
  *                               *phi[l]/y
  *         elif s == 2 and j == 2:             # <<<<<<<<<<<<<<
@@ -24141,19 +24141,19 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
     __pyx_L17_bool_binop_done:;
     if (__pyx_t_8) {
 
-      /* "hybess.pyx":622
+      /* "src/anilos/hybess_src/hybess.pyx":623
  *                               *phi[l]/y
  *         elif s == 2 and j == 2:
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)             # <<<<<<<<<<<<<<
  *             return -nured/2*xi_k\
  *                               *(np.asarray(dphi) +2*(x/y)*np.asarray(phi[0:ell_max+1]))
  */
-      __pyx_t_6 = __pyx_f_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 622, __pyx_L1_error)
+      __pyx_t_6 = __pyx_f_6anilos_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 623, __pyx_L1_error)
       __pyx_v_dphi = __pyx_t_6;
       __pyx_t_6.memview = NULL;
       __pyx_t_6.data = NULL;
 
-      /* "hybess.pyx":623
+      /* "src/anilos/hybess_src/hybess.pyx":624
  *         elif s == 2 and j == 2:
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *             return -nured/2*xi_k\             # <<<<<<<<<<<<<<
@@ -24161,22 +24161,22 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
  *             # for l in range (ell0, ell_max+1):
  */
       __pyx_t_7 = __Pyx_c_prod_long__double(__Pyx_c_quot_long__double(__Pyx_c_neg_long__double(__pyx_v_nured), __pyx_t_long_double_complex_from_parts(2, 0)), __pyx_v_xi_k);
-      __pyx_t_12 = __pyx_PyComplex_FromComplex(__pyx_t_7); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 623, __pyx_L1_error)
+      __pyx_t_12 = __pyx_PyComplex_FromComplex(__pyx_t_7); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 624, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
 
-      /* "hybess.pyx":624
+      /* "src/anilos/hybess_src/hybess.pyx":625
  *             dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *             return -nured/2*xi_k\
  *                               *(np.asarray(dphi) +2*(x/y)*np.asarray(phi[0:ell_max+1]))             # <<<<<<<<<<<<<<
  *             # for l in range (ell0, ell_max+1):
  *             #         beta[l] = -nured/2*xi_k\
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 624, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 625, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 624, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 625, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_dphi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 624, __pyx_L1_error)
+      __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_dphi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 625, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __pyx_t_1 = NULL;
       __pyx_t_10 = 0;
@@ -24197,15 +24197,15 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
         __pyx_t_5 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_10, 1+__pyx_t_10);
         __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-        if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 624, __pyx_L1_error)
+        if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 625, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       }
-      __pyx_t_3 = PyFloat_FromDouble((2.0 * (__pyx_v_x / __pyx_v_y))); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 624, __pyx_L1_error)
+      __pyx_t_3 = PyFloat_FromDouble((2.0 * (__pyx_v_x / __pyx_v_y))); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 625, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 624, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 625, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_asarray); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 624, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_asarray); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 625, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_6.data = __pyx_v_phi.data;
@@ -24226,10 +24226,10 @@ __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
     0,
     1) < 0))
 {
-    __PYX_ERR(0, 624, __pyx_L1_error)
+    __PYX_ERR(0, 625, __pyx_L1_error)
 }
 
-__pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 624, __pyx_L1_error)
+__pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 625, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __PYX_XCLEAR_MEMVIEW(&__pyx_t_6, 1);
       __pyx_t_6.memview = NULL; __pyx_t_6.data = NULL;
@@ -24252,30 +24252,30 @@ __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
         __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_10, 1+__pyx_t_10);
         __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 624, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 625, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       }
-      __pyx_t_4 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 624, __pyx_L1_error)
+      __pyx_t_4 = PyNumber_Multiply(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 625, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = PyNumber_Add(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 624, __pyx_L1_error)
+      __pyx_t_2 = PyNumber_Add(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 625, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_4 = PyNumber_Multiply(__pyx_t_12, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 624, __pyx_L1_error)
+      __pyx_t_4 = PyNumber_Multiply(__pyx_t_12, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 625, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_4, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 624, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_4, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 625, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_r = __pyx_t_6;
       __pyx_t_6.memview = NULL;
       __pyx_t_6.data = NULL;
       goto __pyx_L0;
 
-      /* "hybess.pyx":621
+      /* "src/anilos/hybess_src/hybess.pyx":622
  *                               *sqrt((l+2.)*(l-1.))/2.\
  *                               *phi[l]/y
  *         elif s == 2 and j == 2:             # <<<<<<<<<<<<<<
@@ -24285,7 +24285,7 @@ __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
     }
     __pyx_L12:;
 
-    /* "hybess.pyx":615
+    /* "src/anilos/hybess_src/hybess.pyx":616
  *                               *sqrt((l+2.)*(l-1.))/2.\
  *                               *phi[l]/y
  *     elif m == 2:             # <<<<<<<<<<<<<<
@@ -24295,7 +24295,7 @@ __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
   }
   __pyx_L4:;
 
-  /* "hybess.pyx":629
+  /* "src/anilos/hybess_src/hybess.pyx":630
  *             #                   *(dphi[l] +2*(x/y)*phi[l])
  * 
  *     return beta             # <<<<<<<<<<<<<<
@@ -24306,7 +24306,7 @@ __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
   __pyx_r = __pyx_v_beta;
   goto __pyx_L0;
 
-  /* "hybess.pyx":538
+  /* "src/anilos/hybess_src/hybess.pyx":539
  *     return epsilon
  * 
  * cdef long double complex[:] BetaComplex(long double chi,             # <<<<<<<<<<<<<<
@@ -24326,7 +24326,7 @@ __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
   __Pyx_XDECREF(__pyx_t_13);
   __pyx_r.data = NULL;
   __pyx_r.memview = NULL;
-  __Pyx_AddTraceback("hybess.BetaComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.BetaComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
   goto __pyx_L2;
   __pyx_L0:;
   if (unlikely(!__pyx_r.memview)) {
@@ -24340,7 +24340,7 @@ __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
   return __pyx_r;
 }
 
-/* "hybess.pyx":632
+/* "src/anilos/hybess_src/hybess.pyx":633
  * 
  * 
  * def epsilon(double chi,             # <<<<<<<<<<<<<<
@@ -24349,16 +24349,16 @@ __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_t_6, 1, (PyObject *(*)(char *)) __p
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6hybess_1epsilon(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6anilos_6hybess_1epsilon(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_6hybess_epsilon, "Even (electric) part of radial function \n\n    See eq. (2.40) in Phys. Rev. D 100, 123535 (2019)\n    [arXiv:1909.13687 [gr-qc]]\n\n    Parameters\n    ----------\n    chi : double\n        Comoving distance\n    s : int\n        Spin\n    j : int\n        Multipole\n    m : int\n        Magnetic number\n    ell_max : int\n        Maximum multipole\n    nu : complex\n        Fourier mode\n    calK : int\n        Curvature\n    mode : {'tensor', 'vector'}\n\n    Returns\n    -------\n    numpy_array\n    ");
-static PyMethodDef __pyx_mdef_6hybess_1epsilon = {"epsilon", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6hybess_1epsilon, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6hybess_epsilon};
-static PyObject *__pyx_pw_6hybess_1epsilon(PyObject *__pyx_self, 
+PyDoc_STRVAR(__pyx_doc_6anilos_6hybess_epsilon, "Even (electric) part of radial function \n\n    See eq. (2.40) in Phys. Rev. D 100, 123535 (2019)\n    [arXiv:1909.13687 [gr-qc]]\n\n    Parameters\n    ----------\n    chi : double\n        Comoving distance\n    s : int\n        Spin\n    j : int\n        Multipole\n    m : int\n        Magnetic number\n    ell_max : int\n        Maximum multipole\n    nu : complex\n        Fourier mode\n    calK : int\n        Curvature\n    mode : {'tensor', 'vector'}\n\n    Returns\n    -------\n    numpy_array\n    ");
+static PyMethodDef __pyx_mdef_6anilos_6hybess_1epsilon = {"epsilon", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6anilos_6hybess_1epsilon, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6anilos_6hybess_epsilon};
+static PyObject *__pyx_pw_6anilos_6hybess_1epsilon(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -24426,7 +24426,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 632, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 633, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -24434,9 +24434,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 632, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 633, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 1); __PYX_ERR(0, 632, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 1); __PYX_ERR(0, 633, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -24444,9 +24444,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 632, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 633, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 2); __PYX_ERR(0, 632, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 2); __PYX_ERR(0, 633, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -24454,9 +24454,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[3]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 632, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 633, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 3); __PYX_ERR(0, 632, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 3); __PYX_ERR(0, 633, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
@@ -24464,9 +24464,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[4]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 632, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 633, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 4); __PYX_ERR(0, 632, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 4); __PYX_ERR(0, 633, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  5:
@@ -24474,9 +24474,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[5]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 632, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 633, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 5); __PYX_ERR(0, 632, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 5); __PYX_ERR(0, 633, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  6:
@@ -24484,9 +24484,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[6]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 632, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 633, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 6); __PYX_ERR(0, 632, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 6); __PYX_ERR(0, 633, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  7:
@@ -24494,9 +24494,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[7]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 632, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 633, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 7); __PYX_ERR(0, 632, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 7); __PYX_ERR(0, 633, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  8:
@@ -24504,14 +24504,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[8]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 632, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 633, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 8); __PYX_ERR(0, 632, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, 8); __PYX_ERR(0, 633, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "epsilon") < 0)) __PYX_ERR(0, 632, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "epsilon") < 0)) __PYX_ERR(0, 633, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 9)) {
       goto __pyx_L5_argtuple_error;
@@ -24526,19 +24526,19 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[7] = __Pyx_Arg_FASTCALL(__pyx_args, 7);
       values[8] = __Pyx_Arg_FASTCALL(__pyx_args, 8);
     }
-    __pyx_v_chi = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_chi == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 632, __pyx_L3_error)
-    __pyx_v_s = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_s == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 633, __pyx_L3_error)
-    __pyx_v_j = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_j == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 633, __pyx_L3_error)
-    __pyx_v_m = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_m == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 633, __pyx_L3_error)
-    __pyx_v_ell_max = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_ell_max == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 634, __pyx_L3_error)
-    __pyx_v_nu = __Pyx_PyComplex_As___pyx_t_double_complex(values[5]); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 635, __pyx_L3_error)
-    __pyx_v_calK = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_calK == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 636, __pyx_L3_error)
-    __pyx_v_ellc = __pyx_PyFloat_AsDouble(values[7]); if (unlikely((__pyx_v_ellc == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 636, __pyx_L3_error)
+    __pyx_v_chi = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_chi == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 633, __pyx_L3_error)
+    __pyx_v_s = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_s == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 634, __pyx_L3_error)
+    __pyx_v_j = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_j == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 634, __pyx_L3_error)
+    __pyx_v_m = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_m == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 634, __pyx_L3_error)
+    __pyx_v_ell_max = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_ell_max == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 635, __pyx_L3_error)
+    __pyx_v_nu = __Pyx_PyComplex_As___pyx_t_double_complex(values[5]); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 636, __pyx_L3_error)
+    __pyx_v_calK = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_calK == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 637, __pyx_L3_error)
+    __pyx_v_ellc = __pyx_PyFloat_AsDouble(values[7]); if (unlikely((__pyx_v_ellc == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 637, __pyx_L3_error)
     __pyx_v_mode = ((PyObject*)values[8]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, __pyx_nargs); __PYX_ERR(0, 632, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("epsilon", 1, 9, 9, __pyx_nargs); __PYX_ERR(0, 633, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -24548,12 +24548,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("hybess.epsilon", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.epsilon", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_mode), (&PyUnicode_Type), 1, "mode", 1))) __PYX_ERR(0, 637, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6hybess_epsilon(__pyx_self, __pyx_v_chi, __pyx_v_s, __pyx_v_j, __pyx_v_m, __pyx_v_ell_max, __pyx_v_nu, __pyx_v_calK, __pyx_v_ellc, __pyx_v_mode);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_mode), (&PyUnicode_Type), 1, "mode", 1))) __PYX_ERR(0, 638, __pyx_L1_error)
+  __pyx_r = __pyx_pf_6anilos_6hybess_epsilon(__pyx_self, __pyx_v_chi, __pyx_v_s, __pyx_v_j, __pyx_v_m, __pyx_v_ell_max, __pyx_v_nu, __pyx_v_calK, __pyx_v_ellc, __pyx_v_mode);
 
   /* function exit code */
   goto __pyx_L0;
@@ -24570,7 +24570,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6hybess_epsilon(CYTHON_UNUSED PyObject *__pyx_self, double __pyx_v_chi, int __pyx_v_s, int __pyx_v_j, int __pyx_v_m, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, int __pyx_v_calK, double __pyx_v_ellc, PyObject *__pyx_v_mode) {
+static PyObject *__pyx_pf_6anilos_6hybess_epsilon(CYTHON_UNUSED PyObject *__pyx_self, double __pyx_v_chi, int __pyx_v_s, int __pyx_v_j, int __pyx_v_m, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, int __pyx_v_calK, double __pyx_v_ellc, PyObject *__pyx_v_mode) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -24580,7 +24580,7 @@ static PyObject *__pyx_pf_6hybess_epsilon(CYTHON_UNUSED PyObject *__pyx_self, do
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("epsilon", 1);
 
-  /* "hybess.pyx":666
+  /* "src/anilos/hybess_src/hybess.pyx":667
  *     """
  * 
  *     return EpsilonComplex(chi, s, j, m, ell_max, nu, ellc, calK, mode)             # <<<<<<<<<<<<<<
@@ -24588,8 +24588,8 @@ static PyObject *__pyx_pf_6hybess_epsilon(CYTHON_UNUSED PyObject *__pyx_self, do
  * def beta(double chi,
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6hybess_EpsilonComplex(__pyx_v_chi, __pyx_v_s, __pyx_v_j, __pyx_v_m, __pyx_v_ell_max, __pyx_t_long_double_complex_from_parts(__Pyx_CREAL(__pyx_v_nu), __Pyx_CIMAG(__pyx_v_nu)), __pyx_v_ellc, __pyx_v_calK, __pyx_v_mode); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 666, __pyx_L1_error)
-  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_t_1, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 666, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_6anilos_6hybess_EpsilonComplex(__pyx_v_chi, __pyx_v_s, __pyx_v_j, __pyx_v_m, __pyx_v_ell_max, __pyx_t_long_double_complex_from_parts(__Pyx_CREAL(__pyx_v_nu), __Pyx_CIMAG(__pyx_v_nu)), __pyx_v_ellc, __pyx_v_calK, __pyx_v_mode); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 667, __pyx_L1_error)
+  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_t_1, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 667, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_1, 1);
   __pyx_t_1.memview = NULL; __pyx_t_1.data = NULL;
@@ -24597,7 +24597,7 @@ static PyObject *__pyx_pf_6hybess_epsilon(CYTHON_UNUSED PyObject *__pyx_self, do
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "hybess.pyx":632
+  /* "src/anilos/hybess_src/hybess.pyx":633
  * 
  * 
  * def epsilon(double chi,             # <<<<<<<<<<<<<<
@@ -24609,7 +24609,7 @@ static PyObject *__pyx_pf_6hybess_epsilon(CYTHON_UNUSED PyObject *__pyx_self, do
   __pyx_L1_error:;
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_1, 1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("hybess.epsilon", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.epsilon", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -24617,7 +24617,7 @@ static PyObject *__pyx_pf_6hybess_epsilon(CYTHON_UNUSED PyObject *__pyx_self, do
   return __pyx_r;
 }
 
-/* "hybess.pyx":668
+/* "src/anilos/hybess_src/hybess.pyx":669
  *     return EpsilonComplex(chi, s, j, m, ell_max, nu, ellc, calK, mode)
  * 
  * def beta(double chi,             # <<<<<<<<<<<<<<
@@ -24626,16 +24626,16 @@ static PyObject *__pyx_pf_6hybess_epsilon(CYTHON_UNUSED PyObject *__pyx_self, do
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6hybess_3beta(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6anilos_6hybess_3beta(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_6hybess_2beta, "Odd (magnetic) part of radial function \n\n    See eq. (2.40) in Phys. Rev. D 100, 123535 (2019)\n    [arXiv:1909.13687 [gr-qc]]\n\n    Parameters\n    ----------\n    chi : double\n        Comoving distance\n    s : int\n        Spin\n    j : int\n        Multipole\n    m : int\n        Magnetic number\n    ell_max : int\n        Maximum multipole\n    nu : complex\n        Fourier mode\n    calK : int\n        Curvature\n    mode : {'tensor', 'vector'}\n\n    Returns\n    -------\n    numpy_array\n    ");
-static PyMethodDef __pyx_mdef_6hybess_3beta = {"beta", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6hybess_3beta, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6hybess_2beta};
-static PyObject *__pyx_pw_6hybess_3beta(PyObject *__pyx_self, 
+PyDoc_STRVAR(__pyx_doc_6anilos_6hybess_2beta, "Odd (magnetic) part of radial function \n\n    See eq. (2.40) in Phys. Rev. D 100, 123535 (2019)\n    [arXiv:1909.13687 [gr-qc]]\n\n    Parameters\n    ----------\n    chi : double\n        Comoving distance\n    s : int\n        Spin\n    j : int\n        Multipole\n    m : int\n        Magnetic number\n    ell_max : int\n        Maximum multipole\n    nu : complex\n        Fourier mode\n    calK : int\n        Curvature\n    mode : {'tensor', 'vector'}\n\n    Returns\n    -------\n    numpy_array\n    ");
+static PyMethodDef __pyx_mdef_6anilos_6hybess_3beta = {"beta", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6anilos_6hybess_3beta, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6anilos_6hybess_2beta};
+static PyObject *__pyx_pw_6anilos_6hybess_3beta(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -24703,7 +24703,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 668, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 669, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -24711,9 +24711,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 668, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 669, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 1); __PYX_ERR(0, 668, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 1); __PYX_ERR(0, 669, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -24721,9 +24721,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 668, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 669, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 2); __PYX_ERR(0, 668, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 2); __PYX_ERR(0, 669, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -24731,9 +24731,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[3]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 668, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 669, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 3); __PYX_ERR(0, 668, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 3); __PYX_ERR(0, 669, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
@@ -24741,9 +24741,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[4]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 668, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 669, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 4); __PYX_ERR(0, 668, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 4); __PYX_ERR(0, 669, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  5:
@@ -24751,9 +24751,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[5]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 668, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 669, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 5); __PYX_ERR(0, 668, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 5); __PYX_ERR(0, 669, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  6:
@@ -24761,9 +24761,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[6]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 668, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 669, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 6); __PYX_ERR(0, 668, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 6); __PYX_ERR(0, 669, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  7:
@@ -24771,9 +24771,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[7]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 668, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 669, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 7); __PYX_ERR(0, 668, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 7); __PYX_ERR(0, 669, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  8:
@@ -24781,14 +24781,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[8]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 668, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 669, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 8); __PYX_ERR(0, 668, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, 8); __PYX_ERR(0, 669, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "beta") < 0)) __PYX_ERR(0, 668, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "beta") < 0)) __PYX_ERR(0, 669, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 9)) {
       goto __pyx_L5_argtuple_error;
@@ -24803,19 +24803,19 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[7] = __Pyx_Arg_FASTCALL(__pyx_args, 7);
       values[8] = __Pyx_Arg_FASTCALL(__pyx_args, 8);
     }
-    __pyx_v_chi = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_chi == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 668, __pyx_L3_error)
-    __pyx_v_s = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_s == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 669, __pyx_L3_error)
-    __pyx_v_j = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_j == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 669, __pyx_L3_error)
-    __pyx_v_m = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_m == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 669, __pyx_L3_error)
-    __pyx_v_ell_max = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_ell_max == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 670, __pyx_L3_error)
-    __pyx_v_nu = __Pyx_PyComplex_As___pyx_t_double_complex(values[5]); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 671, __pyx_L3_error)
-    __pyx_v_calK = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_calK == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 672, __pyx_L3_error)
-    __pyx_v_ellc = __pyx_PyFloat_AsDouble(values[7]); if (unlikely((__pyx_v_ellc == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 673, __pyx_L3_error)
+    __pyx_v_chi = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_chi == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 669, __pyx_L3_error)
+    __pyx_v_s = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_s == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 670, __pyx_L3_error)
+    __pyx_v_j = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_j == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 670, __pyx_L3_error)
+    __pyx_v_m = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_m == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 670, __pyx_L3_error)
+    __pyx_v_ell_max = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_ell_max == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 671, __pyx_L3_error)
+    __pyx_v_nu = __Pyx_PyComplex_As___pyx_t_double_complex(values[5]); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 672, __pyx_L3_error)
+    __pyx_v_calK = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_calK == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 673, __pyx_L3_error)
+    __pyx_v_ellc = __pyx_PyFloat_AsDouble(values[7]); if (unlikely((__pyx_v_ellc == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 674, __pyx_L3_error)
     __pyx_v_mode = ((PyObject*)values[8]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, __pyx_nargs); __PYX_ERR(0, 668, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("beta", 1, 9, 9, __pyx_nargs); __PYX_ERR(0, 669, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -24825,12 +24825,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("hybess.beta", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.beta", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_mode), (&PyUnicode_Type), 1, "mode", 1))) __PYX_ERR(0, 674, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6hybess_2beta(__pyx_self, __pyx_v_chi, __pyx_v_s, __pyx_v_j, __pyx_v_m, __pyx_v_ell_max, __pyx_v_nu, __pyx_v_calK, __pyx_v_ellc, __pyx_v_mode);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_mode), (&PyUnicode_Type), 1, "mode", 1))) __PYX_ERR(0, 675, __pyx_L1_error)
+  __pyx_r = __pyx_pf_6anilos_6hybess_2beta(__pyx_self, __pyx_v_chi, __pyx_v_s, __pyx_v_j, __pyx_v_m, __pyx_v_ell_max, __pyx_v_nu, __pyx_v_calK, __pyx_v_ellc, __pyx_v_mode);
 
   /* function exit code */
   goto __pyx_L0;
@@ -24847,7 +24847,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6hybess_2beta(CYTHON_UNUSED PyObject *__pyx_self, double __pyx_v_chi, int __pyx_v_s, int __pyx_v_j, int __pyx_v_m, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, int __pyx_v_calK, double __pyx_v_ellc, PyObject *__pyx_v_mode) {
+static PyObject *__pyx_pf_6anilos_6hybess_2beta(CYTHON_UNUSED PyObject *__pyx_self, double __pyx_v_chi, int __pyx_v_s, int __pyx_v_j, int __pyx_v_m, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, int __pyx_v_calK, double __pyx_v_ellc, PyObject *__pyx_v_mode) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -24857,7 +24857,7 @@ static PyObject *__pyx_pf_6hybess_2beta(CYTHON_UNUSED PyObject *__pyx_self, doub
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("beta", 1);
 
-  /* "hybess.pyx":703
+  /* "src/anilos/hybess_src/hybess.pyx":704
  *     """
  * 
  *     return BetaComplex(chi, s, j, m, ell_max, nu, ellc, calK, mode)             # <<<<<<<<<<<<<<
@@ -24865,8 +24865,8 @@ static PyObject *__pyx_pf_6hybess_2beta(CYTHON_UNUSED PyObject *__pyx_self, doub
  * def epsbeta_for_tensor(double [:] chi_grid,
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6hybess_BetaComplex(__pyx_v_chi, __pyx_v_s, __pyx_v_j, __pyx_v_m, __pyx_v_ell_max, __pyx_t_long_double_complex_from_parts(__Pyx_CREAL(__pyx_v_nu), __Pyx_CIMAG(__pyx_v_nu)), __pyx_v_ellc, __pyx_v_calK, __pyx_v_mode); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 703, __pyx_L1_error)
-  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_t_1, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 703, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_6anilos_6hybess_BetaComplex(__pyx_v_chi, __pyx_v_s, __pyx_v_j, __pyx_v_m, __pyx_v_ell_max, __pyx_t_long_double_complex_from_parts(__Pyx_CREAL(__pyx_v_nu), __Pyx_CIMAG(__pyx_v_nu)), __pyx_v_ellc, __pyx_v_calK, __pyx_v_mode); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 704, __pyx_L1_error)
+  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_t_1, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 704, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_1, 1);
   __pyx_t_1.memview = NULL; __pyx_t_1.data = NULL;
@@ -24874,7 +24874,7 @@ static PyObject *__pyx_pf_6hybess_2beta(CYTHON_UNUSED PyObject *__pyx_self, doub
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "hybess.pyx":668
+  /* "src/anilos/hybess_src/hybess.pyx":669
  *     return EpsilonComplex(chi, s, j, m, ell_max, nu, ellc, calK, mode)
  * 
  * def beta(double chi,             # <<<<<<<<<<<<<<
@@ -24886,7 +24886,7 @@ static PyObject *__pyx_pf_6hybess_2beta(CYTHON_UNUSED PyObject *__pyx_self, doub
   __pyx_L1_error:;
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_1, 1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("hybess.beta", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.beta", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -24894,7 +24894,7 @@ static PyObject *__pyx_pf_6hybess_2beta(CYTHON_UNUSED PyObject *__pyx_self, doub
   return __pyx_r;
 }
 
-/* "hybess.pyx":705
+/* "src/anilos/hybess_src/hybess.pyx":706
  *     return BetaComplex(chi, s, j, m, ell_max, nu, ellc, calK, mode)
  * 
  * def epsbeta_for_tensor(double [:] chi_grid,             # <<<<<<<<<<<<<<
@@ -24903,16 +24903,16 @@ static PyObject *__pyx_pf_6hybess_2beta(CYTHON_UNUSED PyObject *__pyx_self, doub
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6hybess_5epsbeta_for_tensor(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6anilos_6hybess_5epsbeta_for_tensor(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_6hybess_4epsbeta_for_tensor, "Even and odd part of radial function \n\n    See eq. (2.40) in Phys. Rev. D 100, 123535 (2019)\n    [arXiv:1909.13687 [gr-qc]]\n\n    Parameters\n    ----------\n    chi_grind : array\n        Array of distances\n    ell_max : int\n        Maximum multipole\n    nu : complex\n        Fourier mode\n    ellc : float\n        Curvature radius\n    grind_length : int\n        lenght of chi_grind\n\n    Returns\n    -------\n    list\n        List containing three arrays, the radial functions\n        for temperature and polarizations multipoles\n    ");
-static PyMethodDef __pyx_mdef_6hybess_5epsbeta_for_tensor = {"epsbeta_for_tensor", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6hybess_5epsbeta_for_tensor, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6hybess_4epsbeta_for_tensor};
-static PyObject *__pyx_pw_6hybess_5epsbeta_for_tensor(PyObject *__pyx_self, 
+PyDoc_STRVAR(__pyx_doc_6anilos_6hybess_4epsbeta_for_tensor, "Even and odd part of radial function \n\n    See eq. (2.40) in Phys. Rev. D 100, 123535 (2019)\n    [arXiv:1909.13687 [gr-qc]]\n\n    Parameters\n    ----------\n    chi_grind : array\n        Array of distances\n    ell_max : int\n        Maximum multipole\n    nu : complex\n        Fourier mode\n    ellc : float\n        Curvature radius\n    grind_length : int\n        lenght of chi_grind\n\n    Returns\n    -------\n    list\n        List containing three arrays, the radial functions\n        for temperature and polarizations multipoles\n    ");
+static PyMethodDef __pyx_mdef_6anilos_6hybess_5epsbeta_for_tensor = {"epsbeta_for_tensor", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6anilos_6hybess_5epsbeta_for_tensor, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6anilos_6hybess_4epsbeta_for_tensor};
+static PyObject *__pyx_pw_6anilos_6hybess_5epsbeta_for_tensor(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -24968,7 +24968,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 705, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 706, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -24976,9 +24976,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 705, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 706, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsbeta_for_tensor", 1, 5, 5, 1); __PYX_ERR(0, 705, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsbeta_for_tensor", 1, 5, 5, 1); __PYX_ERR(0, 706, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -24986,9 +24986,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 705, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 706, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsbeta_for_tensor", 1, 5, 5, 2); __PYX_ERR(0, 705, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsbeta_for_tensor", 1, 5, 5, 2); __PYX_ERR(0, 706, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -24996,9 +24996,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[3]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 705, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 706, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsbeta_for_tensor", 1, 5, 5, 3); __PYX_ERR(0, 705, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsbeta_for_tensor", 1, 5, 5, 3); __PYX_ERR(0, 706, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
@@ -25006,14 +25006,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[4]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 705, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 706, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsbeta_for_tensor", 1, 5, 5, 4); __PYX_ERR(0, 705, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsbeta_for_tensor", 1, 5, 5, 4); __PYX_ERR(0, 706, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "epsbeta_for_tensor") < 0)) __PYX_ERR(0, 705, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "epsbeta_for_tensor") < 0)) __PYX_ERR(0, 706, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 5)) {
       goto __pyx_L5_argtuple_error;
@@ -25024,15 +25024,15 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[3] = __Pyx_Arg_FASTCALL(__pyx_args, 3);
       values[4] = __Pyx_Arg_FASTCALL(__pyx_args, 4);
     }
-    __pyx_v_chi_grid = __Pyx_PyObject_to_MemoryviewSlice_ds_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_chi_grid.memview)) __PYX_ERR(0, 705, __pyx_L3_error)
-    __pyx_v_ell_max = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_ell_max == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 706, __pyx_L3_error)
-    __pyx_v_nu = __Pyx_PyComplex_As___pyx_t_double_complex(values[2]); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 707, __pyx_L3_error)
-    __pyx_v_ellc = __pyx_PyFloat_AsDouble(values[3]); if (unlikely((__pyx_v_ellc == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 708, __pyx_L3_error)
-    __pyx_v_grid_length = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_grid_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 709, __pyx_L3_error)
+    __pyx_v_chi_grid = __Pyx_PyObject_to_MemoryviewSlice_ds_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_chi_grid.memview)) __PYX_ERR(0, 706, __pyx_L3_error)
+    __pyx_v_ell_max = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_ell_max == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 707, __pyx_L3_error)
+    __pyx_v_nu = __Pyx_PyComplex_As___pyx_t_double_complex(values[2]); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 708, __pyx_L3_error)
+    __pyx_v_ellc = __pyx_PyFloat_AsDouble(values[3]); if (unlikely((__pyx_v_ellc == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 709, __pyx_L3_error)
+    __pyx_v_grid_length = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_grid_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 710, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("epsbeta_for_tensor", 1, 5, 5, __pyx_nargs); __PYX_ERR(0, 705, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("epsbeta_for_tensor", 1, 5, 5, __pyx_nargs); __PYX_ERR(0, 706, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -25043,11 +25043,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     }
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_chi_grid, 1);
-  __Pyx_AddTraceback("hybess.epsbeta_for_tensor", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.epsbeta_for_tensor", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6hybess_4epsbeta_for_tensor(__pyx_self, __pyx_v_chi_grid, __pyx_v_ell_max, __pyx_v_nu, __pyx_v_ellc, __pyx_v_grid_length);
+  __pyx_r = __pyx_pf_6anilos_6hybess_4epsbeta_for_tensor(__pyx_self, __pyx_v_chi_grid, __pyx_v_ell_max, __pyx_v_nu, __pyx_v_ellc, __pyx_v_grid_length);
 
   /* function exit code */
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_chi_grid, 1);
@@ -25061,7 +25061,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_chi_grid, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, double __pyx_v_ellc, int __pyx_v_grid_length) {
+static PyObject *__pyx_pf_6anilos_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_chi_grid, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, double __pyx_v_ellc, int __pyx_v_grid_length) {
   __Pyx_memviewslice __pyx_v_epsilonT = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_epsilonE = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_betaB = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -25069,7 +25069,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
   __Pyx_memviewslice __pyx_v_dphi = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_d2phi = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_coef = { 0, 0, { 0 }, { 0 }, { 0 } };
-  struct __pyx_t_6hybess_Geometric_variables __pyx_v_gvar;
+  struct __pyx_t_6anilos_6hybess_Geometric_variables __pyx_v_gvar;
   __pyx_t_long_double_complex __pyx_v_nured;
   long double __pyx_v_chi;
   __pyx_t_double_complex __pyx_v_xi_k;
@@ -25108,166 +25108,166 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("epsbeta_for_tensor", 1);
 
-  /* "hybess.pyx":735
+  /* "src/anilos/hybess_src/hybess.pyx":736
  *     """
  *     cdef:
  *         long double complex[:,:] epsilonT = np.empty((grid_length, ell_max-1), dtype = np.clongdouble)             # <<<<<<<<<<<<<<
  *         long double complex[:,:] epsilonE = np.empty((grid_length, ell_max-1), dtype = np.clongdouble)
  *         long double complex[:,:] betaB = np.empty((grid_length, ell_max-1), dtype = np.clongdouble)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 735, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 736, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 735, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 736, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_grid_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 735, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_grid_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 736, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyInt_From_long((__pyx_v_ell_max - 1)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 735, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_long((__pyx_v_ell_max - 1)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 736, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 735, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 736, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1)) __PYX_ERR(0, 735, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1)) __PYX_ERR(0, 736, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_3);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3)) __PYX_ERR(0, 735, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3)) __PYX_ERR(0, 736, __pyx_L1_error);
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 735, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 736, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_4);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4)) __PYX_ERR(0, 735, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4)) __PYX_ERR(0, 736, __pyx_L1_error);
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 735, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 736, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 735, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 736, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 735, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 736, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 735, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 736, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 735, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 736, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 735, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 736, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_epsilonT = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "hybess.pyx":736
+  /* "src/anilos/hybess_src/hybess.pyx":737
  *     cdef:
  *         long double complex[:,:] epsilonT = np.empty((grid_length, ell_max-1), dtype = np.clongdouble)
  *         long double complex[:,:] epsilonE = np.empty((grid_length, ell_max-1), dtype = np.clongdouble)             # <<<<<<<<<<<<<<
  *         long double complex[:,:] betaB = np.empty((grid_length, ell_max-1), dtype = np.clongdouble)
  *         long double complex[:] phi
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 736, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 737, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_empty); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 736, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_empty); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 737, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_grid_length); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 736, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_grid_length); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 737, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_3 = __Pyx_PyInt_From_long((__pyx_v_ell_max - 1)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 736, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_long((__pyx_v_ell_max - 1)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 737, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 736, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 737, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_5);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_5)) __PYX_ERR(0, 736, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_5)) __PYX_ERR(0, 737, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_3);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3)) __PYX_ERR(0, 736, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3)) __PYX_ERR(0, 737, __pyx_L1_error);
   __pyx_t_5 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 736, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 737, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2)) __PYX_ERR(0, 736, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2)) __PYX_ERR(0, 737, __pyx_L1_error);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 736, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 737, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 736, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 737, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 736, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 737, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 736, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 737, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 736, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 737, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds___pyx_t_long_double_complex(__pyx_t_1, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 736, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds___pyx_t_long_double_complex(__pyx_t_1, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 737, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_epsilonE = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "hybess.pyx":737
+  /* "src/anilos/hybess_src/hybess.pyx":738
  *         long double complex[:,:] epsilonT = np.empty((grid_length, ell_max-1), dtype = np.clongdouble)
  *         long double complex[:,:] epsilonE = np.empty((grid_length, ell_max-1), dtype = np.clongdouble)
  *         long double complex[:,:] betaB = np.empty((grid_length, ell_max-1), dtype = np.clongdouble)             # <<<<<<<<<<<<<<
  *         long double complex[:] phi
  *         long double complex[:] dphi
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 737, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 738, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 737, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 738, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_grid_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 737, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_grid_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 738, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyInt_From_long((__pyx_v_ell_max - 1)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 737, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_long((__pyx_v_ell_max - 1)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 738, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 737, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 738, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1)) __PYX_ERR(0, 737, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1)) __PYX_ERR(0, 738, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_3);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3)) __PYX_ERR(0, 737, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3)) __PYX_ERR(0, 738, __pyx_L1_error);
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 737, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 738, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_4);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4)) __PYX_ERR(0, 737, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4)) __PYX_ERR(0, 738, __pyx_L1_error);
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 737, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 738, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 737, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 738, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 737, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 738, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 737, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 738, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 737, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 738, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 737, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 738, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_betaB = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "hybess.pyx":741
+  /* "src/anilos/hybess_src/hybess.pyx":742
  *         long double complex[:] dphi
  *         long double complex[:] d2phi
  *         double[:] coef = np.empty(ell_max - 1)             # <<<<<<<<<<<<<<
  *         Geometric_variables gvar
  *         long double complex nured = nu * ellc
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 741, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 742, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_empty); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 741, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_empty); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 742, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyInt_From_long((__pyx_v_ell_max - 1)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 741, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_long((__pyx_v_ell_max - 1)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 742, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_2 = NULL;
   __pyx_t_7 = 0;
@@ -25288,17 +25288,17 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
     __pyx_t_5 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_7, 1+__pyx_t_7);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 741, __pyx_L1_error)
+    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 742, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
-  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 741, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 742, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_coef = __pyx_t_8;
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "hybess.pyx":743
+  /* "src/anilos/hybess_src/hybess.pyx":744
  *         double[:] coef = np.empty(ell_max - 1)
  *         Geometric_variables gvar
  *         long double complex nured = nu * ellc             # <<<<<<<<<<<<<<
@@ -25308,17 +25308,17 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
   __pyx_t_9 = __Pyx_c_prod_double(__pyx_v_nu, __pyx_t_double_complex_from_parts(__pyx_v_ellc, 0));
   __pyx_v_nured = __pyx_t_long_double_complex_from_parts(__Pyx_CREAL(__pyx_t_9), __Pyx_CIMAG(__pyx_t_9));
 
-  /* "hybess.pyx":745
+  /* "src/anilos/hybess_src/hybess.pyx":746
  *         long double complex nured = nu * ellc
  *         long double chi
  *         double complex xi_k = ximoverkc(2,nured)             # <<<<<<<<<<<<<<
  *         double complex nured2 = nured * nured
  *         long double dr_over_r2
  */
-  __pyx_t_10 = __pyx_f_6hybess_ximoverkc(2, __pyx_v_nured); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 745, __pyx_L1_error)
+  __pyx_t_10 = __pyx_f_6anilos_6hybess_ximoverkc(2, __pyx_v_nured); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 746, __pyx_L1_error)
   __pyx_v_xi_k = __pyx_t_double_complex_from_parts(__Pyx_CREAL(__pyx_t_10), __Pyx_CIMAG(__pyx_t_10));
 
-  /* "hybess.pyx":746
+  /* "src/anilos/hybess_src/hybess.pyx":747
  *         long double chi
  *         double complex xi_k = ximoverkc(2,nured)
  *         double complex nured2 = nured * nured             # <<<<<<<<<<<<<<
@@ -25328,7 +25328,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
   __pyx_t_10 = __Pyx_c_prod_long__double(__pyx_v_nured, __pyx_v_nured);
   __pyx_v_nured2 = __pyx_t_double_complex_from_parts(__Pyx_CREAL(__pyx_t_10), __Pyx_CIMAG(__pyx_t_10));
 
-  /* "hybess.pyx":752
+  /* "src/anilos/hybess_src/hybess.pyx":753
  *         int l
  * 
  *     coef[0] = 3.             # <<<<<<<<<<<<<<
@@ -25338,7 +25338,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
   __pyx_t_11 = 0;
   *((double *) ( /* dim=0 */ (__pyx_v_coef.data + __pyx_t_11 * __pyx_v_coef.strides[0]) )) = 3.;
 
-  /* "hybess.pyx":753
+  /* "src/anilos/hybess_src/hybess.pyx":754
  * 
  *     coef[0] = 3.
  *     for l in range(3, ell_max+1):             # <<<<<<<<<<<<<<
@@ -25350,7 +25350,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
   for (__pyx_t_14 = 3; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
     __pyx_v_l = __pyx_t_14;
 
-    /* "hybess.pyx":754
+    /* "src/anilos/hybess_src/hybess.pyx":755
  *     coef[0] = 3.
  *     for l in range(3, ell_max+1):
  *         coef[l-2] = sqrt((l+2.) / (l-2.)) * coef[l - 3]             # <<<<<<<<<<<<<<
@@ -25362,7 +25362,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
     *((double *) ( /* dim=0 */ (__pyx_v_coef.data + __pyx_t_15 * __pyx_v_coef.strides[0]) )) = (sqrt(((__pyx_v_l + 2.) / (__pyx_v_l - 2.))) * (*((double *) ( /* dim=0 */ (__pyx_v_coef.data + __pyx_t_11 * __pyx_v_coef.strides[0]) ))));
   }
 
-  /* "hybess.pyx":756
+  /* "src/anilos/hybess_src/hybess.pyx":757
  *         coef[l-2] = sqrt((l+2.) / (l-2.)) * coef[l - 3]
  * 
  *     for i in range (grid_length):             # <<<<<<<<<<<<<<
@@ -25374,7 +25374,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
   for (__pyx_t_17 = 0; __pyx_t_17 < __pyx_t_16; __pyx_t_17+=1) {
     __pyx_v_i = __pyx_t_17;
 
-    /* "hybess.pyx":757
+    /* "src/anilos/hybess_src/hybess.pyx":758
  * 
  *     for i in range (grid_length):
  *         chi = chi_grid[i]             # <<<<<<<<<<<<<<
@@ -25384,7 +25384,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
     __pyx_t_11 = __pyx_v_i;
     __pyx_v_chi = (*((double *) ( /* dim=0 */ (__pyx_v_chi_grid.data + __pyx_t_11 * __pyx_v_chi_grid.strides[0]) )));
 
-    /* "hybess.pyx":758
+    /* "src/anilos/hybess_src/hybess.pyx":759
  *     for i in range (grid_length):
  *         chi = chi_grid[i]
  *         gvar.r = sinhl(chi/ellc)             # <<<<<<<<<<<<<<
@@ -25393,7 +25393,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
  */
     __pyx_v_gvar.r = sinhl((__pyx_v_chi / ((long double)__pyx_v_ellc)));
 
-    /* "hybess.pyx":759
+    /* "src/anilos/hybess_src/hybess.pyx":760
  *         chi = chi_grid[i]
  *         gvar.r = sinhl(chi/ellc)
  *         gvar.dr_over_r = coshl(chi/ellc) / gvar.r             # <<<<<<<<<<<<<<
@@ -25402,7 +25402,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
  */
     __pyx_v_gvar.dr_over_r = (coshl((__pyx_v_chi / ((long double)__pyx_v_ellc))) / __pyx_v_gvar.r);
 
-    /* "hybess.pyx":760
+    /* "src/anilos/hybess_src/hybess.pyx":761
  *         gvar.r = sinhl(chi/ellc)
  *         gvar.dr_over_r = coshl(chi/ellc) / gvar.r
  *         dr_over_r2 = gvar.dr_over_r * gvar.dr_over_r             # <<<<<<<<<<<<<<
@@ -25411,7 +25411,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
  */
     __pyx_v_dr_over_r2 = (__pyx_v_gvar.dr_over_r * __pyx_v_gvar.dr_over_r);
 
-    /* "hybess.pyx":761
+    /* "src/anilos/hybess_src/hybess.pyx":762
  *         gvar.dr_over_r = coshl(chi/ellc) / gvar.r
  *         dr_over_r2 = gvar.dr_over_r * gvar.dr_over_r
  *         r2 = gvar.r * gvar.r             # <<<<<<<<<<<<<<
@@ -25420,46 +25420,46 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
  */
     __pyx_v_r2 = (__pyx_v_gvar.r * __pyx_v_gvar.r);
 
-    /* "hybess.pyx":762
+    /* "src/anilos/hybess_src/hybess.pyx":763
  *         dr_over_r2 = gvar.dr_over_r * gvar.dr_over_r
  *         r2 = gvar.r * gvar.r
  *         phi =  HyperBesselComplex(chi/ellc, nured ,ell_max,  gvar)             # <<<<<<<<<<<<<<
  *         dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *         d2phi = HyperBesselPrime2Complex(nured,ell_max,phi, dphi, gvar)
  */
-    __pyx_t_18 = __pyx_f_6hybess_HyperBesselComplex((__pyx_v_chi / ((long double)__pyx_v_ellc)), __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_18.memview)) __PYX_ERR(0, 762, __pyx_L1_error)
+    __pyx_t_18 = __pyx_f_6anilos_6hybess_HyperBesselComplex((__pyx_v_chi / ((long double)__pyx_v_ellc)), __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_18.memview)) __PYX_ERR(0, 763, __pyx_L1_error)
     __PYX_XCLEAR_MEMVIEW(&__pyx_v_phi, 1);
     __pyx_v_phi = __pyx_t_18;
     __pyx_t_18.memview = NULL;
     __pyx_t_18.data = NULL;
 
-    /* "hybess.pyx":763
+    /* "src/anilos/hybess_src/hybess.pyx":764
  *         r2 = gvar.r * gvar.r
  *         phi =  HyperBesselComplex(chi/ellc, nured ,ell_max,  gvar)
  *         dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)             # <<<<<<<<<<<<<<
  *         d2phi = HyperBesselPrime2Complex(nured,ell_max,phi, dphi, gvar)
  *         for j in range(2, ell_max+1):
  */
-    __pyx_t_18 = __pyx_f_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_18.memview)) __PYX_ERR(0, 763, __pyx_L1_error)
+    __pyx_t_18 = __pyx_f_6anilos_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_18.memview)) __PYX_ERR(0, 764, __pyx_L1_error)
     __PYX_XCLEAR_MEMVIEW(&__pyx_v_dphi, 1);
     __pyx_v_dphi = __pyx_t_18;
     __pyx_t_18.memview = NULL;
     __pyx_t_18.data = NULL;
 
-    /* "hybess.pyx":764
+    /* "src/anilos/hybess_src/hybess.pyx":765
  *         phi =  HyperBesselComplex(chi/ellc, nured ,ell_max,  gvar)
  *         dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *         d2phi = HyperBesselPrime2Complex(nured,ell_max,phi, dphi, gvar)             # <<<<<<<<<<<<<<
  *         for j in range(2, ell_max+1):
  *             epsilonT[i][j-2] = xi_k* coef[j-2] *phi[j]/r2
  */
-    __pyx_t_18 = __pyx_f_6hybess_HyperBesselPrime2Complex(__pyx_v_nured, __pyx_v_ell_max, __pyx_v_phi, __pyx_v_dphi, __pyx_v_gvar); if (unlikely(!__pyx_t_18.memview)) __PYX_ERR(0, 764, __pyx_L1_error)
+    __pyx_t_18 = __pyx_f_6anilos_6hybess_HyperBesselPrime2Complex(__pyx_v_nured, __pyx_v_ell_max, __pyx_v_phi, __pyx_v_dphi, __pyx_v_gvar); if (unlikely(!__pyx_t_18.memview)) __PYX_ERR(0, 765, __pyx_L1_error)
     __PYX_XCLEAR_MEMVIEW(&__pyx_v_d2phi, 1);
     __pyx_v_d2phi = __pyx_t_18;
     __pyx_t_18.memview = NULL;
     __pyx_t_18.data = NULL;
 
-    /* "hybess.pyx":765
+    /* "src/anilos/hybess_src/hybess.pyx":766
  *         dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *         d2phi = HyperBesselPrime2Complex(nured,ell_max,phi, dphi, gvar)
  *         for j in range(2, ell_max+1):             # <<<<<<<<<<<<<<
@@ -25471,7 +25471,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
     for (__pyx_t_19 = 2; __pyx_t_19 < __pyx_t_13; __pyx_t_19+=1) {
       __pyx_v_j = __pyx_t_19;
 
-      /* "hybess.pyx":766
+      /* "src/anilos/hybess_src/hybess.pyx":767
  *         d2phi = HyperBesselPrime2Complex(nured,ell_max,phi, dphi, gvar)
  *         for j in range(2, ell_max+1):
  *             epsilonT[i][j-2] = xi_k* coef[j-2] *phi[j]/r2             # <<<<<<<<<<<<<<
@@ -25485,7 +25485,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
       __pyx_t_20 = (__pyx_v_j - 2);
       *((__pyx_t_long_double_complex *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_epsilonT.data + __pyx_t_15 * __pyx_v_epsilonT.strides[0]) ) + __pyx_t_20 * __pyx_v_epsilonT.strides[1]) )) = __Pyx_c_quot_long__double(__Pyx_c_prod_long__double(__pyx_t_long_double_complex_from_parts(__Pyx_CREAL(__pyx_t_9), __Pyx_CIMAG(__pyx_t_9)), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_11 * __pyx_v_phi.strides[0]) )))), __pyx_t_long_double_complex_from_parts(__pyx_v_r2, 0));
 
-      /* "hybess.pyx":767
+      /* "src/anilos/hybess_src/hybess.pyx":768
  *         for j in range(2, ell_max+1):
  *             epsilonT[i][j-2] = xi_k* coef[j-2] *phi[j]/r2
  *             epsilonE[i][j-2] = (xi_k/4.) *(d2phi[j] +4.* gvar.dr_over_r * dphi[j]\             # <<<<<<<<<<<<<<
@@ -25496,7 +25496,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
       __pyx_t_11 = __pyx_v_j;
       __pyx_t_20 = __pyx_v_j;
 
-      /* "hybess.pyx":769
+      /* "src/anilos/hybess_src/hybess.pyx":770
  *             epsilonE[i][j-2] = (xi_k/4.) *(d2phi[j] +4.* gvar.dr_over_r * dphi[j]\
  *                              + (2. * dr_over_r2 + 1. - nured2)\
  *                               *phi[j])             # <<<<<<<<<<<<<<
@@ -25505,7 +25505,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
  */
       __pyx_t_15 = __pyx_v_j;
 
-      /* "hybess.pyx":767
+      /* "src/anilos/hybess_src/hybess.pyx":768
  *         for j in range(2, ell_max+1):
  *             epsilonT[i][j-2] = xi_k* coef[j-2] *phi[j]/r2
  *             epsilonE[i][j-2] = (xi_k/4.) *(d2phi[j] +4.* gvar.dr_over_r * dphi[j]\             # <<<<<<<<<<<<<<
@@ -25516,7 +25516,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
       __pyx_t_22 = (__pyx_v_j - 2);
       *((__pyx_t_long_double_complex *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_epsilonE.data + __pyx_t_21 * __pyx_v_epsilonE.strides[0]) ) + __pyx_t_22 * __pyx_v_epsilonE.strides[1]) )) = __Pyx_c_prod_long__double(__pyx_t_long_double_complex_from_parts(__Pyx_CREAL(__pyx_t_9), __Pyx_CIMAG(__pyx_t_9)), __Pyx_c_sum_long__double(__Pyx_c_sum_long__double((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_d2phi.data + __pyx_t_11 * __pyx_v_d2phi.strides[0]) ))), __Pyx_c_prod_long__double(__pyx_t_long_double_complex_from_parts((4. * __pyx_v_gvar.dr_over_r), 0), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_dphi.data + __pyx_t_20 * __pyx_v_dphi.strides[0]) ))))), __Pyx_c_prod_long__double(__Pyx_c_diff_long__double(__pyx_t_long_double_complex_from_parts(((2. * __pyx_v_dr_over_r2) + 1.), 0), __pyx_t_long_double_complex_from_parts(__Pyx_CREAL(__pyx_v_nured2), __Pyx_CIMAG(__pyx_v_nured2))), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_15 * __pyx_v_phi.strides[0]) ))))));
 
-      /* "hybess.pyx":770
+      /* "src/anilos/hybess_src/hybess.pyx":771
  *                              + (2. * dr_over_r2 + 1. - nured2)\
  *                               *phi[j])
  *             betaB[i][j-2] = -nured/2. * xi_k *(dphi[j] + 2. * gvar.dr_over_r * phi[j])             # <<<<<<<<<<<<<<
@@ -25531,7 +25531,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
     }
   }
 
-  /* "hybess.pyx":772
+  /* "src/anilos/hybess_src/hybess.pyx":773
  *             betaB[i][j-2] = -nured/2. * xi_k *(dphi[j] + 2. * gvar.dr_over_r * phi[j])
  * 
  *     return [epsilonT, epsilonE, betaB]             # <<<<<<<<<<<<<<
@@ -25539,20 +25539,20 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
  * def epsbeta_for_vector(double [:] chi_grid, int ell_max, double complex nu, double ellc, int grid_length):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_epsilonT, 2, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 772, __pyx_L1_error)
+  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_epsilonT, 2, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 773, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_epsilonE, 2, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 772, __pyx_L1_error)
+  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_epsilonE, 2, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 773, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_betaB, 2, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 772, __pyx_L1_error)
+  __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_betaB, 2, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 773, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = PyList_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 772, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 773, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_5);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 0, __pyx_t_5)) __PYX_ERR(0, 772, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 0, __pyx_t_5)) __PYX_ERR(0, 773, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_3);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 1, __pyx_t_3)) __PYX_ERR(0, 772, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 1, __pyx_t_3)) __PYX_ERR(0, 773, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_4);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 2, __pyx_t_4)) __PYX_ERR(0, 772, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 2, __pyx_t_4)) __PYX_ERR(0, 773, __pyx_L1_error);
   __pyx_t_5 = 0;
   __pyx_t_3 = 0;
   __pyx_t_4 = 0;
@@ -25560,7 +25560,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "hybess.pyx":705
+  /* "src/anilos/hybess_src/hybess.pyx":706
  *     return BetaComplex(chi, s, j, m, ell_max, nu, ellc, calK, mode)
  * 
  * def epsbeta_for_tensor(double [:] chi_grid,             # <<<<<<<<<<<<<<
@@ -25578,7 +25578,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_6, 1);
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_8, 1);
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_18, 1);
-  __Pyx_AddTraceback("hybess.epsbeta_for_tensor", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.epsbeta_for_tensor", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_epsilonT, 1);
@@ -25593,7 +25593,7 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
   return __pyx_r;
 }
 
-/* "hybess.pyx":774
+/* "src/anilos/hybess_src/hybess.pyx":775
  *     return [epsilonT, epsilonE, betaB]
  * 
  * def epsbeta_for_vector(double [:] chi_grid, int ell_max, double complex nu, double ellc, int grid_length):             # <<<<<<<<<<<<<<
@@ -25602,16 +25602,16 @@ static PyObject *__pyx_pf_6hybess_4epsbeta_for_tensor(CYTHON_UNUSED PyObject *__
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6hybess_7epsbeta_for_vector(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6anilos_6hybess_7epsbeta_for_vector(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_6hybess_6epsbeta_for_vector, "\n    Even and odd part of radial function \n\n    See eq. (2.40) in Phys. Rev. D 100,  123535 (2019)\n    [arXiv:1909.13687 [gr-qc]]\n\n    Parameters\n    ----------\n    chi_grind : array\n        Array of distances\n    ell_max : int\n        Maximum multipole\n    nu : complex\n        Fourier mode\n    ellc : float\n        Curvature radius\n    grind_length : int\n        lenght of chi_grind\n\n    Returns\n    -------\n    list\n        List containing four arrays, the radial functions\n        for temperature (two arrays) and polarizations multipoles\n    ");
-static PyMethodDef __pyx_mdef_6hybess_7epsbeta_for_vector = {"epsbeta_for_vector", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6hybess_7epsbeta_for_vector, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6hybess_6epsbeta_for_vector};
-static PyObject *__pyx_pw_6hybess_7epsbeta_for_vector(PyObject *__pyx_self, 
+PyDoc_STRVAR(__pyx_doc_6anilos_6hybess_6epsbeta_for_vector, "\n    Even and odd part of radial function \n\n    See eq. (2.40) in Phys. Rev. D 100,  123535 (2019)\n    [arXiv:1909.13687 [gr-qc]]\n\n    Parameters\n    ----------\n    chi_grind : array\n        Array of distances\n    ell_max : int\n        Maximum multipole\n    nu : complex\n        Fourier mode\n    ellc : float\n        Curvature radius\n    grind_length : int\n        lenght of chi_grind\n\n    Returns\n    -------\n    list\n        List containing four arrays, the radial functions\n        for temperature (two arrays) and polarizations multipoles\n    ");
+static PyMethodDef __pyx_mdef_6anilos_6hybess_7epsbeta_for_vector = {"epsbeta_for_vector", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6anilos_6hybess_7epsbeta_for_vector, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6anilos_6hybess_6epsbeta_for_vector};
+static PyObject *__pyx_pw_6anilos_6hybess_7epsbeta_for_vector(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -25667,7 +25667,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 774, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 775, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -25675,9 +25675,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 774, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 775, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsbeta_for_vector", 1, 5, 5, 1); __PYX_ERR(0, 774, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsbeta_for_vector", 1, 5, 5, 1); __PYX_ERR(0, 775, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -25685,9 +25685,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 774, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 775, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsbeta_for_vector", 1, 5, 5, 2); __PYX_ERR(0, 774, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsbeta_for_vector", 1, 5, 5, 2); __PYX_ERR(0, 775, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -25695,9 +25695,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[3]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 774, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 775, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsbeta_for_vector", 1, 5, 5, 3); __PYX_ERR(0, 774, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsbeta_for_vector", 1, 5, 5, 3); __PYX_ERR(0, 775, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
@@ -25705,14 +25705,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[4]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 774, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 775, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("epsbeta_for_vector", 1, 5, 5, 4); __PYX_ERR(0, 774, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("epsbeta_for_vector", 1, 5, 5, 4); __PYX_ERR(0, 775, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "epsbeta_for_vector") < 0)) __PYX_ERR(0, 774, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "epsbeta_for_vector") < 0)) __PYX_ERR(0, 775, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 5)) {
       goto __pyx_L5_argtuple_error;
@@ -25723,15 +25723,15 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[3] = __Pyx_Arg_FASTCALL(__pyx_args, 3);
       values[4] = __Pyx_Arg_FASTCALL(__pyx_args, 4);
     }
-    __pyx_v_chi_grid = __Pyx_PyObject_to_MemoryviewSlice_ds_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_chi_grid.memview)) __PYX_ERR(0, 774, __pyx_L3_error)
-    __pyx_v_ell_max = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_ell_max == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 774, __pyx_L3_error)
-    __pyx_v_nu = __Pyx_PyComplex_As___pyx_t_double_complex(values[2]); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 774, __pyx_L3_error)
-    __pyx_v_ellc = __pyx_PyFloat_AsDouble(values[3]); if (unlikely((__pyx_v_ellc == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 774, __pyx_L3_error)
-    __pyx_v_grid_length = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_grid_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 774, __pyx_L3_error)
+    __pyx_v_chi_grid = __Pyx_PyObject_to_MemoryviewSlice_ds_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_chi_grid.memview)) __PYX_ERR(0, 775, __pyx_L3_error)
+    __pyx_v_ell_max = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_ell_max == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 775, __pyx_L3_error)
+    __pyx_v_nu = __Pyx_PyComplex_As___pyx_t_double_complex(values[2]); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 775, __pyx_L3_error)
+    __pyx_v_ellc = __pyx_PyFloat_AsDouble(values[3]); if (unlikely((__pyx_v_ellc == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 775, __pyx_L3_error)
+    __pyx_v_grid_length = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_grid_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 775, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("epsbeta_for_vector", 1, 5, 5, __pyx_nargs); __PYX_ERR(0, 774, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("epsbeta_for_vector", 1, 5, 5, __pyx_nargs); __PYX_ERR(0, 775, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -25742,11 +25742,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     }
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_chi_grid, 1);
-  __Pyx_AddTraceback("hybess.epsbeta_for_vector", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.epsbeta_for_vector", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6hybess_6epsbeta_for_vector(__pyx_self, __pyx_v_chi_grid, __pyx_v_ell_max, __pyx_v_nu, __pyx_v_ellc, __pyx_v_grid_length);
+  __pyx_r = __pyx_pf_6anilos_6hybess_6epsbeta_for_vector(__pyx_self, __pyx_v_chi_grid, __pyx_v_ell_max, __pyx_v_nu, __pyx_v_ellc, __pyx_v_grid_length);
 
   /* function exit code */
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_chi_grid, 1);
@@ -25760,7 +25760,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_chi_grid, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, double __pyx_v_ellc, int __pyx_v_grid_length) {
+static PyObject *__pyx_pf_6anilos_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_chi_grid, int __pyx_v_ell_max, __pyx_t_double_complex __pyx_v_nu, double __pyx_v_ellc, int __pyx_v_grid_length) {
   __Pyx_memviewslice __pyx_v_epsilonT = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_epsilonT2 = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_epsilonE = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -25770,7 +25770,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
   __Pyx_memviewslice __pyx_v_coef = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_coef2 = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_coef3 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  struct __pyx_t_6hybess_Geometric_variables __pyx_v_gvar;
+  struct __pyx_t_6anilos_6hybess_Geometric_variables __pyx_v_gvar;
   __pyx_t_long_double_complex __pyx_v_nured;
   long double __pyx_v_chi;
   __pyx_t_double_complex __pyx_v_xi_k2;
@@ -25807,215 +25807,215 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("epsbeta_for_vector", 1);
 
-  /* "hybess.pyx":801
+  /* "src/anilos/hybess_src/hybess.pyx":802
  *     """
  *     cdef:
  *         long double complex[:,:] epsilonT = np.empty((grid_length, ell_max), dtype = np.clongdouble)             # <<<<<<<<<<<<<<
  *         long double complex[:,:] epsilonT2 = np.empty((grid_length, ell_max), dtype = np.clongdouble)
  *         long double complex[:,:] epsilonE = np.empty((grid_length, ell_max), dtype = np.clongdouble)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 801, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 802, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 801, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 802, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_grid_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 801, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_grid_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 802, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ell_max); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 801, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ell_max); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 802, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 801, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 802, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1)) __PYX_ERR(0, 801, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1)) __PYX_ERR(0, 802, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_3);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3)) __PYX_ERR(0, 801, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3)) __PYX_ERR(0, 802, __pyx_L1_error);
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 801, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 802, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_4);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4)) __PYX_ERR(0, 801, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4)) __PYX_ERR(0, 802, __pyx_L1_error);
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 801, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 802, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 801, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 802, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 801, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 802, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 801, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 802, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 801, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 802, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 801, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 802, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_epsilonT = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "hybess.pyx":802
+  /* "src/anilos/hybess_src/hybess.pyx":803
  *     cdef:
  *         long double complex[:,:] epsilonT = np.empty((grid_length, ell_max), dtype = np.clongdouble)
  *         long double complex[:,:] epsilonT2 = np.empty((grid_length, ell_max), dtype = np.clongdouble)             # <<<<<<<<<<<<<<
  *         long double complex[:,:] epsilonE = np.empty((grid_length, ell_max), dtype = np.clongdouble)
  *         long double complex[:,:] betaB = np.empty((grid_length, ell_max), dtype = np.clongdouble)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 802, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 803, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_empty); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 802, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_empty); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 803, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_grid_length); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 802, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_grid_length); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 803, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ell_max); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 802, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ell_max); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 803, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 802, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 803, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_5);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_5)) __PYX_ERR(0, 802, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_5)) __PYX_ERR(0, 803, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_3);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3)) __PYX_ERR(0, 802, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3)) __PYX_ERR(0, 803, __pyx_L1_error);
   __pyx_t_5 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 802, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 803, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2)) __PYX_ERR(0, 802, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2)) __PYX_ERR(0, 803, __pyx_L1_error);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 802, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 803, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 802, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 803, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 802, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 803, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 802, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 803, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 802, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 803, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds___pyx_t_long_double_complex(__pyx_t_1, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 802, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds___pyx_t_long_double_complex(__pyx_t_1, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 803, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_epsilonT2 = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "hybess.pyx":803
+  /* "src/anilos/hybess_src/hybess.pyx":804
  *         long double complex[:,:] epsilonT = np.empty((grid_length, ell_max), dtype = np.clongdouble)
  *         long double complex[:,:] epsilonT2 = np.empty((grid_length, ell_max), dtype = np.clongdouble)
  *         long double complex[:,:] epsilonE = np.empty((grid_length, ell_max), dtype = np.clongdouble)             # <<<<<<<<<<<<<<
  *         long double complex[:,:] betaB = np.empty((grid_length, ell_max), dtype = np.clongdouble)
  *         long double complex[:] phi
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 803, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 804, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 803, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 804, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_grid_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 803, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_grid_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 804, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ell_max); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 803, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ell_max); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 804, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 803, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 804, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1)) __PYX_ERR(0, 803, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1)) __PYX_ERR(0, 804, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_3);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3)) __PYX_ERR(0, 803, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3)) __PYX_ERR(0, 804, __pyx_L1_error);
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 803, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 804, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_4);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4)) __PYX_ERR(0, 803, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4)) __PYX_ERR(0, 804, __pyx_L1_error);
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 803, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 804, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 803, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 804, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 803, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 804, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 803, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 804, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 803, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 804, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 803, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds___pyx_t_long_double_complex(__pyx_t_5, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 804, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_epsilonE = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "hybess.pyx":804
+  /* "src/anilos/hybess_src/hybess.pyx":805
  *         long double complex[:,:] epsilonT2 = np.empty((grid_length, ell_max), dtype = np.clongdouble)
  *         long double complex[:,:] epsilonE = np.empty((grid_length, ell_max), dtype = np.clongdouble)
  *         long double complex[:,:] betaB = np.empty((grid_length, ell_max), dtype = np.clongdouble)             # <<<<<<<<<<<<<<
  *         long double complex[:] phi
  *         long double complex[:] dphi
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_empty); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_empty); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_grid_length); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_grid_length); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ell_max); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ell_max); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_5);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_5)) __PYX_ERR(0, 804, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_5)) __PYX_ERR(0, 805, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_3);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3)) __PYX_ERR(0, 804, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3)) __PYX_ERR(0, 805, __pyx_L1_error);
   __pyx_t_5 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2)) __PYX_ERR(0, 804, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2)) __PYX_ERR(0, 805, __pyx_L1_error);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 804, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds___pyx_t_long_double_complex(__pyx_t_1, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 804, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dsds___pyx_t_long_double_complex(__pyx_t_1, PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_betaB = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "hybess.pyx":807
+  /* "src/anilos/hybess_src/hybess.pyx":808
  *         long double complex[:] phi
  *         long double complex[:] dphi
  *         double[:] coef = np.empty(ell_max)             # <<<<<<<<<<<<<<
  *         double[:] coef2 = np.empty(ell_max)
  *         double[:] coef3 = np.empty(ell_max)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 807, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 808, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_empty); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 807, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_empty); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 808, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_ell_max); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 807, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_ell_max); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 808, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = NULL;
   __pyx_t_7 = 0;
@@ -26036,29 +26036,29 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_7, 1+__pyx_t_7);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 807, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 808, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
-  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_t_1, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 807, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_t_1, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 808, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_coef = __pyx_t_8;
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "hybess.pyx":808
+  /* "src/anilos/hybess_src/hybess.pyx":809
  *         long double complex[:] dphi
  *         double[:] coef = np.empty(ell_max)
  *         double[:] coef2 = np.empty(ell_max)             # <<<<<<<<<<<<<<
  *         double[:] coef3 = np.empty(ell_max)
  *         Geometric_variables gvar
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 808, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 809, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 808, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_empty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 809, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ell_max); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 808, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ell_max); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 809, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   __pyx_t_7 = 0;
@@ -26079,29 +26079,29 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_7, 1+__pyx_t_7);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 808, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 809, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
-  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_t_1, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 808, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_t_1, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 809, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_coef2 = __pyx_t_8;
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "hybess.pyx":809
+  /* "src/anilos/hybess_src/hybess.pyx":810
  *         double[:] coef = np.empty(ell_max)
  *         double[:] coef2 = np.empty(ell_max)
  *         double[:] coef3 = np.empty(ell_max)             # <<<<<<<<<<<<<<
  *         Geometric_variables gvar
  *         long double complex nured = nu * ellc
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 809, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 810, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_empty); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 809, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_empty); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 810, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_ell_max); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 809, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_ell_max); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 810, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = NULL;
   __pyx_t_7 = 0;
@@ -26122,17 +26122,17 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_7, 1+__pyx_t_7);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 809, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 810, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
-  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_t_1, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 809, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds_double(__pyx_t_1, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 810, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_coef3 = __pyx_t_8;
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "hybess.pyx":811
+  /* "src/anilos/hybess_src/hybess.pyx":812
  *         double[:] coef3 = np.empty(ell_max)
  *         Geometric_variables gvar
  *         long double complex nured = nu * ellc             # <<<<<<<<<<<<<<
@@ -26142,27 +26142,27 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
   __pyx_t_9 = __Pyx_c_prod_double(__pyx_v_nu, __pyx_t_double_complex_from_parts(__pyx_v_ellc, 0));
   __pyx_v_nured = __pyx_t_long_double_complex_from_parts(__Pyx_CREAL(__pyx_t_9), __Pyx_CIMAG(__pyx_t_9));
 
-  /* "hybess.pyx":813
+  /* "src/anilos/hybess_src/hybess.pyx":814
  *         long double complex nured = nu * ellc
  *         long double chi
  *         double complex xi_k2 = ximoverkc(2,nured)             # <<<<<<<<<<<<<<
  *         double complex xi_k1 = ximoverkc(1,nured)
  *         double complex nured2 = nured * nured
  */
-  __pyx_t_10 = __pyx_f_6hybess_ximoverkc(2, __pyx_v_nured); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 813, __pyx_L1_error)
+  __pyx_t_10 = __pyx_f_6anilos_6hybess_ximoverkc(2, __pyx_v_nured); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 814, __pyx_L1_error)
   __pyx_v_xi_k2 = __pyx_t_double_complex_from_parts(__Pyx_CREAL(__pyx_t_10), __Pyx_CIMAG(__pyx_t_10));
 
-  /* "hybess.pyx":814
+  /* "src/anilos/hybess_src/hybess.pyx":815
  *         long double chi
  *         double complex xi_k2 = ximoverkc(2,nured)
  *         double complex xi_k1 = ximoverkc(1,nured)             # <<<<<<<<<<<<<<
  *         double complex nured2 = nured * nured
  *         Py_ssize_t i, j
  */
-  __pyx_t_10 = __pyx_f_6hybess_ximoverkc(1, __pyx_v_nured); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 814, __pyx_L1_error)
+  __pyx_t_10 = __pyx_f_6anilos_6hybess_ximoverkc(1, __pyx_v_nured); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 815, __pyx_L1_error)
   __pyx_v_xi_k1 = __pyx_t_double_complex_from_parts(__Pyx_CREAL(__pyx_t_10), __Pyx_CIMAG(__pyx_t_10));
 
-  /* "hybess.pyx":815
+  /* "src/anilos/hybess_src/hybess.pyx":816
  *         double complex xi_k2 = ximoverkc(2,nured)
  *         double complex xi_k1 = ximoverkc(1,nured)
  *         double complex nured2 = nured * nured             # <<<<<<<<<<<<<<
@@ -26172,7 +26172,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
   __pyx_t_10 = __Pyx_c_prod_long__double(__pyx_v_nured, __pyx_v_nured);
   __pyx_v_nured2 = __pyx_t_double_complex_from_parts(__Pyx_CREAL(__pyx_t_10), __Pyx_CIMAG(__pyx_t_10));
 
-  /* "hybess.pyx":819
+  /* "src/anilos/hybess_src/hybess.pyx":820
  *         int l
  * 
  *     coef[0] = 1.             # <<<<<<<<<<<<<<
@@ -26182,7 +26182,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
   __pyx_t_11 = 0;
   *((double *) ( /* dim=0 */ (__pyx_v_coef.data + __pyx_t_11 * __pyx_v_coef.strides[0]) )) = 1.;
 
-  /* "hybess.pyx":820
+  /* "src/anilos/hybess_src/hybess.pyx":821
  * 
  *     coef[0] = 1.
  *     coef2[0] = sqrt(3.)             # <<<<<<<<<<<<<<
@@ -26192,7 +26192,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
   __pyx_t_11 = 0;
   *((double *) ( /* dim=0 */ (__pyx_v_coef2.data + __pyx_t_11 * __pyx_v_coef2.strides[0]) )) = sqrt(3.);
 
-  /* "hybess.pyx":821
+  /* "src/anilos/hybess_src/hybess.pyx":822
  *     coef[0] = 1.
  *     coef2[0] = sqrt(3.)
  *     coef3[0] = 0.             # <<<<<<<<<<<<<<
@@ -26202,7 +26202,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
   __pyx_t_11 = 0;
   *((double *) ( /* dim=0 */ (__pyx_v_coef3.data + __pyx_t_11 * __pyx_v_coef3.strides[0]) )) = 0.;
 
-  /* "hybess.pyx":822
+  /* "src/anilos/hybess_src/hybess.pyx":823
  *     coef2[0] = sqrt(3.)
  *     coef3[0] = 0.
  *     for l in range (2, ell_max + 1):             # <<<<<<<<<<<<<<
@@ -26214,7 +26214,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
   for (__pyx_t_14 = 2; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
     __pyx_v_l = __pyx_t_14;
 
-    /* "hybess.pyx":823
+    /* "src/anilos/hybess_src/hybess.pyx":824
  *     coef3[0] = 0.
  *     for l in range (2, ell_max + 1):
  *         coef[l - 1] = sqrt( (l + 1.) / (l - 1.) ) * coef[l - 2]             # <<<<<<<<<<<<<<
@@ -26225,7 +26225,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
     __pyx_t_15 = (__pyx_v_l - 1);
     *((double *) ( /* dim=0 */ (__pyx_v_coef.data + __pyx_t_15 * __pyx_v_coef.strides[0]) )) = (sqrt(((__pyx_v_l + 1.) / (__pyx_v_l - 1.))) * (*((double *) ( /* dim=0 */ (__pyx_v_coef.data + __pyx_t_11 * __pyx_v_coef.strides[0]) ))));
 
-    /* "hybess.pyx":824
+    /* "src/anilos/hybess_src/hybess.pyx":825
  *     for l in range (2, ell_max + 1):
  *         coef[l - 1] = sqrt( (l + 1.) / (l - 1.) ) * coef[l - 2]
  *         coef2[l - 1] = sqrt(3.) * coef[l - 1]             # <<<<<<<<<<<<<<
@@ -26236,7 +26236,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
     __pyx_t_15 = (__pyx_v_l - 1);
     *((double *) ( /* dim=0 */ (__pyx_v_coef2.data + __pyx_t_15 * __pyx_v_coef2.strides[0]) )) = (sqrt(3.) * (*((double *) ( /* dim=0 */ (__pyx_v_coef.data + __pyx_t_11 * __pyx_v_coef.strides[0]) ))));
 
-    /* "hybess.pyx":825
+    /* "src/anilos/hybess_src/hybess.pyx":826
  *         coef[l - 1] = sqrt( (l + 1.) / (l - 1.) ) * coef[l - 2]
  *         coef2[l - 1] = sqrt(3.) * coef[l - 1]
  *         coef3[l - 1] = sqrt( (l + 2.) * (l - 1.) )             # <<<<<<<<<<<<<<
@@ -26247,7 +26247,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
     *((double *) ( /* dim=0 */ (__pyx_v_coef3.data + __pyx_t_11 * __pyx_v_coef3.strides[0]) )) = sqrt(((__pyx_v_l + 2.) * (__pyx_v_l - 1.)));
   }
 
-  /* "hybess.pyx":827
+  /* "src/anilos/hybess_src/hybess.pyx":828
  *         coef3[l - 1] = sqrt( (l + 2.) * (l - 1.) )
  * 
  *     for i in range (grid_length):             # <<<<<<<<<<<<<<
@@ -26259,7 +26259,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
   for (__pyx_t_17 = 0; __pyx_t_17 < __pyx_t_16; __pyx_t_17+=1) {
     __pyx_v_i = __pyx_t_17;
 
-    /* "hybess.pyx":828
+    /* "src/anilos/hybess_src/hybess.pyx":829
  * 
  *     for i in range (grid_length):
  *         chi = chi_grid[i]             # <<<<<<<<<<<<<<
@@ -26269,7 +26269,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
     __pyx_t_11 = __pyx_v_i;
     __pyx_v_chi = (*((double *) ( /* dim=0 */ (__pyx_v_chi_grid.data + __pyx_t_11 * __pyx_v_chi_grid.strides[0]) )));
 
-    /* "hybess.pyx":829
+    /* "src/anilos/hybess_src/hybess.pyx":830
  *     for i in range (grid_length):
  *         chi = chi_grid[i]
  *         gvar.r = sinhl(chi/ellc)             # <<<<<<<<<<<<<<
@@ -26278,7 +26278,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
  */
     __pyx_v_gvar.r = sinhl((__pyx_v_chi / ((long double)__pyx_v_ellc)));
 
-    /* "hybess.pyx":830
+    /* "src/anilos/hybess_src/hybess.pyx":831
  *         chi = chi_grid[i]
  *         gvar.r = sinhl(chi/ellc)
  *         gvar.dr_over_r = coshl(chi/ellc) / gvar.r             # <<<<<<<<<<<<<<
@@ -26287,33 +26287,33 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
  */
     __pyx_v_gvar.dr_over_r = (coshl((__pyx_v_chi / ((long double)__pyx_v_ellc))) / __pyx_v_gvar.r);
 
-    /* "hybess.pyx":831
+    /* "src/anilos/hybess_src/hybess.pyx":832
  *         gvar.r = sinhl(chi/ellc)
  *         gvar.dr_over_r = coshl(chi/ellc) / gvar.r
  *         phi =  HyperBesselComplex(chi/ellc, nured ,ell_max,  gvar)             # <<<<<<<<<<<<<<
  *         dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *         for j in range (1, ell_max + 1):
  */
-    __pyx_t_18 = __pyx_f_6hybess_HyperBesselComplex((__pyx_v_chi / ((long double)__pyx_v_ellc)), __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_18.memview)) __PYX_ERR(0, 831, __pyx_L1_error)
+    __pyx_t_18 = __pyx_f_6anilos_6hybess_HyperBesselComplex((__pyx_v_chi / ((long double)__pyx_v_ellc)), __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_18.memview)) __PYX_ERR(0, 832, __pyx_L1_error)
     __PYX_XCLEAR_MEMVIEW(&__pyx_v_phi, 1);
     __pyx_v_phi = __pyx_t_18;
     __pyx_t_18.memview = NULL;
     __pyx_t_18.data = NULL;
 
-    /* "hybess.pyx":832
+    /* "src/anilos/hybess_src/hybess.pyx":833
  *         gvar.dr_over_r = coshl(chi/ellc) / gvar.r
  *         phi =  HyperBesselComplex(chi/ellc, nured ,ell_max,  gvar)
  *         dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)             # <<<<<<<<<<<<<<
  *         for j in range (1, ell_max + 1):
  *             epsilonT[i][j - 1] = xi_k1 * coef[j-1] * phi[j] / gvar.r
  */
-    __pyx_t_18 = __pyx_f_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_18.memview)) __PYX_ERR(0, 832, __pyx_L1_error)
+    __pyx_t_18 = __pyx_f_6anilos_6hybess_HyperBesselPrimeComplex(__pyx_v_phi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_18.memview)) __PYX_ERR(0, 833, __pyx_L1_error)
     __PYX_XCLEAR_MEMVIEW(&__pyx_v_dphi, 1);
     __pyx_v_dphi = __pyx_t_18;
     __pyx_t_18.memview = NULL;
     __pyx_t_18.data = NULL;
 
-    /* "hybess.pyx":833
+    /* "src/anilos/hybess_src/hybess.pyx":834
  *         phi =  HyperBesselComplex(chi/ellc, nured ,ell_max,  gvar)
  *         dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *         for j in range (1, ell_max + 1):             # <<<<<<<<<<<<<<
@@ -26325,7 +26325,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
     for (__pyx_t_19 = 1; __pyx_t_19 < __pyx_t_13; __pyx_t_19+=1) {
       __pyx_v_j = __pyx_t_19;
 
-      /* "hybess.pyx":834
+      /* "src/anilos/hybess_src/hybess.pyx":835
  *         dphi = HyperBesselPrimeComplex(phi, nured, ell_max, gvar)
  *         for j in range (1, ell_max + 1):
  *             epsilonT[i][j - 1] = xi_k1 * coef[j-1] * phi[j] / gvar.r             # <<<<<<<<<<<<<<
@@ -26339,7 +26339,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
       __pyx_t_20 = (__pyx_v_j - 1);
       *((__pyx_t_long_double_complex *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_epsilonT.data + __pyx_t_15 * __pyx_v_epsilonT.strides[0]) ) + __pyx_t_20 * __pyx_v_epsilonT.strides[1]) )) = __Pyx_c_quot_long__double(__Pyx_c_prod_long__double(__pyx_t_long_double_complex_from_parts(__Pyx_CREAL(__pyx_t_9), __Pyx_CIMAG(__pyx_t_9)), (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_11 * __pyx_v_phi.strides[0]) )))), __pyx_t_long_double_complex_from_parts(__pyx_v_gvar.r, 0));
 
-      /* "hybess.pyx":835
+      /* "src/anilos/hybess_src/hybess.pyx":836
  *         for j in range (1, ell_max + 1):
  *             epsilonT[i][j - 1] = xi_k1 * coef[j-1] * phi[j] / gvar.r
  *             epsilonT2[i][j - 1] = xi_k2 * coef2[j-1] * (dphi[j] / gvar.r - phi[j] * gvar.dr_over_r / gvar.r )             # <<<<<<<<<<<<<<
@@ -26354,7 +26354,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
       __pyx_t_21 = (__pyx_v_j - 1);
       *((__pyx_t_long_double_complex *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_epsilonT2.data + __pyx_t_15 * __pyx_v_epsilonT2.strides[0]) ) + __pyx_t_21 * __pyx_v_epsilonT2.strides[1]) )) = __Pyx_c_prod_long__double(__pyx_t_long_double_complex_from_parts(__Pyx_CREAL(__pyx_t_9), __Pyx_CIMAG(__pyx_t_9)), __Pyx_c_diff_long__double(__Pyx_c_quot_long__double((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_dphi.data + __pyx_t_11 * __pyx_v_dphi.strides[0]) ))), __pyx_t_long_double_complex_from_parts(__pyx_v_gvar.r, 0)), __Pyx_c_quot_long__double(__Pyx_c_prod_long__double((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_20 * __pyx_v_phi.strides[0]) ))), __pyx_t_long_double_complex_from_parts(__pyx_v_gvar.dr_over_r, 0)), __pyx_t_long_double_complex_from_parts(__pyx_v_gvar.r, 0))));
 
-      /* "hybess.pyx":836
+      /* "src/anilos/hybess_src/hybess.pyx":837
  *             epsilonT[i][j - 1] = xi_k1 * coef[j-1] * phi[j] / gvar.r
  *             epsilonT2[i][j - 1] = xi_k2 * coef2[j-1] * (dphi[j] / gvar.r - phi[j] * gvar.dr_over_r / gvar.r )
  *             epsilonE[i][j - 1] = (xi_k2 / 2.) * coef3[j -1] * (dphi[j] / gvar.r + phi[j] * gvar.dr_over_r / gvar.r )             # <<<<<<<<<<<<<<
@@ -26369,7 +26369,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
       __pyx_t_15 = (__pyx_v_j - 1);
       *((__pyx_t_long_double_complex *) ( /* dim=1 */ (( /* dim=0 */ (__pyx_v_epsilonE.data + __pyx_t_21 * __pyx_v_epsilonE.strides[0]) ) + __pyx_t_15 * __pyx_v_epsilonE.strides[1]) )) = __Pyx_c_prod_long__double(__pyx_t_long_double_complex_from_parts(__Pyx_CREAL(__pyx_t_9), __Pyx_CIMAG(__pyx_t_9)), __Pyx_c_sum_long__double(__Pyx_c_quot_long__double((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_dphi.data + __pyx_t_20 * __pyx_v_dphi.strides[0]) ))), __pyx_t_long_double_complex_from_parts(__pyx_v_gvar.r, 0)), __Pyx_c_quot_long__double(__Pyx_c_prod_long__double((*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_11 * __pyx_v_phi.strides[0]) ))), __pyx_t_long_double_complex_from_parts(__pyx_v_gvar.dr_over_r, 0)), __pyx_t_long_double_complex_from_parts(__pyx_v_gvar.r, 0))));
 
-      /* "hybess.pyx":837
+      /* "src/anilos/hybess_src/hybess.pyx":838
  *             epsilonT2[i][j - 1] = xi_k2 * coef2[j-1] * (dphi[j] / gvar.r - phi[j] * gvar.dr_over_r / gvar.r )
  *             epsilonE[i][j - 1] = (xi_k2 / 2.) * coef3[j -1] * (dphi[j] / gvar.r + phi[j] * gvar.dr_over_r / gvar.r )
  *             betaB[i][j - 1] = - nured * (xi_k2 / 2.) * coef3[j -1] * phi[j] / gvar.r             # <<<<<<<<<<<<<<
@@ -26385,7 +26385,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
     }
   }
 
-  /* "hybess.pyx":839
+  /* "src/anilos/hybess_src/hybess.pyx":840
  *             betaB[i][j - 1] = - nured * (xi_k2 / 2.) * coef3[j -1] * phi[j] / gvar.r
  * 
  *     return [epsilonT, epsilonT2, epsilonE, betaB]             # <<<<<<<<<<<<<<
@@ -26393,24 +26393,24 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
  * def HyperBesselTestComplex(double[:] chi_grid, long double complex nu, int ell_max, int calK = -1, double ellc = 1.):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_epsilonT, 2, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 839, __pyx_L1_error)
+  __pyx_t_1 = __pyx_memoryview_fromslice(__pyx_v_epsilonT, 2, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 840, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_epsilonT2, 2, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 839, __pyx_L1_error)
+  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_epsilonT2, 2, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 840, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_epsilonE, 2, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 839, __pyx_L1_error)
+  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_epsilonE, 2, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 840, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_betaB, 2, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 839, __pyx_L1_error)
+  __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_betaB, 2, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 840, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyList_New(4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 839, __pyx_L1_error)
+  __pyx_t_5 = PyList_New(4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 840, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_5, 0, __pyx_t_1)) __PYX_ERR(0, 839, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_5, 0, __pyx_t_1)) __PYX_ERR(0, 840, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_3);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_5, 1, __pyx_t_3)) __PYX_ERR(0, 839, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_5, 1, __pyx_t_3)) __PYX_ERR(0, 840, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_5, 2, __pyx_t_2)) __PYX_ERR(0, 839, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_5, 2, __pyx_t_2)) __PYX_ERR(0, 840, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_4);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_5, 3, __pyx_t_4)) __PYX_ERR(0, 839, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_5, 3, __pyx_t_4)) __PYX_ERR(0, 840, __pyx_L1_error);
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
   __pyx_t_2 = 0;
@@ -26419,7 +26419,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "hybess.pyx":774
+  /* "src/anilos/hybess_src/hybess.pyx":775
  *     return [epsilonT, epsilonE, betaB]
  * 
  * def epsbeta_for_vector(double [:] chi_grid, int ell_max, double complex nu, double ellc, int grid_length):             # <<<<<<<<<<<<<<
@@ -26437,7 +26437,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_6, 1);
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_8, 1);
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_18, 1);
-  __Pyx_AddTraceback("hybess.epsbeta_for_vector", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.epsbeta_for_vector", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_epsilonT, 1);
@@ -26454,7 +26454,7 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
   return __pyx_r;
 }
 
-/* "hybess.pyx":841
+/* "src/anilos/hybess_src/hybess.pyx":842
  *     return [epsilonT, epsilonT2, epsilonE, betaB]
  * 
  * def HyperBesselTestComplex(double[:] chi_grid, long double complex nu, int ell_max, int calK = -1, double ellc = 1.):             # <<<<<<<<<<<<<<
@@ -26463,15 +26463,15 @@ static PyObject *__pyx_pf_6hybess_6epsbeta_for_vector(CYTHON_UNUSED PyObject *__
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6hybess_9HyperBesselTestComplex(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_6anilos_6hybess_9HyperBesselTestComplex(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6hybess_9HyperBesselTestComplex = {"HyperBesselTestComplex", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6hybess_9HyperBesselTestComplex, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6hybess_9HyperBesselTestComplex(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_6anilos_6hybess_9HyperBesselTestComplex = {"HyperBesselTestComplex", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6anilos_6hybess_9HyperBesselTestComplex, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_6anilos_6hybess_9HyperBesselTestComplex(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -26527,7 +26527,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 841, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 842, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -26535,9 +26535,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 841, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 842, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("HyperBesselTestComplex", 0, 3, 5, 1); __PYX_ERR(0, 841, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("HyperBesselTestComplex", 0, 3, 5, 1); __PYX_ERR(0, 842, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -26545,28 +26545,28 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 841, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 842, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("HyperBesselTestComplex", 0, 3, 5, 2); __PYX_ERR(0, 841, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("HyperBesselTestComplex", 0, 3, 5, 2); __PYX_ERR(0, 842, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (kw_args > 0) {
           PyObject* value = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_calK);
           if (value) { values[3] = __Pyx_Arg_NewRef_FASTCALL(value); kw_args--; }
-          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 841, __pyx_L3_error)
+          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 842, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
         if (kw_args > 0) {
           PyObject* value = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_ellc);
           if (value) { values[4] = __Pyx_Arg_NewRef_FASTCALL(value); kw_args--; }
-          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 841, __pyx_L3_error)
+          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 842, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "HyperBesselTestComplex") < 0)) __PYX_ERR(0, 841, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "HyperBesselTestComplex") < 0)) __PYX_ERR(0, 842, __pyx_L3_error)
       }
     } else {
       switch (__pyx_nargs) {
@@ -26581,23 +26581,23 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
         default: goto __pyx_L5_argtuple_error;
       }
     }
-    __pyx_v_chi_grid = __Pyx_PyObject_to_MemoryviewSlice_ds_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_chi_grid.memview)) __PYX_ERR(0, 841, __pyx_L3_error)
-    __pyx_v_nu = __Pyx_PyComplex_As___pyx_t_long_double_complex(values[1]); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 841, __pyx_L3_error)
-    __pyx_v_ell_max = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_ell_max == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 841, __pyx_L3_error)
+    __pyx_v_chi_grid = __Pyx_PyObject_to_MemoryviewSlice_ds_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_chi_grid.memview)) __PYX_ERR(0, 842, __pyx_L3_error)
+    __pyx_v_nu = __Pyx_PyComplex_As___pyx_t_long_double_complex(values[1]); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 842, __pyx_L3_error)
+    __pyx_v_ell_max = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_ell_max == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 842, __pyx_L3_error)
     if (values[3]) {
-      __pyx_v_calK = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_calK == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 841, __pyx_L3_error)
+      __pyx_v_calK = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_calK == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 842, __pyx_L3_error)
     } else {
       __pyx_v_calK = ((int)((int)-1));
     }
     if (values[4]) {
-      __pyx_v_ellc = __pyx_PyFloat_AsDouble(values[4]); if (unlikely((__pyx_v_ellc == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 841, __pyx_L3_error)
+      __pyx_v_ellc = __pyx_PyFloat_AsDouble(values[4]); if (unlikely((__pyx_v_ellc == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 842, __pyx_L3_error)
     } else {
       __pyx_v_ellc = ((double)((double)1.));
     }
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("HyperBesselTestComplex", 0, 3, 5, __pyx_nargs); __PYX_ERR(0, 841, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("HyperBesselTestComplex", 0, 3, 5, __pyx_nargs); __PYX_ERR(0, 842, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -26608,11 +26608,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     }
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_chi_grid, 1);
-  __Pyx_AddTraceback("hybess.HyperBesselTestComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.HyperBesselTestComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6hybess_8HyperBesselTestComplex(__pyx_self, __pyx_v_chi_grid, __pyx_v_nu, __pyx_v_ell_max, __pyx_v_calK, __pyx_v_ellc);
+  __pyx_r = __pyx_pf_6anilos_6hybess_8HyperBesselTestComplex(__pyx_self, __pyx_v_chi_grid, __pyx_v_nu, __pyx_v_ell_max, __pyx_v_calK, __pyx_v_ellc);
 
   /* function exit code */
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_chi_grid, 1);
@@ -26626,7 +26626,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_chi_grid, __pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell_max, CYTHON_UNUSED int __pyx_v_calK, double __pyx_v_ellc) {
+static PyObject *__pyx_pf_6anilos_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_chi_grid, __pyx_t_long_double_complex __pyx_v_nu, int __pyx_v_ell_max, CYTHON_UNUSED int __pyx_v_calK, double __pyx_v_ellc) {
   int __pyx_v_lenght;
   int __pyx_v_m;
   int __pyx_v_i;
@@ -26634,7 +26634,7 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
   long double __pyx_v_chi;
   __Pyx_memviewslice __pyx_v_auxphi = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_phi = { 0, 0, { 0 }, { 0 }, { 0 } };
-  struct __pyx_t_6hybess_Geometric_variables __pyx_v_gvar;
+  struct __pyx_t_6anilos_6hybess_Geometric_variables __pyx_v_gvar;
   __pyx_t_long_double_complex __pyx_v_nured;
   PyObject *__pyx_v_r = NULL;
   PyObject *__pyx_v_x = NULL;
@@ -26665,19 +26665,19 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("HyperBesselTestComplex", 1);
 
-  /* "hybess.pyx":842
+  /* "src/anilos/hybess_src/hybess.pyx":843
  * 
  * def HyperBesselTestComplex(double[:] chi_grid, long double complex nu, int ell_max, int calK = -1, double ellc = 1.):
  *     cdef int lenght = len(np.array(chi_grid)) * (ell_max+2)             # <<<<<<<<<<<<<<
  *     cdef int m
  *     cdef int i
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 842, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 843, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 842, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 843, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_chi_grid, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 842, __pyx_L1_error)
+  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_chi_grid, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 843, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = NULL;
   __pyx_t_5 = 0;
@@ -26698,93 +26698,93 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 842, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 843, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
-  __pyx_t_6 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 842, __pyx_L1_error)
+  __pyx_t_6 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 843, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_lenght = (__pyx_t_6 * (__pyx_v_ell_max + 2));
 
-  /* "hybess.pyx":847
+  /* "src/anilos/hybess_src/hybess.pyx":848
  *     cdef int j
  *     cdef long double chi
  *     cdef long double complex[:] auxphi = np.empty(ell_max+2, dtype = np.clongdouble)             # <<<<<<<<<<<<<<
  *     #cdef double[:] auxdphi = np.empty(ell_max+1)
  *     cdef long double complex[:] phi = np.empty(lenght, dtype = np.clongdouble)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 847, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 848, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 847, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_empty); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 848, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_long((__pyx_v_ell_max + 2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 847, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_long((__pyx_v_ell_max + 2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 848, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 847, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 848, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1)) __PYX_ERR(0, 847, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1)) __PYX_ERR(0, 848, __pyx_L1_error);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 847, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 848, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 847, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 848, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 847, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 848, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_7) < 0) __PYX_ERR(0, 847, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_7) < 0) __PYX_ERR(0, 848, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 847, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 848, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_7, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 847, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_7, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 848, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_v_auxphi = __pyx_t_8;
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "hybess.pyx":849
+  /* "src/anilos/hybess_src/hybess.pyx":850
  *     cdef long double complex[:] auxphi = np.empty(ell_max+2, dtype = np.clongdouble)
  *     #cdef double[:] auxdphi = np.empty(ell_max+1)
  *     cdef long double complex[:] phi = np.empty(lenght, dtype = np.clongdouble)             # <<<<<<<<<<<<<<
  *     #cdef double[:] dphi = np.empty(n)
  *     cdef Geometric_variables gvar
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 849, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_empty); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 849, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_empty); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v_lenght); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 849, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v_lenght); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 849, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_7);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_7)) __PYX_ERR(0, 849, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_7)) __PYX_ERR(0, 850, __pyx_L1_error);
   __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 849, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 849, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 849, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 849, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, __pyx_t_7); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 849, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, __pyx_t_7); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_4, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 849, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_ds___pyx_t_long_double_complex(__pyx_t_4, PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 850, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_phi = __pyx_t_8;
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "hybess.pyx":852
+  /* "src/anilos/hybess_src/hybess.pyx":853
  *     #cdef double[:] dphi = np.empty(n)
  *     cdef Geometric_variables gvar
  *     cdef long double complex nured = nu *ellc             # <<<<<<<<<<<<<<
@@ -26793,7 +26793,7 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
  */
   __pyx_v_nured = __Pyx_c_prod_long__double(__pyx_v_nu, __pyx_t_long_double_complex_from_parts(__pyx_v_ellc, 0));
 
-  /* "hybess.pyx":854
+  /* "src/anilos/hybess_src/hybess.pyx":855
  *     cdef long double complex nured = nu *ellc
  * 
  *     for i, chi in enumerate(np.array(chi_grid)):             # <<<<<<<<<<<<<<
@@ -26801,12 +26801,12 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
  *         x = coshl(chi/ellc)
  */
   __pyx_t_9 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 854, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 855, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_array); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 854, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_array); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 855, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __pyx_memoryview_fromslice(__pyx_v_chi_grid, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 854, __pyx_L1_error)
+  __pyx_t_7 = __pyx_memoryview_fromslice(__pyx_v_chi_grid, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 855, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __pyx_t_1 = NULL;
   __pyx_t_5 = 0;
@@ -26827,7 +26827,7 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
     __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 854, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 855, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
@@ -26836,9 +26836,9 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
     __pyx_t_6 = 0;
     __pyx_t_10 = NULL;
   } else {
-    __pyx_t_6 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 854, __pyx_L1_error)
+    __pyx_t_6 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 855, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_10 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 854, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 855, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   for (;;) {
@@ -26847,28 +26847,28 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
         {
           Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_2);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 854, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 855, __pyx_L1_error)
           #endif
           if (__pyx_t_6 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 854, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 855, __pyx_L1_error)
         #else
-        __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 854, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 855, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         {
           Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_2);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 854, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 855, __pyx_L1_error)
           #endif
           if (__pyx_t_6 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 854, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 855, __pyx_L1_error)
         #else
-        __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 854, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 855, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -26878,105 +26878,105 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 854, __pyx_L1_error)
+          else __PYX_ERR(0, 855, __pyx_L1_error)
         }
         break;
       }
       __Pyx_GOTREF(__pyx_t_4);
     }
-    __pyx_t_11 = __pyx_PyFloat_AsDouble(__pyx_t_4); if (unlikely((__pyx_t_11 == (long double)-1) && PyErr_Occurred())) __PYX_ERR(0, 854, __pyx_L1_error)
+    __pyx_t_11 = __pyx_PyFloat_AsDouble(__pyx_t_4); if (unlikely((__pyx_t_11 == (long double)-1) && PyErr_Occurred())) __PYX_ERR(0, 855, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_chi = __pyx_t_11;
     __pyx_v_i = __pyx_t_9;
     __pyx_t_9 = (__pyx_t_9 + 1);
 
-    /* "hybess.pyx":855
+    /* "src/anilos/hybess_src/hybess.pyx":856
  * 
  *     for i, chi in enumerate(np.array(chi_grid)):
  *         r = ellc * sinhl(chi/ellc)             # <<<<<<<<<<<<<<
  *         x = coshl(chi/ellc)
  * 
  */
-    __pyx_t_4 = PyFloat_FromDouble((__pyx_v_ellc * sinhl((__pyx_v_chi / ((long double)__pyx_v_ellc))))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 855, __pyx_L1_error)
+    __pyx_t_4 = PyFloat_FromDouble((__pyx_v_ellc * sinhl((__pyx_v_chi / ((long double)__pyx_v_ellc))))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 856, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_XDECREF_SET(__pyx_v_r, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "hybess.pyx":856
+    /* "src/anilos/hybess_src/hybess.pyx":857
  *     for i, chi in enumerate(np.array(chi_grid)):
  *         r = ellc * sinhl(chi/ellc)
  *         x = coshl(chi/ellc)             # <<<<<<<<<<<<<<
  * 
  *         y = r/ellc # dimensionless radial coordinate
  */
-    __pyx_t_4 = PyFloat_FromDouble(coshl((__pyx_v_chi / ((long double)__pyx_v_ellc)))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 856, __pyx_L1_error)
+    __pyx_t_4 = PyFloat_FromDouble(coshl((__pyx_v_chi / ((long double)__pyx_v_ellc)))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 857, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_XDECREF_SET(__pyx_v_x, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "hybess.pyx":858
+    /* "src/anilos/hybess_src/hybess.pyx":859
  *         x = coshl(chi/ellc)
  * 
  *         y = r/ellc # dimensionless radial coordinate             # <<<<<<<<<<<<<<
  *         gvar.r = y
  *         gvar.dr_over_r = x/y
  */
-    __pyx_t_4 = PyFloat_FromDouble(__pyx_v_ellc); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 858, __pyx_L1_error)
+    __pyx_t_4 = PyFloat_FromDouble(__pyx_v_ellc); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 859, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_7 = __Pyx_PyNumber_Divide(__pyx_v_r, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 858, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyNumber_Divide(__pyx_v_r, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 859, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_XDECREF_SET(__pyx_v_y, __pyx_t_7);
     __pyx_t_7 = 0;
 
-    /* "hybess.pyx":859
+    /* "src/anilos/hybess_src/hybess.pyx":860
  * 
  *         y = r/ellc # dimensionless radial coordinate
  *         gvar.r = y             # <<<<<<<<<<<<<<
  *         gvar.dr_over_r = x/y
  *         auxphi = HyperBesselComplex(chi/ellc, nured ,ell_max, gvar)
  */
-    __pyx_t_11 = __pyx_PyFloat_AsDouble(__pyx_v_y); if (unlikely((__pyx_t_11 == (long double)-1) && PyErr_Occurred())) __PYX_ERR(0, 859, __pyx_L1_error)
+    __pyx_t_11 = __pyx_PyFloat_AsDouble(__pyx_v_y); if (unlikely((__pyx_t_11 == (long double)-1) && PyErr_Occurred())) __PYX_ERR(0, 860, __pyx_L1_error)
     __pyx_v_gvar.r = __pyx_t_11;
 
-    /* "hybess.pyx":860
+    /* "src/anilos/hybess_src/hybess.pyx":861
  *         y = r/ellc # dimensionless radial coordinate
  *         gvar.r = y
  *         gvar.dr_over_r = x/y             # <<<<<<<<<<<<<<
  *         auxphi = HyperBesselComplex(chi/ellc, nured ,ell_max, gvar)
  *         HyperBesselPrimeComplex(auxphi, nured, ell_max, gvar)
  */
-    __pyx_t_7 = __Pyx_PyNumber_Divide(__pyx_v_x, __pyx_v_y); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 860, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyNumber_Divide(__pyx_v_x, __pyx_v_y); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 861, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_11 = __pyx_PyFloat_AsDouble(__pyx_t_7); if (unlikely((__pyx_t_11 == (long double)-1) && PyErr_Occurred())) __PYX_ERR(0, 860, __pyx_L1_error)
+    __pyx_t_11 = __pyx_PyFloat_AsDouble(__pyx_t_7); if (unlikely((__pyx_t_11 == (long double)-1) && PyErr_Occurred())) __PYX_ERR(0, 861, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __pyx_v_gvar.dr_over_r = __pyx_t_11;
 
-    /* "hybess.pyx":861
+    /* "src/anilos/hybess_src/hybess.pyx":862
  *         gvar.r = y
  *         gvar.dr_over_r = x/y
  *         auxphi = HyperBesselComplex(chi/ellc, nured ,ell_max, gvar)             # <<<<<<<<<<<<<<
  *         HyperBesselPrimeComplex(auxphi, nured, ell_max, gvar)
  *         for j in range (ell_max+2):
  */
-    __pyx_t_8 = __pyx_f_6hybess_HyperBesselComplex((__pyx_v_chi / ((long double)__pyx_v_ellc)), __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 861, __pyx_L1_error)
+    __pyx_t_8 = __pyx_f_6anilos_6hybess_HyperBesselComplex((__pyx_v_chi / ((long double)__pyx_v_ellc)), __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 862, __pyx_L1_error)
     __PYX_XCLEAR_MEMVIEW(&__pyx_v_auxphi, 1);
     __pyx_v_auxphi = __pyx_t_8;
     __pyx_t_8.memview = NULL;
     __pyx_t_8.data = NULL;
 
-    /* "hybess.pyx":862
+    /* "src/anilos/hybess_src/hybess.pyx":863
  *         gvar.dr_over_r = x/y
  *         auxphi = HyperBesselComplex(chi/ellc, nured ,ell_max, gvar)
  *         HyperBesselPrimeComplex(auxphi, nured, ell_max, gvar)             # <<<<<<<<<<<<<<
  *         for j in range (ell_max+2):
  *             m = i * (ell_max+2) + j
  */
-    __pyx_t_8 = __pyx_f_6hybess_HyperBesselPrimeComplex(__pyx_v_auxphi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 862, __pyx_L1_error)
+    __pyx_t_8 = __pyx_f_6anilos_6hybess_HyperBesselPrimeComplex(__pyx_v_auxphi, __pyx_v_nured, __pyx_v_ell_max, __pyx_v_gvar); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(0, 863, __pyx_L1_error)
     __PYX_XCLEAR_MEMVIEW(&__pyx_t_8, 1);
     __pyx_t_8.memview = NULL; __pyx_t_8.data = NULL;
 
-    /* "hybess.pyx":863
+    /* "src/anilos/hybess_src/hybess.pyx":864
  *         auxphi = HyperBesselComplex(chi/ellc, nured ,ell_max, gvar)
  *         HyperBesselPrimeComplex(auxphi, nured, ell_max, gvar)
  *         for j in range (ell_max+2):             # <<<<<<<<<<<<<<
@@ -26988,7 +26988,7 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
     for (__pyx_t_14 = 0; __pyx_t_14 < __pyx_t_13; __pyx_t_14+=1) {
       __pyx_v_j = __pyx_t_14;
 
-      /* "hybess.pyx":864
+      /* "src/anilos/hybess_src/hybess.pyx":865
  *         HyperBesselPrimeComplex(auxphi, nured, ell_max, gvar)
  *         for j in range (ell_max+2):
  *             m = i * (ell_max+2) + j             # <<<<<<<<<<<<<<
@@ -26997,7 +26997,7 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
  */
       __pyx_v_m = ((__pyx_v_i * (__pyx_v_ell_max + 2)) + __pyx_v_j);
 
-      /* "hybess.pyx":865
+      /* "src/anilos/hybess_src/hybess.pyx":866
  *         for j in range (ell_max+2):
  *             m = i * (ell_max+2) + j
  *             phi[m] = auxphi[j]             # <<<<<<<<<<<<<<
@@ -27009,7 +27009,7 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
       *((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_phi.data + __pyx_t_16 * __pyx_v_phi.strides[0]) )) = (*((__pyx_t_long_double_complex *) ( /* dim=0 */ (__pyx_v_auxphi.data + __pyx_t_15 * __pyx_v_auxphi.strides[0]) )));
     }
 
-    /* "hybess.pyx":854
+    /* "src/anilos/hybess_src/hybess.pyx":855
  *     cdef long double complex nured = nu *ellc
  * 
  *     for i, chi in enumerate(np.array(chi_grid)):             # <<<<<<<<<<<<<<
@@ -27019,54 +27019,54 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "hybess.pyx":866
+  /* "src/anilos/hybess_src/hybess.pyx":867
  *             m = i * (ell_max+2) + j
  *             phi[m] = auxphi[j]
  *     phii = np.reshape(np.array(phi, dtype = np.clongdouble), (len(chi_grid), ell_max+2))             # <<<<<<<<<<<<<<
  *     return phii
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 866, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 867, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_reshape); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 866, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_reshape); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 867, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 866, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 867, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_array); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 866, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_array); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 867, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __pyx_memoryview_fromslice(__pyx_v_phi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 866, __pyx_L1_error)
+  __pyx_t_7 = __pyx_memoryview_fromslice(__pyx_v_phi, 1, (PyObject *(*)(char *)) __pyx_memview_get___pyx_t_long_double_complex, (int (*)(char *, PyObject *)) __pyx_memview_set___pyx_t_long_double_complex, 0);; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 867, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 866, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 867, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_7);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_7)) __PYX_ERR(0, 866, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_7)) __PYX_ERR(0, 867, __pyx_L1_error);
   __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 866, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 867, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __Pyx_GetModuleGlobalName(__pyx_t_17, __pyx_n_s_np); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 866, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_17, __pyx_n_s_np); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 867, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
-  __pyx_t_18 = __Pyx_PyObject_GetAttrStr(__pyx_t_17, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 866, __pyx_L1_error)
+  __pyx_t_18 = __Pyx_PyObject_GetAttrStr(__pyx_t_17, __pyx_n_s_clongdouble); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 867, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_DECREF(__pyx_t_17); __pyx_t_17 = 0;
-  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_dtype, __pyx_t_18) < 0) __PYX_ERR(0, 866, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_dtype, __pyx_t_18) < 0) __PYX_ERR(0, 867, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_18 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 866, __pyx_L1_error)
+  __pyx_t_18 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 867, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_t_6 = __Pyx_MemoryView_Len(__pyx_v_chi_grid); 
-  __pyx_t_7 = PyInt_FromSsize_t(__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 866, __pyx_L1_error)
+  __pyx_t_7 = PyInt_FromSsize_t(__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 867, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_3 = __Pyx_PyInt_From_long((__pyx_v_ell_max + 2)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 866, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_long((__pyx_v_ell_max + 2)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 867, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 866, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 867, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_7);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_7)) __PYX_ERR(0, 866, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_7)) __PYX_ERR(0, 867, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_3);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_3)) __PYX_ERR(0, 866, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_3)) __PYX_ERR(0, 867, __pyx_L1_error);
   __pyx_t_7 = 0;
   __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -27089,14 +27089,14 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 866, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 867, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
   __pyx_v_phii = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "hybess.pyx":867
+  /* "src/anilos/hybess_src/hybess.pyx":868
  *             phi[m] = auxphi[j]
  *     phii = np.reshape(np.array(phi, dtype = np.clongdouble), (len(chi_grid), ell_max+2))
  *     return phii             # <<<<<<<<<<<<<<
@@ -27106,7 +27106,7 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
   __pyx_r = __pyx_v_phii;
   goto __pyx_L0;
 
-  /* "hybess.pyx":841
+  /* "src/anilos/hybess_src/hybess.pyx":842
  *     return [epsilonT, epsilonT2, epsilonE, betaB]
  * 
  * def HyperBesselTestComplex(double[:] chi_grid, long double complex nu, int ell_max, int calK = -1, double ellc = 1.):             # <<<<<<<<<<<<<<
@@ -27124,7 +27124,7 @@ static PyObject *__pyx_pf_6hybess_8HyperBesselTestComplex(CYTHON_UNUSED PyObject
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_8, 1);
   __Pyx_XDECREF(__pyx_t_17);
   __Pyx_XDECREF(__pyx_t_18);
-  __Pyx_AddTraceback("hybess.HyperBesselTestComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("anilos.hybess.HyperBesselTestComplex", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_auxphi, 1);
@@ -27275,7 +27275,7 @@ static PyType_Slot __pyx_type___pyx_array_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_array_spec = {
-  "hybess.array",
+  "anilos.hybess.array",
   sizeof(struct __pyx_array_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_SEQUENCE,
@@ -27321,7 +27321,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "hybess.""array", /*tp_name*/
+  "anilos.hybess.""array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -27484,7 +27484,7 @@ static PyType_Slot __pyx_type___pyx_MemviewEnum_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_MemviewEnum_spec = {
-  "hybess.Enum",
+  "anilos.hybess.Enum",
   sizeof(struct __pyx_MemviewEnum_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,
@@ -27494,7 +27494,7 @@ static PyType_Spec __pyx_type___pyx_MemviewEnum_spec = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "hybess.""Enum", /*tp_name*/
+  "anilos.hybess.""Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -27794,7 +27794,7 @@ static PyType_Slot __pyx_type___pyx_memoryview_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_memoryview_spec = {
-  "hybess.memoryview",
+  "anilos.hybess.memoryview",
   sizeof(struct __pyx_memoryview_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,
@@ -27840,7 +27840,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "hybess.""memoryview", /*tp_name*/
+  "anilos.hybess.""memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -27995,7 +27995,7 @@ static PyType_Slot __pyx_type___pyx_memoryviewslice_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_memoryviewslice_spec = {
-  "hybess._memoryviewslice",
+  "anilos.hybess._memoryviewslice",
   sizeof(struct __pyx_memoryviewslice_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_SEQUENCE,
@@ -28005,7 +28005,7 @@ static PyType_Spec __pyx_type___pyx_memoryviewslice_spec = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "hybess.""_memoryviewslice", /*tp_name*/
+  "anilos.hybess.""_memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -28155,6 +28155,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_abc, __pyx_k_abc, sizeof(__pyx_k_abc), 0, 0, 1, 1},
     {&__pyx_n_s_allocate_buffer, __pyx_k_allocate_buffer, sizeof(__pyx_k_allocate_buffer), 0, 0, 1, 1},
     {&__pyx_kp_u_and, __pyx_k_and, sizeof(__pyx_k_and), 0, 1, 0, 0},
+    {&__pyx_n_s_anilos_hybess, __pyx_k_anilos_hybess, sizeof(__pyx_k_anilos_hybess), 0, 0, 1, 1},
     {&__pyx_n_s_array, __pyx_k_array, sizeof(__pyx_k_array), 0, 0, 1, 1},
     {&__pyx_n_s_asarray, __pyx_k_asarray, sizeof(__pyx_k_asarray), 0, 0, 1, 1},
     {&__pyx_n_s_asyncio_coroutines, __pyx_k_asyncio_coroutines, sizeof(__pyx_k_asyncio_coroutines), 0, 0, 1, 1},
@@ -28211,8 +28212,6 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_kp_u_got_differing_extents_in_dimensi, __pyx_k_got_differing_extents_in_dimensi, sizeof(__pyx_k_got_differing_extents_in_dimensi), 0, 1, 0, 0},
     {&__pyx_n_s_grid_length, __pyx_k_grid_length, sizeof(__pyx_k_grid_length), 0, 0, 1, 1},
     {&__pyx_n_s_gvar, __pyx_k_gvar, sizeof(__pyx_k_gvar), 0, 0, 1, 1},
-    {&__pyx_n_s_hybess, __pyx_k_hybess, sizeof(__pyx_k_hybess), 0, 0, 1, 1},
-    {&__pyx_kp_s_hybess_pyx, __pyx_k_hybess_pyx, sizeof(__pyx_k_hybess_pyx), 0, 0, 1, 0},
     {&__pyx_n_s_i, __pyx_k_i, sizeof(__pyx_k_i), 0, 0, 1, 1},
     {&__pyx_n_s_id, __pyx_k_id, sizeof(__pyx_k_id), 0, 0, 1, 1},
     {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
@@ -28268,6 +28267,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_shape, __pyx_k_shape, sizeof(__pyx_k_shape), 0, 0, 1, 1},
     {&__pyx_n_s_size, __pyx_k_size, sizeof(__pyx_k_size), 0, 0, 1, 1},
     {&__pyx_n_s_spec, __pyx_k_spec, sizeof(__pyx_k_spec), 0, 0, 1, 1},
+    {&__pyx_kp_s_src_anilos_hybess_src_hybess_pyx, __pyx_k_src_anilos_hybess_src_hybess_pyx, sizeof(__pyx_k_src_anilos_hybess_src_hybess_pyx), 0, 0, 1, 0},
     {&__pyx_n_s_start, __pyx_k_start, sizeof(__pyx_k_start), 0, 0, 1, 1},
     {&__pyx_n_s_step, __pyx_k_step, sizeof(__pyx_k_step), 0, 0, 1, 1},
     {&__pyx_n_s_stop, __pyx_k_stop, sizeof(__pyx_k_stop), 0, 0, 1, 1},
@@ -28297,10 +28297,10 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
 }
 /* #### Code section: cached_builtins ### */
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 134, __pyx_L1_error)
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 356, __pyx_L1_error)
-  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(0, 439, __pyx_L1_error)
-  __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(0, 854, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 357, __pyx_L1_error)
+  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(0, 440, __pyx_L1_error)
+  __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(0, 855, __pyx_L1_error)
   __pyx_builtin___import__ = __Pyx_GetBuiltinName(__pyx_n_s_import); if (!__pyx_builtin___import__) __PYX_ERR(1, 100, __pyx_L1_error)
   __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_n_s_MemoryError); if (!__pyx_builtin_MemoryError) __PYX_ERR(1, 156, __pyx_L1_error)
   __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_n_s_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(1, 2, __pyx_L1_error)
@@ -28355,7 +28355,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1026
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1026
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy._core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -28366,7 +28366,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "../anaconda3/lib/python3.9/site-packages/numpy/__init__.cython-30.pxd":1032
+  /* "../anilos_build_env/lib/python3.10/site-packages/numpy/__init__.cython-30.pxd":1032
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy._core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -28377,25 +28377,25 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "hybess.pyx":356
+  /* "src/anilos/hybess_src/hybess.pyx":357
  *         i+= 1.
  *         if(i == 1000000):
  *             print("Continued fraction did not converge")             # <<<<<<<<<<<<<<
  *             nonconvergence[0] = 1
  *             break
  */
-  __pyx_tuple__11 = PyTuple_Pack(1, __pyx_kp_u_Continued_fraction_did_not_conve); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 356, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(1, __pyx_kp_u_Continued_fraction_did_not_conve); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 357, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
 
-  /* "hybess.pyx":439
+  /* "src/anilos/hybess_src/hybess.pyx":440
  *         ell0 = 1
  *     else:
  *         raise ValueError('Nonexisting or non implemented mode')             # <<<<<<<<<<<<<<
  *     if m == 0:
  *         if s == 0:
  */
-  __pyx_tuple__12 = PyTuple_Pack(1, __pyx_kp_u_Nonexisting_or_non_implemented_m); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 439, __pyx_L1_error)
+  __pyx_tuple__12 = PyTuple_Pack(1, __pyx_kp_u_Nonexisting_or_non_implemented_m); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 440, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
 
@@ -28500,62 +28500,62 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__22);
   __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_Enum, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(1, 1, __pyx_L1_error)
 
-  /* "hybess.pyx":632
+  /* "src/anilos/hybess_src/hybess.pyx":633
  * 
  * 
  * def epsilon(double chi,             # <<<<<<<<<<<<<<
  *             int s, int j, int m,
  *             int ell_max,
  */
-  __pyx_tuple__24 = PyTuple_Pack(9, __pyx_n_s_chi, __pyx_n_s_s, __pyx_n_s_j, __pyx_n_s_m, __pyx_n_s_ell_max, __pyx_n_s_nu, __pyx_n_s_calK, __pyx_n_s_ellc, __pyx_n_s_mode); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 632, __pyx_L1_error)
+  __pyx_tuple__24 = PyTuple_Pack(9, __pyx_n_s_chi, __pyx_n_s_s, __pyx_n_s_j, __pyx_n_s_m, __pyx_n_s_ell_max, __pyx_n_s_nu, __pyx_n_s_calK, __pyx_n_s_ellc, __pyx_n_s_mode); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 633, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
   __Pyx_GIVEREF(__pyx_tuple__24);
-  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(9, 0, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_hybess_pyx, __pyx_n_s_epsilon, 632, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 632, __pyx_L1_error)
+  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(9, 0, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_anilos_hybess_src_hybess_pyx, __pyx_n_s_epsilon, 633, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 633, __pyx_L1_error)
 
-  /* "hybess.pyx":668
+  /* "src/anilos/hybess_src/hybess.pyx":669
  *     return EpsilonComplex(chi, s, j, m, ell_max, nu, ellc, calK, mode)
  * 
  * def beta(double chi,             # <<<<<<<<<<<<<<
  *          int s, int j, int m,
  *          int ell_max,
  */
-  __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(9, 0, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_hybess_pyx, __pyx_n_s_beta, 668, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 668, __pyx_L1_error)
+  __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(9, 0, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_anilos_hybess_src_hybess_pyx, __pyx_n_s_beta, 669, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 669, __pyx_L1_error)
 
-  /* "hybess.pyx":705
+  /* "src/anilos/hybess_src/hybess.pyx":706
  *     return BetaComplex(chi, s, j, m, ell_max, nu, ellc, calK, mode)
  * 
  * def epsbeta_for_tensor(double [:] chi_grid,             # <<<<<<<<<<<<<<
  *                        int ell_max,
  *                        double complex nu,
  */
-  __pyx_tuple__27 = PyTuple_Pack(22, __pyx_n_s_chi_grid, __pyx_n_s_ell_max, __pyx_n_s_nu, __pyx_n_s_ellc, __pyx_n_s_grid_length, __pyx_n_s_epsilonT, __pyx_n_s_epsilonE, __pyx_n_s_betaB, __pyx_n_s_phi, __pyx_n_s_dphi, __pyx_n_s_d2phi, __pyx_n_s_coef, __pyx_n_s_gvar, __pyx_n_s_nured, __pyx_n_s_chi, __pyx_n_s_xi_k, __pyx_n_s_nured2, __pyx_n_s_dr_over_r2, __pyx_n_s_r2, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_l); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 705, __pyx_L1_error)
+  __pyx_tuple__27 = PyTuple_Pack(22, __pyx_n_s_chi_grid, __pyx_n_s_ell_max, __pyx_n_s_nu, __pyx_n_s_ellc, __pyx_n_s_grid_length, __pyx_n_s_epsilonT, __pyx_n_s_epsilonE, __pyx_n_s_betaB, __pyx_n_s_phi, __pyx_n_s_dphi, __pyx_n_s_d2phi, __pyx_n_s_coef, __pyx_n_s_gvar, __pyx_n_s_nured, __pyx_n_s_chi, __pyx_n_s_xi_k, __pyx_n_s_nured2, __pyx_n_s_dr_over_r2, __pyx_n_s_r2, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_l); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 706, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
   __Pyx_GIVEREF(__pyx_tuple__27);
-  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(5, 0, 0, 22, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_hybess_pyx, __pyx_n_s_epsbeta_for_tensor, 705, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 705, __pyx_L1_error)
+  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(5, 0, 0, 22, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_anilos_hybess_src_hybess_pyx, __pyx_n_s_epsbeta_for_tensor, 706, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 706, __pyx_L1_error)
 
-  /* "hybess.pyx":774
+  /* "src/anilos/hybess_src/hybess.pyx":775
  *     return [epsilonT, epsilonE, betaB]
  * 
  * def epsbeta_for_vector(double [:] chi_grid, int ell_max, double complex nu, double ellc, int grid_length):             # <<<<<<<<<<<<<<
  *     """
  *     Even and odd part of radial function
  */
-  __pyx_tuple__29 = PyTuple_Pack(23, __pyx_n_s_chi_grid, __pyx_n_s_ell_max, __pyx_n_s_nu, __pyx_n_s_ellc, __pyx_n_s_grid_length, __pyx_n_s_epsilonT, __pyx_n_s_epsilonT2, __pyx_n_s_epsilonE, __pyx_n_s_betaB, __pyx_n_s_phi, __pyx_n_s_dphi, __pyx_n_s_coef, __pyx_n_s_coef2, __pyx_n_s_coef3, __pyx_n_s_gvar, __pyx_n_s_nured, __pyx_n_s_chi, __pyx_n_s_xi_k2, __pyx_n_s_xi_k1, __pyx_n_s_nured2, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_l); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 774, __pyx_L1_error)
+  __pyx_tuple__29 = PyTuple_Pack(23, __pyx_n_s_chi_grid, __pyx_n_s_ell_max, __pyx_n_s_nu, __pyx_n_s_ellc, __pyx_n_s_grid_length, __pyx_n_s_epsilonT, __pyx_n_s_epsilonT2, __pyx_n_s_epsilonE, __pyx_n_s_betaB, __pyx_n_s_phi, __pyx_n_s_dphi, __pyx_n_s_coef, __pyx_n_s_coef2, __pyx_n_s_coef3, __pyx_n_s_gvar, __pyx_n_s_nured, __pyx_n_s_chi, __pyx_n_s_xi_k2, __pyx_n_s_xi_k1, __pyx_n_s_nured2, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_l); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 775, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__29);
   __Pyx_GIVEREF(__pyx_tuple__29);
-  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(5, 0, 0, 23, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_hybess_pyx, __pyx_n_s_epsbeta_for_vector, 774, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 774, __pyx_L1_error)
+  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(5, 0, 0, 23, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_anilos_hybess_src_hybess_pyx, __pyx_n_s_epsbeta_for_vector, 775, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 775, __pyx_L1_error)
 
-  /* "hybess.pyx":841
+  /* "src/anilos/hybess_src/hybess.pyx":842
  *     return [epsilonT, epsilonT2, epsilonE, betaB]
  * 
  * def HyperBesselTestComplex(double[:] chi_grid, long double complex nu, int ell_max, int calK = -1, double ellc = 1.):             # <<<<<<<<<<<<<<
  *     cdef int lenght = len(np.array(chi_grid)) * (ell_max+2)
  *     cdef int m
  */
-  __pyx_tuple__31 = PyTuple_Pack(18, __pyx_n_s_chi_grid, __pyx_n_s_nu, __pyx_n_s_ell_max, __pyx_n_s_calK, __pyx_n_s_ellc, __pyx_n_s_lenght, __pyx_n_s_m, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_chi, __pyx_n_s_auxphi, __pyx_n_s_phi, __pyx_n_s_gvar, __pyx_n_s_nured, __pyx_n_s_r, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_phii); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 841, __pyx_L1_error)
+  __pyx_tuple__31 = PyTuple_Pack(18, __pyx_n_s_chi_grid, __pyx_n_s_nu, __pyx_n_s_ell_max, __pyx_n_s_calK, __pyx_n_s_ellc, __pyx_n_s_lenght, __pyx_n_s_m, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_chi, __pyx_n_s_auxphi, __pyx_n_s_phi, __pyx_n_s_gvar, __pyx_n_s_nured, __pyx_n_s_r, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_phii); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 842, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__31);
   __Pyx_GIVEREF(__pyx_tuple__31);
-  __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(5, 0, 0, 18, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_hybess_pyx, __pyx_n_s_HyperBesselTestComplex, 841, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 841, __pyx_L1_error)
+  __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(5, 0, 0, 18, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_anilos_hybess_src_hybess_pyx, __pyx_n_s_HyperBesselTestComplex, 842, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 842, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -29130,14 +29130,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_hybess) {
+  if (__pyx_module_is_main_anilos__hybess) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name_2, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "hybess")) {
-      if (unlikely((PyDict_SetItemString(modules, "hybess", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "anilos.hybess")) {
+      if (unlikely((PyDict_SetItemString(modules, "anilos.hybess", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -29671,93 +29671,93 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_pyx_unpickle_Enum, __pyx_t_7) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "hybess.pyx":43
+  /* "src/anilos/hybess_src/hybess.pyx":44
  * 
  * import cython
  * import numpy as np             # <<<<<<<<<<<<<<
  * cimport numpy as np
  * from cython.parallel import prange
  */
-  __pyx_t_7 = __Pyx_ImportDottedModule(__pyx_n_s_numpy, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_ImportDottedModule(__pyx_n_s_numpy, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_7) < 0) __PYX_ERR(0, 43, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_7) < 0) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "hybess.pyx":632
+  /* "src/anilos/hybess_src/hybess.pyx":633
  * 
  * 
  * def epsilon(double chi,             # <<<<<<<<<<<<<<
  *             int s, int j, int m,
  *             int ell_max,
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_6hybess_1epsilon, 0, __pyx_n_s_epsilon, NULL, __pyx_n_s_hybess, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 632, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_6anilos_6hybess_1epsilon, 0, __pyx_n_s_epsilon, NULL, __pyx_n_s_anilos_hybess, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 633, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_epsilon, __pyx_t_7) < 0) __PYX_ERR(0, 632, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_epsilon, __pyx_t_7) < 0) __PYX_ERR(0, 633, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "hybess.pyx":668
+  /* "src/anilos/hybess_src/hybess.pyx":669
  *     return EpsilonComplex(chi, s, j, m, ell_max, nu, ellc, calK, mode)
  * 
  * def beta(double chi,             # <<<<<<<<<<<<<<
  *          int s, int j, int m,
  *          int ell_max,
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_6hybess_3beta, 0, __pyx_n_s_beta, NULL, __pyx_n_s_hybess, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 668, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_6anilos_6hybess_3beta, 0, __pyx_n_s_beta, NULL, __pyx_n_s_anilos_hybess, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 669, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_beta, __pyx_t_7) < 0) __PYX_ERR(0, 668, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_beta, __pyx_t_7) < 0) __PYX_ERR(0, 669, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "hybess.pyx":705
+  /* "src/anilos/hybess_src/hybess.pyx":706
  *     return BetaComplex(chi, s, j, m, ell_max, nu, ellc, calK, mode)
  * 
  * def epsbeta_for_tensor(double [:] chi_grid,             # <<<<<<<<<<<<<<
  *                        int ell_max,
  *                        double complex nu,
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_6hybess_5epsbeta_for_tensor, 0, __pyx_n_s_epsbeta_for_tensor, NULL, __pyx_n_s_hybess, __pyx_d, ((PyObject *)__pyx_codeobj__28)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 705, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_6anilos_6hybess_5epsbeta_for_tensor, 0, __pyx_n_s_epsbeta_for_tensor, NULL, __pyx_n_s_anilos_hybess, __pyx_d, ((PyObject *)__pyx_codeobj__28)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 706, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_epsbeta_for_tensor, __pyx_t_7) < 0) __PYX_ERR(0, 705, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_epsbeta_for_tensor, __pyx_t_7) < 0) __PYX_ERR(0, 706, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "hybess.pyx":774
+  /* "src/anilos/hybess_src/hybess.pyx":775
  *     return [epsilonT, epsilonE, betaB]
  * 
  * def epsbeta_for_vector(double [:] chi_grid, int ell_max, double complex nu, double ellc, int grid_length):             # <<<<<<<<<<<<<<
  *     """
  *     Even and odd part of radial function
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_6hybess_7epsbeta_for_vector, 0, __pyx_n_s_epsbeta_for_vector, NULL, __pyx_n_s_hybess, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 774, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_6anilos_6hybess_7epsbeta_for_vector, 0, __pyx_n_s_epsbeta_for_vector, NULL, __pyx_n_s_anilos_hybess, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 775, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_epsbeta_for_vector, __pyx_t_7) < 0) __PYX_ERR(0, 774, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_epsbeta_for_vector, __pyx_t_7) < 0) __PYX_ERR(0, 775, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "hybess.pyx":841
+  /* "src/anilos/hybess_src/hybess.pyx":842
  *     return [epsilonT, epsilonT2, epsilonE, betaB]
  * 
  * def HyperBesselTestComplex(double[:] chi_grid, long double complex nu, int ell_max, int calK = -1, double ellc = 1.):             # <<<<<<<<<<<<<<
  *     cdef int lenght = len(np.array(chi_grid)) * (ell_max+2)
  *     cdef int m
  */
-  __pyx_t_7 = __Pyx_PyInt_From_int(((int)-1)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 841, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_int(((int)-1)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 842, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_4 = PyFloat_FromDouble(((double)1.)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 841, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble(((double)1.)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 842, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 841, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 842, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_7);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_7)) __PYX_ERR(0, 841, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_7)) __PYX_ERR(0, 842, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_4);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_4)) __PYX_ERR(0, 841, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_4)) __PYX_ERR(0, 842, __pyx_L1_error);
   __pyx_t_7 = 0;
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6hybess_9HyperBesselTestComplex, 0, __pyx_n_s_HyperBesselTestComplex, NULL, __pyx_n_s_hybess, __pyx_d, ((PyObject *)__pyx_codeobj__32)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 841, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6anilos_6hybess_9HyperBesselTestComplex, 0, __pyx_n_s_HyperBesselTestComplex, NULL, __pyx_n_s_anilos_hybess, __pyx_d, ((PyObject *)__pyx_codeobj__32)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 842, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_4, __pyx_t_5);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_HyperBesselTestComplex, __pyx_t_4) < 0) __PYX_ERR(0, 841, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_HyperBesselTestComplex, __pyx_t_4) < 0) __PYX_ERR(0, 842, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "hybess.pyx":1
+  /* "src/anilos/hybess_src/hybess.pyx":1
  * """             # <<<<<<<<<<<<<<
  * hybesscy.pyx is a module that computes Hyperspherical Bessel functions
  * (HBF) of complex order. The method utilized to perform the
@@ -29776,7 +29776,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_7);
   if (__pyx_m) {
     if (__pyx_d && stringtab_initialized) {
-      __Pyx_AddTraceback("init hybess", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init anilos.hybess", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     #if !CYTHON_USE_MODULE_STATE
     Py_CLEAR(__pyx_m);
@@ -29790,7 +29790,7 @@ if (!__Pyx_RefNanny) {
     }
     #endif
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init hybess");
+    PyErr_SetString(PyExc_ImportError, "init anilos.hybess");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

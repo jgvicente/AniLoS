@@ -1,5 +1,5 @@
 __authors__ = "Cyril Pitrou, João Vicente, Thiago Pereira"
-__version__ = "0.0.1"
+__version__ = "0.1.0"
 __maintainer__ = "João Vicente"
 __email__ = "jgvicente2000@gmail.com"
 
@@ -90,7 +90,7 @@ class Anilos:
         epsilon_TC : float, default: 0.03
             Condition to define the tight coupling regime, i.e,
             for H(eta)/tau(eta) < epsilon_TC, tight coupling is assumed.
-        IC : {'isocurvature', 'octupole'}
+        IC : {'iso_quad', 'iso_oct'}
             Initial conditions for vector modes
         gauge : {'synchronous', 'newtonian'}
             Defines the gauge of the variables for vector modes.
@@ -129,7 +129,7 @@ class Anilos:
         self.cutoff_multipole = 30  # Cutoff multipole for Boltzmann hierarchy
         self.sqrth = 0.1  # (spiraling length) = sqrth*(curvature radius)
         self.epsilon_TC = 0.003  # Condition to find the Tight Coupling regime
-        self.IC = 'isocurvature'  # Can be 'isocurvature' or 'octupole'.
+        self.IC = 'iso_quad'  # Can be 'iso_quad' or 'iso_oct'.
         self.verbose = False
         self.gauge = 'synchronous'  # Can be synchronous or newtonian. Changes only the velocities.
         # These variables are not independent from Omega_K.
@@ -168,8 +168,8 @@ class Anilos:
         #     warnings.warn("small values of sqrth may take more time to compute")
         if not isinstance(self.epsilon_TC, (float, int)):
             raise TypeError(f"float or int expected, not {type(self.epsilon_TC).__name__} ")
-        if self.IC != 'isocurvature' and self.IC != 'octupole':
-            raise ValueError("initial conditions for vector modes must be either 'isocurvature' or 'octupole' ")
+        if self.IC != 'iso_quad' and self.IC != 'iso_oct':
+            raise ValueError("initial conditions for vector modes must be either 'iso_quad' or 'iso_oct' ")
         if self.gauge != 'synchronous' and self.gauge != 'newtonian':
             raise ValueError("gauge must be either 'synchronous' or 'newtonian' ")
         if self.Omega_b is not None:
@@ -186,28 +186,22 @@ class Anilos:
                 raise TypeError(f"float or int expected, not {type(self.Omega_m).__name__} ")
         if self.Omega_b is not None and self.Omega_cdm is not None and self.Omega_m is not None:
             if (self.Omega_b + self.Omega_cdm != self.Omega_m):
-                raise ValueError(f"Inconsistence in the matter component \
-                                 {self.Omega_b} + {self.Omega_cdm} != {self.Omega_m}.\
-                                 Please provide either Omega_b and Omega_cdm or Omega_m.")
+                raise ValueError(f"Inconsistence in the matter component {self.Omega_b} + {self.Omega_cdm} != {self.Omega_m}. Please provide either Omega_b and Omega_cdm or Omega_m.")
         if self.Omega_b is not None and self.Omega_cdm is not None and self.Omega_Lambda is not None:
             if np.abs(self.Omega_b + self.Omega_cdm + self.Omega_Lambda + self.Omega_K - 1.) > 1e-4:
-                raise ValueError(f"Incosistence in the energy component.\
-                                 Condition |Omega_m + Omega_Lambda + Omega_K - 1| < 1e-4  \
-                                 not satisfied.")  
+                raise ValueError(f"Incosistence in the energy component. Condition |Omega_m + Omega_Lambda + Omega_K - 1| < 1e-4 not satisfied.")  
         if self.Omega_m is not None and self.Omega_Lambda is not None:
             if np.abs(self.Omega_m + self.Omega_Lambda + self.Omega_K - 1.) > 1e-4:
-                raise ValueError(f"Incosistence in the energy component.\
-                                 Condition |Omega_m + Omega_Lambda + Omega_K - 1| < 1e-4  \
-                                 not satisfied.")  
+                raise ValueError(f"Incosistence in the energy component. Condition |Omega_m + Omega_Lambda + Omega_K - 1| < 1e-4 not satisfied.")  
         
         self.DH = self.c_light / 100000 / self.h_hubble  # Hubble horizon in Mpc
-        self.curvature_radius = self.DH / np.sqrt(np.abs(self.Omega_K))  # ell_c in Mpc
-            # to work with dimensionless variables, set curvature_radius = 1
+        # ell_c in Mpc to work with dimensionless variables, set curvature_radius = 1
+        self.curvature_radius = self.DH / np.sqrt(np.abs(self.Omega_K)) 
+        # This is called \cal{K} in arXiv:1909.13688.
         self.calK = -1 * np.sign(self.Omega_K)  # Dimensionless curvature constant (i.e., -1, 0, +1).
-            # This is called \cal{K} in arXiv:1909.13688.
         self.curvature_constant = -1 * self.Omega_K / self.DH**2  # Dimensional curvature constant (i.e., <, =, > 0)
                     
-        # Calling Class
+        # Calling Class. Recall that 8piG/3 = 1
         params = {'Omega_k':self.Omega_K,'z_reio':self.z_reio, 'h': self.h_hubble}
         if self.Omega_b is not None:
             params.update({'Omega_b' : self.Omega_b})
@@ -262,9 +256,7 @@ class Anilos:
         # bianchi parameters
         self.spiraling_length = self.sqrth * self.curvature_radius
         if self.spiraling_length < 100:
-            warnings.warn(f"small value of spiraling length. It may take longer to compute. \
-                          spiraling_length = {self.spiraling_length} Mpc. \
-                          Recall that spiraling_length = sqrth * curvature_radius")
+            warnings.warn(f"small value of spiraling length (spiraling_length = {self.spiraling_length} Mpc). It may take longer to compute. Recall that spiraling_length = sqrth * curvature_radius")
 
         if self.verbose:
             print("parameters are:")
@@ -434,11 +426,10 @@ class Anilos:
     def tensor_solver(self, calS2=None, method='RK45', rtol=1e-7, atol=1e-10):
         """Solver for (beta, beta') and multipoles (N, T, E, B) as a function of time.
 
-        The shear beta and beta' and the multipoles N and T during
-        the tight coupling phase are stored in the array Anilos.tensor_tc (for later use
-        in the source terms of the integral solution) with
-        the following structure:
-        Anilos.tensor_tc: [beta, beta', N_2, T_2, N_3, T_3, ...]
+        The shear beta and beta' and the multipoles N during the tight coupling
+        phase are stored in the array Anilos.tensor_tc (for later use in the source terms
+        of the integral solution) with the following structure:
+        Anilos.tensor_tc: [beta, beta', N_2]
 
         The full hierarchy outside the tight coupling regime is stored in Anilos.nteb_tensor
         with the following structure:
@@ -559,12 +550,12 @@ class Anilos:
         # Sources after tight coupling
         st2_full[itc:] = self.expmtautable[itc:] * (self.tauprimetable[itc:] / 10
                                                 * (temp2_after - np.sqrt(6) * elet2_after)
-                                                - betap_after # @Cyril: -betap or +betap?
-                                                )              # Kernel of integral 7.33 in Harmonics paper
+                                                - betap_after
+                                                )
 
         se2_full[itc:] = self.expmtautable[itc:] * (-np.sqrt(6) * self.tauprimetable[itc:] / 10
                                                 * (temp2_after - np.sqrt(6) * elet2_after)
-                                                    ) # Kernel of integral 7.33 in Harmonics paper
+                                                    )
 
         #store the interpolated quantities
         self.st2_tensor_interp = CubicSpline(self.etatable2,st2_full)
@@ -591,11 +582,10 @@ class Anilos:
         """
 
         if self.calK < 0:
-            ell_max = ell_max + 5 # Avoid errors in the last element
+            ell_max = ell_max + 5 # Avoid integration errors in the last element
         if self.calK > 0:
             if ell_max != 2:
-                warnings.warn("There are no non zero multipoles \
-                              higher than the quadrupole in Bianchi IX")   
+                warnings.warn("There are no non zero multipoles higher than the quadrupole in Bianchi IX")   
                 ell_max = 3 
             elif ell_max == 2:
                 ell_max = 3
@@ -763,10 +753,10 @@ class Anilos:
         """Set initial conditions.
 
         Initial conditions for non-decaying vector modes.
-        Two ICs are implemented: 'isocurvature' and 'octupole'.
-        Isocurvature: photons and neutrinos have opposite directions
+        Two ICs are implemented: 'iso_quad' and 'iso_oct'.
+        iso_quad: photons and neutrinos have opposite directions
         velocities [1].
-        Octupole: an initial non-zero neutrino octupole [2].
+        iso_oct: an initial non-zero neutrino octopole [2].
 
         References:
         [1] Lewis, A. (2004). Observable primordial vector modes.
@@ -798,9 +788,9 @@ class Anilos:
         Onu = self.Omega_nu
         #Ob = self.Omega_b   
             
-        if self.IC == 'isocurvature':
+        if self.IC == 'iso_quad':
             # See [1]
-            self.Phi_i_0 = 1. # Need corrections of order eta
+            self.Phi_i_0 = -1. 
             self.Phi_i_1 = (-15. / (30. * Or + 8. * Onu * self.zeta_array_vector[0]) 
                             * Om * np.sqrt(Or) * self.calH_0 * self.Phi_i_0 * time_init
                             )
@@ -830,11 +820,10 @@ class Anilos:
             self.Vslip_i =  (-Rbg / tauprime / (1. + Rbg) 
                             * (calH_init * self.vf_i - alpha * self.T2_i / self.zeta_array_vector[0])
                             )
-            # revoir et write with the kappaslm for better readbility
 
-        if self.IC == 'octupole':
+        if self.IC == 'iso_oct':
             # Alluded in Eqs 6.7 of Rebhan et al. (9403032) paper
-            self.Phi_i_0 = 1.
+            self.Phi_i_0 = -1.
             self.Phi_i_1 = (-15. / (30. * Or + 8. * Onu * self.zeta_array_vector[0]) 
                             * Om * np.sqrt(Or) * self.calH_0 *self.Phi_i_0 * time_init
                             )
@@ -847,7 +836,7 @@ class Anilos:
             # Neutrinos
             self.N1_i_0 = 0.
             self.N1_i_1 = 0.
-            self.N1_i_2 = -self.Phi_i_0 * Or / Onu /24 * self.kappa0_array_vector[0]**2 * time_init**2 #SHould put correct expression 
+            self.N1_i_2 = -self.Phi_i_0 * Or / Onu /24 * self.kappa0_array_vector[0]**2 * time_init**2
             self.N1_i = self.N1_i_0 + self.N1_i_1 + self.N1_i_2
             self.N2_i_1 = 5. / 12. * Or / Onu * self.kappa0_array_vector[0] * self.Phi_i_0 * time_init
             self.N2_i_2 = (15. / 6. / (30.* Or + 8. * Onu * self.zeta_array_vector[0]) 
@@ -918,10 +907,9 @@ class Anilos:
         # tight-coupling phase
         ####################################
         time_init_TC = self.etatable2[0]  # Start of tight-coupling approximation
-        time_end_TC = self.end_tightc  # End of tight coupling (defined when fourier_k/calH*tau' = 1%)
+        time_end_TC = self.end_tightc  # End of tight coupling
         time_span_TC = [time_init_TC, time_end_TC]
 
-        # Find out initial conditions. comment here that baryons here stand for the tight coupled fluid.
         self.__setIC()
         # Initializes beta, beta', ur, T, E and B type = complex or float
         nteb0_TC = np.zeros(num_var,dtype=complex)
@@ -950,7 +938,6 @@ class Anilos:
         Rbg_array = self.Rbg(self.etatable2[0:self.index_end_tightc])
         calH_array = self.calH_interp(self.etatable2[0:self.index_end_tightc])
 
-        #Need to revisit all this TC expansion. I am a bit inconsistent.
         if self.gauge == 'synchronous':
             T1_array_TC0 = vf_array - Phi_array
             vfsynchronous_array = vf_array
@@ -965,9 +952,9 @@ class Anilos:
         vg_array = vf_array - Rbg_array*Vslip_array / (1. + Rbg_array)
         T1_array =  vg_array
         nteb_table_TC[self.__pos_v('T', 1)] = T1_array
-        nteb_table_TC[self.__pos_v('vb')]  = vb_array # Now vb is really vb a posteriori and not vf.
+        nteb_table_TC[self.__pos_v('vb')]  = vb_array 
 
-        # The photons quadrupole in temperature and E-polarization is also inferred
+        # The photons quadrupole in temperature and E-polarization are also inferred
         T2_array = 4. / 3. * 5. / 3. * alpha / tauprime_array  * T1_array_TC0 * self.zeta_array_vector[0]
         E2_array = -np.sqrt(2. / 3.) * 5. / 3. * alpha / tauprime_array  * T1_array_TC0 * self.zeta_array_vector[0]
         nteb_table_TC[self.__pos_v('T', 2)] = T2_array

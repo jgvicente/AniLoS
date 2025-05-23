@@ -14,11 +14,11 @@ setup(
 )
 
 # Generates a new .c file if hybess.pyx is modified
-# Uncomment the lines below to compile the modifications in hybess.pyx
-# After updating hybess.c (see README.md), comment these lines again
+# Uncomment the lines below to compile the modifications in hybess.pyx (using the command python setup.py build_ext --inplace)
+# After updating hybess.c, comment these lines again and use the command (python -m build)
 
 # hyp_extensions = Extension(
-#     name = "anilos.hybess",
+#     name = "src/anilos.hybess",
 #     sources=["./src/anilos/hybess_src/hybess.pyx"],
 #     include_dirs=[numpy.get_include()]
 # )
