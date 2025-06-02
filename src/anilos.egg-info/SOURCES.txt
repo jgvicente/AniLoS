@@ -3,12 +3,15 @@ README.md
 pyproject.toml
 setup.py
 ./src/anilos/hybess_src/hybess.c
+dist/anilos-0.1.0-cp310-cp310-linux_x86_64.whl
+dist/anilos-0.1.0.tar.gz
 examples/Example.ipynb
 examples/.ipynb_checkpoints/Example-checkpoint.ipynb
 examples/.ipynb_checkpoints/Example_aniclass-checkpoint.ipynb
 src/anilos/__init__.py
 src/anilos/anilos.py
 src/anilos/hierarchy.py
+src/anilos/hybess.cpython-310-x86_64-linux-gnu.so
 src/anilos.egg-info/PKG-INFO
 src/anilos.egg-info/SOURCES.txt
 src/anilos.egg-info/dependency_links.txt

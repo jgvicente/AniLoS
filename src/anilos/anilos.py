@@ -280,8 +280,11 @@ class Anilos:
         # Generalized Fourier mode
         if self.calK > 0:
             self.nu = 3 / self.curvature_radius  # Bianchi IX
+            self.calS2 = -8 / self.curvature_radius**2  # eq. D.1 in arxiv:1909.13688
         else:
             self.nu = m / self.spiraling_length + 1j / self.curvature_radius
+            # eq. D.2 in arxiv:1909.13688
+            self.calS2 = -self.nu**2 + self.calK / self.curvature_radius**2 
         if self.verbose:
             if m == 1:
                 svt_type = 'vector'
@@ -289,8 +292,6 @@ class Anilos:
                 svt_type = 'tensor'
             print(f"generalized fourier mode for {svt_type} modes is {self.nu}")
         self.nured = self.nu * self.curvature_radius  # Reduced (i.e., dimensionless) Fourier mode
-        # eq. D.2 in arxiv:1909.13688
-        self.calS2 = -self.nu**2 + self.calK / self.curvature_radius**2 
         self.fourier_k = np.abs(self.nu)
         self.index_TC_k_condition = np.where(self.fourier_k/self.tauprimetable < self.epsilon_TC )[0][-1]  # Index where TC ends
         self.index_TC_H_condition = np.where(self.Hcaltable2/self.tauprimetable < self.epsilon_TC )[0][-1]
@@ -423,7 +424,7 @@ class Anilos:
                             self.denom_array_tensor,
                             self.zeta_array_tensor)
 
-    def tensor_solver(self, calS2=None, method='RK45', rtol=1e-7, atol=1e-10):
+    def tensor_solver(self, method='RK45', rtol=1e-7, atol=1e-10):
         """Solver for (beta, beta') and multipoles (N, T, E, B) as a function of time.
 
         The shear beta and beta' and the multipoles N during the tight coupling
@@ -437,8 +438,6 @@ class Anilos:
 
         Parameters
         ----------
-        calS2 : complex, default: Eq. D.2 in arxiv:1909.13688
-            Eq. D.2 in arxiv:1909.13688
         method : str, default: RK45
             Method used to solve the system
         rtol, atol : float, default: 1e-7 and 1e-10
@@ -447,15 +446,16 @@ class Anilos:
 
         ell_max = self.cutoff_multipole
         self.__bianchi_parameters(2)  # Set Bianchi variables
-        if not calS2:
-            calS2 = self.calS2
+        calS2 = self.calS2
+        # if not calS2:
+        #     calS2 = self.calS2
         if self.calK > 0:
             if ell_max != 2:
                 warnings.warn("ell_max must be 2 in Bianchi IX. Changing the value.")   
                 ell_max = 3 
             elif ell_max == 2:
                 ell_max = 3
-        
+
         ####################################
         # Tight coupling phase
         ####################################
@@ -467,7 +467,7 @@ class Anilos:
         betaur0 = np.zeros(4*(ell_max-1)+2,dtype=complex)
         # Set initial conditions on beta and beta'
         betaur0[0] = 1
-        betaur0[1] = -self.fourier_k**2*self.etatable2[0]/3
+        betaur0[1] = np.sqrt(-calS2)*self.etatable2[0]/3
 
         # Setting hierarchy variables needed for the coefficients
         self.ur_index = np.array([2 + 4 *(i -2) for i in range(2,ell_max+1)])
@@ -561,7 +561,7 @@ class Anilos:
         self.st2_tensor_interp = CubicSpline(self.etatable2,st2_full)
         self.se2_tensor_interp = CubicSpline(self.etatable2,se2_full)
 
-    def alm_tensor(self, ell_max, healpy = False):
+    def alm_tensor(self, ell_max, healpy = True):
         """Computes alm_T, alm_E, and alm_B simultaneously
         using line-of-sight integration.
 
@@ -1080,7 +1080,7 @@ class Anilos:
         self.st2_interp2 = CubicSpline(self.etatable2,st2_full2)
         self.se2_interp = CubicSpline(self.etatable2,se2_full)
 
-    def alm_vector(self, ell_max, healpy = False):
+    def alm_vector(self, ell_max, healpy = True):
         """Computes alm_T, alm_E and alm_B simultaneously
         using line-of-sight integration
 
