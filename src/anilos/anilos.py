@@ -90,8 +90,10 @@ class Anilos:
         epsilon_TC : float, default: 0.03
             Condition to define the tight coupling regime, i.e,
             for H(eta)/tau(eta) < epsilon_TC, tight coupling is assumed.
-        IC : {'iso_quad', 'iso_oct'}
-            Initial conditions for vector modes
+        IC : {'iso', 'oct'}
+            Initial conditions for vector modes.
+            iso: neutrino isocurvature quadrupole ic;
+            oct: neutrino isocurvature octopole ic.
         gauge : {'synchronous', 'newtonian'}
             Defines the gauge of the variables for vector modes.
         verbose : bool
@@ -129,7 +131,7 @@ class Anilos:
         self.cutoff_multipole = 30  # Cutoff multipole for Boltzmann hierarchy
         self.sqrth = 0.1  # (spiraling length) = sqrth*(curvature radius)
         self.epsilon_TC = 0.003  # Condition to find the Tight Coupling regime
-        self.IC = 'iso_quad'  # Can be 'iso_quad' or 'iso_oct'.
+        self.IC = 'iso'  # Can be 'iso' or 'oct'.
         self.verbose = False
         self.gauge = 'synchronous'  # Can be synchronous or newtonian. Changes only the velocities.
         # These variables are not independent from Omega_K.
@@ -168,8 +170,8 @@ class Anilos:
         #     warnings.warn("small values of sqrth may take more time to compute")
         if not isinstance(self.epsilon_TC, (float, int)):
             raise TypeError(f"float or int expected, not {type(self.epsilon_TC).__name__} ")
-        if self.IC != 'iso_quad' and self.IC != 'iso_oct':
-            raise ValueError("initial conditions for vector modes must be either 'iso_quad' or 'iso_oct' ")
+        if self.IC != 'iso' and self.IC != 'oct':
+            raise ValueError("initial conditions for vector modes must be either 'iso' or 'oct' ")
         if self.gauge != 'synchronous' and self.gauge != 'newtonian':
             raise ValueError("gauge must be either 'synchronous' or 'newtonian' ")
         if self.Omega_b is not None:
@@ -753,10 +755,10 @@ class Anilos:
         """Set initial conditions.
 
         Initial conditions for non-decaying vector modes.
-        Two ICs are implemented: 'iso_quad' and 'iso_oct'.
-        iso_quad: photons and neutrinos have opposite directions
+        Two ICs are implemented: 'iso' and 'oct'.
+        iso: photons and neutrinos have opposite directions
         velocities [1].
-        iso_oct: an initial non-zero neutrino octopole [2].
+        oct: an initial non-zero neutrino octopole [2].
 
         References:
         [1] Lewis, A. (2004). Observable primordial vector modes.
@@ -788,7 +790,7 @@ class Anilos:
         Onu = self.Omega_nu
         #Ob = self.Omega_b   
             
-        if self.IC == 'iso_quad':
+        if self.IC == 'iso':
             # See [1]
             self.Phi_i_0 = -1. 
             self.Phi_i_1 = (-15. / (30. * Or + 8. * Onu * self.zeta_array_vector[0]) 
@@ -821,7 +823,7 @@ class Anilos:
                             * (calH_init * self.vf_i - alpha * self.T2_i / self.zeta_array_vector[0])
                             )
 
-        if self.IC == 'iso_oct':
+        if self.IC == 'oct':
             # Alluded in Eqs 6.7 of Rebhan et al. (9403032) paper
             self.Phi_i_0 = -1.
             self.Phi_i_1 = (-15. / (30. * Or + 8. * Onu * self.zeta_array_vector[0]) 
