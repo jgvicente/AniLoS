@@ -74,6 +74,15 @@ To modify the radial functions defined in the Cython source:
 
 TBA.
 
+## Acknowledgements
+
+This work was supported by:
+
+1. Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)
+2. Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)
+3. Fundação de Amparo à Pesquisa do Estado do Rio de Janeiro (grant E26/204.633/2024)
+4. Fundação Araucária (NAPI de Fenômenos Extremos do Universo, grant 347/2024 PD&I)
+
 ## License
 
 AniLoS is released under the GNU General Public License v3.0.
